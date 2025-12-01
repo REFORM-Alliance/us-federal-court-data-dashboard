@@ -26,25 +26,13 @@ library(plotly)
 library(matrixStats)
 
 
-####Connect to Database####
-##Database Connection
-con <- dbConnect(
-  RPostgres::Postgres(),
-  host = "reform-cjis-rds-cluster.cluster-cl8mgigamxxo.us-east-1.rds.amazonaws.com",
-  port = 5432,
-  user = "postgres",
-  password = "Reform12345!"
-)
-
-on.exit(dbDisconnect(con), add = TRUE)
-
-
 ####Read in Data####
 ##Federal Courts Data
 federal_courts_df <- 
-  con %>% 
-  tbl(in_schema("us_courts", "us_federal_courts_data")) %>% 
-  collect() %>% 
+  "data" %>% 
+  here("us_federal_courts_data.csv") %>% 
+  fread(sep = ",", header = TRUE, stringsAsFactors = FALSE) %>% 
+  clean_names() %>% 
   filter(!(table_num == "E-1" & variables == "persons_under_supervision" & table_name_date != date)) %>% 
   mutate(date_full = 
            ifelse(is.na(date) == TRUE, as.character(table_name_date), as.character(date)) %>% 

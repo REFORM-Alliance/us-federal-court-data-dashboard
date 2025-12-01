@@ -969,6 +969,9 @@ DBI::dbExecute(con, "CREATE SCHEMA IF NOT EXISTS us_courts;")
 ##Insert into Database
 dbWriteTable(con, DBI::Id("us_courts", "us_federal_courts_data"), full_data, overwrite = TRUE)
 
+##Write CSV
+fwrite(full_data, here("data", "us_federal_courts_data.csv"), row.names = FALSE)
+
 
 ####Fix Shapefile Data####
 ##Circuit Shapefile Data

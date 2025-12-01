@@ -274,265 +274,6 @@ selected_quarters <-
 
 ####App####
 ##UI
-# ui <- navbarPage("US Federal Court Supervision Data Dashboard",
-#                  theme = my_theme,
-#                  tags$head(
-#                    tags$style(HTML("
-#                               /* Hide most year range grid labels */
-#                               #year_range .irs-grid-text,
-#                               #year_range_state .irs-grid-text,
-#                               #year_range_table .irs-grid-text {
-#                                 display: none !important;
-#                               }
-#                               #year_range .irs-grid-pol:nth-child(16n+1) + .irs-grid-text,
-#                               #year_range_state .irs-grid-pol:nth-child(16n+1) + .irs-grid-text,
-#                               #year_range_table .irs-grid-pol:nth-child(16n+1) + .irs-grid-text {
-#                                 display: block !important;
-#                                 font-size: 10px !important;
-#                               }
-#                               
-#                               /* Fixed navbar */
-#                               .navbar {
-#                                 position: fixed !important;
-#                                 top: 0 !important;
-#                                 left: 0 !important;
-#                                 right: 0 !important;
-#                                 z-index: 1030 !important;
-#                                 margin-bottom: 0 !important;
-#                               }
-#                               
-#                               /* Add padding to body to account for fixed navbar */
-#                               body {
-#                                 padding-top: 60px !important;
-#                               }
-#                               
-#                               /* Fixed sidebar for both dashboards */
-#                               .col-sm-2 {
-#                                 position: fixed !important;
-#                                 top: 60px !important;
-#                                 left: 0 !important;
-#                                 width: 16.66667% !important;
-#                                 height: calc(100vh - 60px) !important;
-#                                 overflow-y: auto !important;
-#                                 z-index: 1000 !important;
-#                                 background-color: #FDF6E3 !important;
-#                                 padding-right: 15px !important;
-#                               }
-#                               
-#                               /* Main panel offset for both dashboards */
-#                               .col-sm-10 {
-#                                 margin-left: 16.66667% !important;
-#                                 width: 83.33333% !important;
-#                                 padding-top: 20px !important;
-#                                 padding-left: 30px !important;
-#                               }
-#                               
-#                               /* Ensure box content doesn't get hidden */
-#                               .box {
-#                                 width: 100% !important;
-#                                 overflow: visible !important;
-#                               }
-#                               
-#                               /* Ensure plotly charts have proper spacing */
-#                               .plotly {
-#                                 margin-left: 0 !important;
-#                               }
-#                             "))
-#                  ),
-#                  tabPanel("Main Dashboard",
-#                           # tags$head(
-#                           #   tags$style(HTML("
-#                           #         #year_range .irs-grid-text {
-#                           #           display: none !important;
-#                           #         }
-#                           #         #year_range .irs-grid-pol:nth-child(16n+1) + .irs-grid-text {
-#                           #           display: block !important;
-#                           #           font-size: 10px !important;
-#                           #         }
-#                           # 
-#                           #         .col-sm-2 {
-#                           #           position: fixed !important;
-#                           #           top: 50px;
-#                           #           left: 0;
-#                           #           height: 100vh;
-#                           #           overflow-y: auto;
-#                           #           z-index: 1000;
-#                           #         }
-#                           # 
-#                           #         # .col-sm-10 {
-#                           #         #   margin-left: 16.66667%;
-#                           #         # }
-#                           #       "))
-#                           # ),
-#                           # tags$head(
-#                           #   tags$style(HTML("
-#                           #     /* Hide most year range grid labels */
-#                           #     #year_range .irs-grid-text,
-#                           #     #year_range_state .irs-grid-text,
-#                           #     #year_range_table .irs-grid-text {
-#                           #       display: none !important;
-#                           #     }
-#                           #     #year_range .irs-grid-pol:nth-child(16n+1) + .irs-grid-text,
-#                           #     #year_range_state .irs-grid-pol:nth-child(16n+1) + .irs-grid-text,
-#                           #     #year_range_table .irs-grid-pol:nth-child(16n+1) + .irs-grid-text {
-#                           #       display: block !important;
-#                           #       font-size: 10px !important;
-#                           #     }
-#                           #     
-#                           #     /* Fixed navbar */
-#                           #     .navbar {
-#                           #       position: fixed !important;
-#                           #       top: 0 !important;
-#                           #       left: 0 !important;
-#                           #       right: 0 !important;
-#                           #       z-index: 1030 !important;
-#                           #       margin-bottom: 0 !important;
-#                           #     }
-#                           #     
-#                           #     /* Add padding to body to account for fixed navbar */
-#                           #     body {
-#                           #       padding-top: 60px !important;
-#                           #     }
-#                           #     
-#                           #     /* Fixed sidebar for both dashboards */
-#                           #     .col-sm-2 {
-#                           #       position: fixed !important;
-#                           #       top: 60px !important;
-#                           #       left: 0 !important;
-#                           #       width: 16.66667% !important;
-#                           #       height: calc(100vh - 60px) !important;
-#                           #       overflow-y: auto !important;
-#                           #       z-index: 1000 !important;
-#                           #       background-color: #FDF6E3 !important;
-#                           #       padding-right: 15px !important;
-#                           #     }
-#                           #     
-#                           #     /* Main panel offset for both dashboards */
-#                           #     .col-sm-10 {
-#                           #       margin-left: 16.66667% !important;
-#                           #       width: 83.33333% !important;
-#                           #       padding-top: 20px !important;
-#                           #     }
-#                           #   "))
-#                           # ),
-#                           sidebarLayout(
-#                             sidebarPanel(
-#                               width = 2,
-#                               tabsetPanel(
-#                                 tabPanel(
-#                                   "Map and Barplot Filters",
-#                                   selectInput("outcome_type", "Outcome Metric Type",
-#                                               choices = c("Population", "Admissions", "Exits"),
-#                                               selected = "Population"),
-#                                   selectInput("rate_or_count", "Rate or Count",
-#                                               choices = c("Per Capita", "Total Count"),
-#                                               selected = "Per Capita"),
-#                                   selectInput("supervision_type", "Supervision Type",
-#                                               choices = c("Total Supervision", "Supervised Release", "Probation", "Parole", "BOP Custody"),
-#                                               selected = "Total Supervision"),
-#                                   selectInput("agg_level", "Aggregation Type",
-#                                               choices = c("Mean" = "mean",
-#                                                           "Median" = "median",
-#                                                           "Minimum" = "min",
-#                                                           "Maximum" = "max"),
-#                                               selected = "mean"),
-#                                   selectInput("geo_level", "Geography Level", 
-#                                               choices = c(
-#                                                 "State" = "state_name", 
-#                                                 "Judicial District" = "state_district", 
-#                                                 "Judicial Circuit" = "circuit"
-#                                               )),
-#                                   sliderTextInput(
-#                                     inputId = "year_range",
-#                                     label = "Year Range",
-#                                     choices = quarters_full,
-#                                     selected = c(first(quarters_full), last(quarters_full)),
-#                                     grid = FALSE,
-#                                     dragRange = TRUE,
-#                                     force_edges = TRUE
-#                                   ),
-#                                   verbatimTextOutput("selected_quarters")
-#                                 ),
-#                                 tabPanel(
-#                                   "Table Filters",
-#                                   selectInput("supervision_type_table", "Supervision Type",
-#                                               choices = c("Total Supervision", "Supervised Release", "Probation", "Parole", "BOP Custody"),
-#                                               selected = "Total Supervision", 
-#                                               multiple = TRUE),
-#                                   selectInput("rate_or_count_table", "Rate or Count",
-#                                               choices = c("Per Capita", "Total Count"),
-#                                               selected = "Per Capita"),
-#                                   selectInput("geo_level_table", "Geography Level", 
-#                                               choices = c(
-#                                                 "State" = "state_name", 
-#                                                 "Judicial District" = "state_district", 
-#                                                 "Judicial Circuit" = "circuit"
-#                                               )),
-#                                   uiOutput("geo_filter_ui"), 
-#                                   sliderTextInput(
-#                                     inputId = "year_range_table",
-#                                     label = "Year Range",
-#                                     choices = quarters_full,
-#                                     selected = c(first(quarters_full), last(quarters_full)),
-#                                     grid = FALSE,
-#                                     dragRange = TRUE,
-#                                     force_edges = TRUE
-#                                   )
-#                                 )
-#                               )
-#                             ),
-#                             mainPanel(
-#                               width = 10,
-#                               fluidRow(
-#                                 box(width = 7, leafletOutput("map", height = 500)),
-#                                 box(width = 5, 
-#                                     align = "left",
-#                                     div(style = "width:95%; padding:0; margin:0; text-align:left;",
-#                                         plotlyOutput("barplot", height = 500, width = "100%")
-#                                     )
-#                                 )
-#                               ),
-#                               fluidRow(
-#                                 box(width = 12, DTOutput("table"))
-#                               )
-#                             )
-#                           )
-#                  ),
-#                  tabPanel(
-#                    "State Dashboard",
-#                    sidebarLayout(
-#                      sidebarPanel(
-#                        width = 2,
-#                          selectInput("state_selection", "State", 
-#                                      choices = sort(na.omit(unique(federal_courts_df_new$state_name)))),
-#                          sliderTextInput(
-#                            inputId = "year_range_state",
-#                            label = "Year Range",
-#                            choices = quarters_full,
-#                            selected = c(first(quarters_full), last(quarters_full)),
-#                            grid = FALSE,
-#                            dragRange = TRUE,
-#                            force_edges = TRUE
-#                          )
-#                        ),
-#                      mainPanel(
-#                        fluidRow(
-#                          box(width = 12, 
-#                              div(style = "width:100%; padding:0; margin:0; text-align:right;",
-#                                  plotlyOutput("state_viz_stacked_barplot", height = 600, width = "100%")))
-#                        ),
-#                        fluidRow(
-#                          box(width = 12, 
-#                              div(style = "width:100%; padding:0; margin:0; text-align:right;",
-#                                  plotlyOutput("state_viz_vs_national", height = 800, width = "100%")))
-#                        )
-#                      )
-#                    )
-#                  )
-# )
-
-####App####
-##UI
 ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                  theme = my_theme,
                  tags$head(
@@ -612,9 +353,8 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
     "))
                  ),
                  
-                 # --- TAB 1: MAIN DASHBOARD ---
                  tabPanel("Main Dashboard",
-                          div(id = "dashboard_main", # <--- Wrapper ID 1
+                          div(id = "dashboard_main", 
                               sidebarLayout(
                                 sidebarPanel(
                                   width = 2,
@@ -700,9 +440,8 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                           )
                  ),
                  
-                 # --- TAB 2: STATE DASHBOARD ---
                  tabPanel("State Dashboard",
-                          div(id = "dashboard_state", # <--- Wrapper ID 2
+                          div(id = "dashboard_state", 
                               sidebarLayout(
                                 sidebarPanel(
                                   width = 2,
@@ -1433,7 +1172,6 @@ server <- function(input, output, session){
                "Supervision: ", supervision_type, "\n",
                "Outcome: ", outcome_metric_type, "\n",
                "State: ", state_name, "\n",
-               # "Value: ", format(round(values, 0), big.mark = ","), "\n",
                "Value: ", round(values_per_capita, 2), "\n",
                "Date: ", format(date, "%b %d, %Y")
              )) %>%
@@ -1447,7 +1185,6 @@ server <- function(input, output, session){
           geom_point(size = 1) +
           facet_grid(supervision_type ~ outcome_metric_type, scales = "free_y") +
           scale_color_manual(values = c("#0072B2", "#E69F00", "#009E73")) +
-          # scale_y_continuous(labels = scales::comma) +
           scale_x_date(date_breaks = "4 years", date_labels = "%Y") +
           labs(x = "Date", y = "Count", color = paste0(input$state_selection, " vs. National")) +
           theme_minimal() +
@@ -1537,8 +1274,6 @@ server <- function(input, output, session){
                "Outcome: ", outcome_metric_type, "\n",
                "State: ", state_name, "\n",
                "Mean Value: ", format(round(values, 0), big.mark = ","), "\n"
-               # "Value: ", round(values_per_capita, 2), "\n",
-               # "Year: ", year
              )) %>%
       dplyr::select(state_name, supervision_type, outcome_metric_type, values, hover_text) %>% 
       {
@@ -1553,9 +1288,6 @@ server <- function(input, output, session){
           scale_color_manual(values = c("#0072B2", "#E69F00", "#009E73", "#CC79A7", "#D55E00")) +
           scale_fill_manual(values = c("#0072B2", "#E69F00", "#009E73", "#CC79A7", "#D55E00")) +
           scale_y_continuous(labels = scales::comma) +
-          # scale_x_date(date_breaks = "5 years", date_labels = "%Y") +
-          # scale_x_continuous(breaks = seq(min(.$year), max(.$year), by = 5),
-          #                    expand = c(0, 0)) +
           labs(x = "Year",  
                y = "Mean Count Over Time", 
                color = "Supervision Type", 

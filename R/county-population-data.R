@@ -63,14 +63,10 @@ parse_mixed_dates <- function(x){
 
 
 ####County Population Data####
-##Set WD Location
-la_data_loc <- "/home/basil/implementation/louisiana/incarceration-rates"
-
 ##County Population Data 1980-1989
 county_populations_1980s <- 
-  la_data_loc %>% 
-  here("data-raw") %>% 
-  # "data-raw" %>% 
+  "data-raw" %>% 
+  here("other") %>% 
   here("e8089co.xls") %>% 
   read_excel(col_names = FALSE) %>% 
   clean_names() %>% 

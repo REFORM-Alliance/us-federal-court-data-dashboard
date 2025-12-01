@@ -5547,6 +5547,9 @@
     }
   },
   "files": {
+    ".gitattributes": {
+      "checksum": "ded15960dafb693a0bba0e5c52f3e360"
+    },
     ".RData": {
       "checksum": "38dddb683c2e64e14e1f2b2ea656598e"
     },
@@ -5554,10 +5557,10 @@
       "checksum": "4c25341033bf4b0d7e0285d2be6db9ba"
     },
     ".Rprofile": {
-      "checksum": "aa46cefda79b25857611bcfdc30baa44"
+      "checksum": "414e40c0aeda069ea8fd42375b0be65e"
     },
     "app.R": {
-      "checksum": "47217748cc773602fed123c77a70170e"
+      "checksum": "4ac84cbb34533a6b2be70fae96eb1040"
     },
     "data-raw/99c8_00.txt": {
       "checksum": "9bc68c37e2293a8672495fc9c7ffbb17"
@@ -6537,6 +6540,9 @@
     "data-raw/other/districts_with_states.csv": {
       "checksum": "4a6b811cf1d44f9d04aeaf59d5e33f73"
     },
+    "data-raw/other/e8089co.xls": {
+      "checksum": "9b52b4ce113bd8851e123aba6a00648e"
+    },
     "data/judicial_circuit_sf.rds": {
       "checksum": "4a6f718b2215c48fa1cc7bff3fc32b4e"
     },
@@ -6546,14 +6552,17 @@
     "data/judicial_sf_data.rds": {
       "checksum": "2c09365cb9499a47f6d6158ff77610d4"
     },
+    "data/us_federal_courts_data.csv": {
+      "checksum": "ad5ae703198368e6578ccb57da081119"
+    },
     "logs/selenium.log": {
       "checksum": "acf25fa3d453b162558be102dc4fb9da"
     },
     "R/county-population-data.R": {
-      "checksum": "c2eaba9832390a07a3dacd4cc052c7e8"
+      "checksum": "cb7b90c5464ee1f2e209de19e024d569"
     },
     "R/parse-us-courts-data.R": {
-      "checksum": "cddfa16e77439e05be33e04333ae291d"
+      "checksum": "2f4b37457f7bbd1e7c008bcd8a8f7f2d"
     },
     "R/scrape-us-courts-data.R": {
       "checksum": "de10897f0711fe9dc57877354a040d47"

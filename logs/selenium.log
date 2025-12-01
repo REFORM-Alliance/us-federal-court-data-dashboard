@@ -1,0 +1,28 @@
+18:06:29.407 INFO [GridLauncherV3.parse] - Selenium server version: 3.141.59, revision: e82be7d358
+18:06:29.525 INFO [GridLauncherV3.lambda$buildLaunchers$3] - Launching a standalone Selenium Server on port 7257
+2025-09-16 18:06:29.631:INFO::main: Logging initialized @622ms to org.seleniumhq.jetty9.util.log.StdErrLog
+18:06:30.076 INFO [WebDriverServlet.<init>] - Initialising WebDriverServlet
+18:06:30.183 INFO [SeleniumServer.boot] - Selenium Server is up and running on port 7257
+18:06:31.897 INFO [ActiveSessionFactory.apply] - Capabilities are: {
+  "browserName": "chrome",
+  "chromeOptions": {
+    "binary": "\u002fusr\u002fbin\u002fgoogle-chrome",
+    "args": [
+      "--headless",
+      "--disable-gpu",
+      "--no-sandbox",
+      "--disable-dev-shm-usage",
+      "--user-agent=Mozilla\u002f5.0(X11; Linux x86_64) AppleWebKit\u002f537.36(KHTML, like Gecko) Chrome\u002f120.0.0.0 Safari\u002f537.36"
+    ]
+  },
+  "javascriptEnabled": true,
+  "nativeEvents": true,
+  "version": ""
+}
+18:06:31.898 INFO [ActiveSessionFactory.lambda$apply$11] - Matched factory org.openqa.selenium.grid.session.remote.ServicedSession$Factory (provider: org.openqa.selenium.chrome.ChromeDriverService)
+Starting ChromeDriver 136.0.7103.93 (d15f7e0b7b458c1502136e8aee33a8187c49a489-refs/branch-heads/7103@{#1841}) on port 11005
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 11005.
+18:06:34.289 INFO [ProtocolHandshake.createSession] - Detected dialect: W3C
+18:06:34.307 INFO [RemoteSession$Factory.lambda$performHandshake$0] - Started new session 8ee7fde3148e66e98e5d2675b306b1c5 (org.openqa.selenium.chrome.ChromeDriverService)

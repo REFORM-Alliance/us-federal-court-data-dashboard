@@ -1,0 +1,4276 @@
+state_district,year,district_id,estimate
+Alabama Middle,1980,1,913012
+Alabama Middle,1981,1,921131
+Alabama Middle,1982,1,921996
+Alabama Middle,1983,1,922068
+Alabama Middle,1984,1,926295
+Alabama Middle,1985,1,930481
+Alabama Middle,1986,1,936453
+Alabama Middle,1987,1,942168
+Alabama Middle,1988,1,946773
+Alabama Middle,1989,1,948306
+Alabama Middle,1990,1,951162
+Alabama Middle,1991,1,960276
+Alabama Middle,1992,1,970365
+Alabama Middle,1993,1,980268
+Alabama Middle,1994,1,988481
+Alabama Middle,1995,1,994742
+Alabama Middle,1996,1,1000055
+Alabama Middle,1997,1,1005568
+Alabama Middle,1998,1,1011342
+Alabama Middle,1999,1,1014367
+Alabama Middle,2000,1,1055187
+Alabama Middle,2001,1,1056174
+Alabama Middle,2002,1,1057876
+Alabama Middle,2003,1,1061313
+Alabama Middle,2004,1,1066048
+Alabama Middle,2005,1,1073658
+Alabama Middle,2006,1,1086214
+Alabama Middle,2007,1,1096450
+Alabama Middle,2008,1,1101864
+Alabama Middle,2009,1,1107432
+Alabama Middle,2010,1,1134963
+Alabama Middle,2011,1,1140178
+Alabama Middle,2012,1,1146418
+Alabama Middle,2013,1,1148808
+Alabama Middle,2014,1,1149319
+Alabama Middle,2015,1,1150355
+Alabama Middle,2016,1,1151115
+Alabama Middle,2017,1,1151806
+Alabama Middle,2018,1,1152490
+Alabama Middle,2019,1,1154337
+Alabama Middle,2020,1,1184179
+Alabama Middle,2021,1,1184927
+Alabama Middle,2022,1,1191176
+Alabama Middle,2023,1,1198427
+Alabama Middle,2024,1,1205552
+Alabama Southern,1980,2,706272
+Alabama Southern,1981,2,712721
+Alabama Southern,1982,2,718449
+Alabama Southern,1983,2,721361
+Alabama Southern,1984,2,722476
+Alabama Southern,1985,2,726049
+Alabama Southern,1986,2,729106
+Alabama Southern,1987,2,731127
+Alabama Southern,1988,2,726973
+Alabama Southern,1989,2,723135
+Alabama Southern,1990,2,724492
+Alabama Southern,1991,2,732091
+Alabama Southern,1992,2,742241
+Alabama Southern,1993,2,753774
+Alabama Southern,1994,2,761253
+Alabama Southern,1995,2,765618
+Alabama Southern,1996,2,770508
+Alabama Southern,1997,2,776993
+Alabama Southern,1998,2,781427
+Alabama Southern,1999,2,784568
+Alabama Southern,2000,2,791760
+Alabama Southern,2001,2,793486
+Alabama Southern,2002,2,792390
+Alabama Southern,2003,2,792866
+Alabama Southern,2004,2,795239
+Alabama Southern,2005,2,799690
+Alabama Southern,2006,2,808447
+Alabama Southern,2007,2,814709
+Alabama Southern,2008,2,821177
+Alabama Southern,2009,2,825304
+Alabama Southern,2010,2,830932
+Alabama Southern,2011,2,831533
+Alabama Southern,2012,2,833468
+Alabama Southern,2013,2,835552
+Alabama Southern,2014,2,838052
+Alabama Southern,2015,2,840471
+Alabama Southern,2016,2,842884
+Alabama Southern,2017,2,844218
+Alabama Southern,2018,2,846562
+Alabama Southern,2019,2,848420
+Alabama Southern,2020,2,857753
+Alabama Southern,2021,2,860469
+Alabama Southern,2022,2,863366
+Alabama Southern,2023,2,870090
+Alabama Southern,2024,2,876712
+Alabama Northern,1980,3,2274741
+Alabama Northern,1981,3,2284681
+Alabama Northern,1982,3,2284818
+Alabama Northern,1983,3,2290671
+Alabama Northern,1984,3,2303053
+Alabama Northern,1985,3,2315990
+Alabama Northern,1986,3,2326010
+Alabama Northern,1987,3,2341967
+Alabama Northern,1988,3,2350096
+Alabama Northern,1989,3,2358778
+Alabama Northern,1990,3,2372854
+Alabama Northern,1991,3,2398658
+Alabama Northern,1992,3,2426663
+Alabama Northern,1993,3,2459072
+Alabama Northern,1994,3,2483231
+Alabama Northern,1995,3,2502371
+Alabama Northern,1996,3,2519840
+Alabama Northern,1997,3,2537720
+Alabama Northern,1998,3,2558268
+Alabama Northern,1999,3,2570927
+Alabama Northern,2000,3,2604902
+Alabama Northern,2001,3,2614374
+Alabama Northern,2002,3,2622154
+Alabama Northern,2003,3,2636412
+Alabama Northern,2004,3,2650903
+Alabama Northern,2005,3,2671701
+Alabama Northern,2006,3,2703027
+Alabama Northern,2007,3,2726745
+Alabama Northern,2008,3,2754423
+Alabama Northern,2009,3,2775972
+Alabama Northern,2010,3,2819542
+Alabama Northern,2011,3,2827358
+Alabama Northern,2012,3,2835702
+Alabama Northern,2013,3,2845721
+Alabama Northern,2014,3,2854428
+Alabama Northern,2015,3,2861521
+Alabama Northern,2016,3,2869526
+Alabama Northern,2017,3,2878462
+Alabama Northern,2018,3,2888629
+Alabama Northern,2019,3,2900428
+Alabama Northern,2020,3,2991162
+Alabama Northern,2021,3,3003800
+Alabama Northern,2022,3,3021639
+Alabama Northern,2023,3,3049156
+Alabama Northern,2024,3,3075435
+Alaska,1980,4,401851
+Alaska,1981,4,418493
+Alaska,1982,4,449606
+Alaska,1983,4,488418
+Alaska,1984,4,513704
+Alaska,1985,4,532496
+Alaska,1986,4,544269
+Alaska,1987,4,539310
+Alaska,1988,4,541984
+Alaska,1989,4,547160
+Alaska,1990,4,553120
+Alaska,1991,4,569273
+Alaska,1992,4,587073
+Alaska,1993,4,596993
+Alaska,1994,4,600624
+Alaska,1995,4,601345
+Alaska,1996,4,604918
+Alaska,1997,4,608846
+Alaska,1998,4,615205
+Alaska,1999,4,619500
+Alaska,2000,4,627499
+Alaska,2001,4,633316
+Alaska,2002,4,642691
+Alaska,2003,4,650884
+Alaska,2004,4,661569
+Alaska,2005,4,669488
+Alaska,2006,4,677325
+Alaska,2007,4,682297
+Alaska,2008,4,688125
+Alaska,2009,4,698473
+Alaska,2010,4,713910
+Alaska,2011,4,722128
+Alaska,2012,4,730443
+Alaska,2013,4,737068
+Alaska,2014,4,736283
+Alaska,2015,4,737498
+Alaska,2016,4,741456
+Alaska,2017,4,739700
+Alaska,2018,4,735139
+Alaska,2019,4,731545
+Alaska,2020,4,733017
+Alaska,2021,4,734420
+Alaska,2022,4,734442
+Alaska,2023,4,736510
+Alaska,2024,4,740133
+Arizona,1980,5,2716546
+Arizona,1981,5,2810108
+Arizona,1982,5,2889860
+Arizona,1983,5,2968924
+Arizona,1984,5,3067134
+Arizona,1985,5,3183539
+Arizona,1986,5,3308261
+Arizona,1987,5,3437103
+Arizona,1988,5,3535183
+Arizona,1989,5,3622184
+Arizona,1990,5,3679056
+Arizona,1991,5,3762394
+Arizona,1992,5,3867333
+Arizona,1993,5,3993390
+Arizona,1994,5,4147561
+Arizona,1995,5,4306908
+Arizona,1996,5,4432308
+Arizona,1997,5,4552207
+Arizona,1998,5,4667277
+Arizona,1999,5,4778332
+Arizona,2000,5,5166697
+Arizona,2001,5,5304417
+Arizona,2002,5,5452108
+Arizona,2003,5,5591206
+Arizona,2004,5,5759425
+Arizona,2005,5,5974834
+Arizona,2006,5,6192100
+Arizona,2007,5,6362241
+Arizona,2008,5,6499377
+Arizona,2009,5,6595778
+Arizona,2010,5,6407172
+Arizona,2011,5,6472643
+Arizona,2012,5,6554978
+Arizona,2013,5,6632764
+Arizona,2014,5,6730413
+Arizona,2015,5,6829676
+Arizona,2016,5,6941072
+Arizona,2017,5,7044008
+Arizona,2018,5,7158024
+Arizona,2019,5,7278717
+Arizona,2020,5,7187135
+Arizona,2021,5,7274078
+Arizona,2022,5,7377566
+Arizona,2023,5,7473027
+Arizona,2024,5,7582384
+Arkansas Western,1980,6,913806
+Arkansas Western,1981,6,917439
+Arkansas Western,1982,6,918041
+Arkansas Western,1983,6,926090
+Arkansas Western,1984,6,935688
+Arkansas Western,1985,6,940142
+Arkansas Western,1986,6,943191
+Arkansas Western,1987,6,949723
+Arkansas Western,1988,6,951959
+Arkansas Western,1989,6,953281
+Arkansas Western,1990,6,958254
+Arkansas Western,1991,6,969013
+Arkansas Western,1992,6,983888
+Arkansas Western,1993,6,1003946
+Arkansas Western,1994,6,1021470
+Arkansas Western,1995,6,1040479
+Arkansas Western,1996,6,1055782
+Arkansas Western,1997,6,1066946
+Arkansas Western,1998,6,1073989
+Arkansas Western,1999,6,1081953
+Arkansas Western,2000,6,1153288
+Arkansas Western,2001,6,1163103
+Arkansas Western,2002,6,1175439
+Arkansas Western,2003,6,1189320
+Arkansas Western,2004,6,1205298
+Arkansas Western,2005,6,1226228
+Arkansas Western,2006,6,1250750
+Arkansas Western,2007,6,1269129
+Arkansas Western,2008,6,1283324
+Arkansas Western,2009,6,1293734
+Arkansas Western,2010,6,1297930
+Arkansas Western,2011,6,1308875
+Arkansas Western,2012,6,1316459
+Arkansas Western,2013,6,1322786
+Arkansas Western,2014,6,1328546
+Arkansas Western,2015,6,1338891
+Arkansas Western,2016,6,1350127
+Arkansas Western,2017,6,1362162
+Arkansas Western,2018,6,1371786
+Arkansas Western,2019,6,1380508
+Arkansas Western,2020,6,1379703
+Arkansas Western,2021,6,1392398
+Arkansas Western,2022,6,1408507
+Arkansas Western,2023,6,1422499
+Arkansas Western,2024,6,1436287
+Arkansas Eastern,1980,7,1372552
+Arkansas Eastern,1981,7,1375765
+Arkansas Eastern,1982,7,1376213
+Arkansas Eastern,1983,7,1379676
+Arkansas Eastern,1984,7,1384079
+Arkansas Eastern,1985,7,1386904
+Arkansas Eastern,1986,7,1388797
+Arkansas Eastern,1987,7,1392634
+Arkansas Eastern,1988,7,1390696
+Arkansas Eastern,1989,7,1393073
+Arkansas Eastern,1990,7,1396089
+Arkansas Eastern,1991,7,1401653
+Arkansas Eastern,1992,7,1410210
+Arkansas Eastern,1993,7,1419797
+Arkansas Eastern,1994,7,1429135
+Arkansas Eastern,1995,7,1439642
+Arkansas Eastern,1996,7,1449076
+Arkansas Eastern,1997,7,1457061
+Arkansas Eastern,1998,7,1464213
+Arkansas Eastern,1999,7,1469420
+Arkansas Eastern,2000,7,1525000
+Arkansas Eastern,2001,7,1527965
+Arkansas Eastern,2002,7,1529293
+Arkansas Eastern,2003,7,1532971
+Arkansas Eastern,2004,7,1540863
+Arkansas Eastern,2005,7,1549993
+Arkansas Eastern,2006,7,1564347
+Arkansas Eastern,2007,7,1573065
+Arkansas Eastern,2008,7,1584440
+Arkansas Eastern,2009,7,1595716
+Arkansas Eastern,2010,7,1624034
+Arkansas Eastern,2011,7,1631792
+Arkansas Eastern,2012,7,1635705
+Arkansas Eastern,2013,7,1636614
+Arkansas Eastern,2014,7,1638846
+Arkansas Eastern,2015,7,1639157
+Arkansas Eastern,2016,7,1639791
+Arkansas Eastern,2017,7,1639183
+Arkansas Eastern,2018,7,1637947
+Arkansas Eastern,2019,7,1637296
+Arkansas Eastern,2020,7,1634843
+Arkansas Eastern,2021,7,1634472
+Arkansas Eastern,2022,7,1639197
+Arkansas Eastern,2023,7,1646964
+Arkansas Eastern,2024,7,1652067
+California Northern,1980,8,5677992
+California Northern,1981,8,5784103
+California Northern,1982,8,5863535
+California Northern,1983,8,5967451
+California Northern,1984,8,6053855
+California Northern,1985,8,6156626
+California Northern,1986,8,6238682
+California Northern,1987,8,6317936
+California Northern,1988,8,6415204
+California Northern,1989,8,6527686
+California Northern,1990,8,6615740
+California Northern,1991,8,6674541
+California Northern,1992,8,6748768
+California Northern,1993,8,6798248
+California Northern,1994,8,6811573
+California Northern,1995,8,6856199
+California Northern,1996,8,6929706
+California Northern,1997,8,7041262
+California Northern,1998,8,7140212
+California Northern,1999,8,7198279
+California Northern,2000,8,7419003
+California Northern,2001,8,7479947
+California Northern,2002,8,7452867
+California Northern,2003,8,7437822
+California Northern,2004,8,7427362
+California Northern,2005,8,7440545
+California Northern,2006,8,7466129
+California Northern,2007,8,7533747
+California Northern,2008,8,7638089
+California Northern,2009,8,7740949
+California Northern,2010,8,7802333
+California Northern,2011,8,7889453
+California Northern,2012,8,7983588
+California Northern,2013,8,8085550
+California Northern,2014,8,8185798
+California Northern,2015,8,8281864
+California Northern,2016,8,8342387
+California Northern,2017,8,8372377
+California Northern,2018,8,8381043
+California Northern,2019,8,8376322
+California Northern,2020,8,8396750
+California Northern,2021,8,8210188
+California Northern,2022,8,8191366
+California Northern,2023,8,8208937
+California Northern,2024,8,8277057
+California Southern,1980,9,1953956
+California Southern,1981,9,2021319
+California Southern,1982,9,2068042
+California Southern,1983,9,2115023
+California Southern,1984,9,2163894
+California Southern,1985,9,2225289
+California Southern,1986,9,2295719
+California Southern,1987,9,2375386
+California Southern,1988,9,2466165
+California Southern,1989,9,2549546
+California Southern,1990,9,2624146
+California Southern,1991,9,2671934
+California Southern,1992,9,2728680
+California Southern,1993,9,2743890
+California Southern,1994,9,2763187
+California Southern,1995,9,2780979
+California Southern,1996,9,2814606
+California Southern,1997,9,2864215
+California Southern,1998,9,2909858
+California Southern,1999,9,2966131
+California Southern,2000,9,2967383
+California Southern,2001,9,3010246
+California Southern,2002,9,3045814
+California Southern,2003,9,3074068
+California Southern,2004,9,3085581
+California Southern,2005,9,3094817
+California Southern,2006,9,3104014
+California Southern,2007,9,3136022
+California Southern,2008,9,3182367
+California Southern,2009,9,3220667
+California Southern,2010,9,3277928
+California Southern,2011,9,3312942
+California Southern,2012,9,3350910
+California Southern,2013,9,3386206
+California Southern,2014,9,3426851
+California Southern,2015,9,3459787
+California Southern,2016,9,3486268
+California Southern,2017,9,3502886
+California Southern,2018,9,3515384
+California Southern,2019,9,3519545
+California Southern,2020,9,3480912
+California Southern,2021,9,3453450
+California Southern,2022,9,3463522
+California Southern,2023,9,3466475
+California Southern,2024,9,3480523
+California Eastern,1980,10,4084138
+California Eastern,1981,10,4226863
+California Eastern,1982,10,4346703
+California Eastern,1983,10,4455000
+California Eastern,1984,10,4555093
+California Eastern,1985,10,4679793
+California Eastern,1986,10,4796354
+California Eastern,1987,10,4942824
+California Eastern,1988,10,5104012
+California Eastern,1989,10,5282123
+California Eastern,1990,10,5528019
+California Eastern,1991,10,5682685
+California Eastern,1992,10,5789946
+California Eastern,1993,10,5871667
+California Eastern,1994,10,5940528
+California Eastern,1995,10,5990102
+California Eastern,1996,10,6056491
+California Eastern,1997,10,6131235
+California Eastern,1998,10,6212771
+California Eastern,1999,10,6316100
+California Eastern,2000,10,6527629
+California Eastern,2001,10,6675205
+California Eastern,2002,10,6827617
+California Eastern,2003,10,6969713
+California Eastern,2004,10,7090592
+California Eastern,2005,10,7193502
+California Eastern,2006,10,7280806
+California Eastern,2007,10,7362961
+California Eastern,2008,10,7435122
+California Eastern,2009,10,7505127
+California Eastern,2010,10,7639270
+California Eastern,2011,10,7688714
+California Eastern,2012,10,7728768
+California Eastern,2013,10,7773671
+California Eastern,2014,10,7842802
+California Eastern,2015,10,7912363
+California Eastern,2016,10,7982261
+California Eastern,2017,10,8062502
+California Eastern,2018,10,8125464
+California Eastern,2019,10,8175310
+California Eastern,2020,10,8279397
+California Eastern,2021,10,8307641
+California Eastern,2022,10,8342080
+California Eastern,2023,10,8373928
+California Eastern,2024,10,8440085
+California Central,1980,11,11951678
+California Central,1981,11,12253648
+California Central,1982,11,12541727
+California Central,1983,11,12822549
+California Central,1984,11,13071555
+California Central,1985,11,13379399
+California Central,1986,11,13771483
+California Central,1987,11,14141014
+California Central,1988,11,14478869
+California Central,1989,11,14858810
+California Central,1990,11,15182206
+California Central,1991,11,15384954
+California Central,1992,11,15608526
+California Central,1993,11,15733403
+California Central,1994,11,15801891
+California Central,1995,11,15866245
+California Central,1996,11,15980026
+California Central,1997,11,16180996
+California Central,1998,11,16419953
+California Central,1999,11,16664611
+California Central,2000,11,17080556
+California Central,2001,11,17320225
+California Central,2002,11,17549896
+California Central,2003,11,17769504
+California Central,2004,11,17954884
+California Central,2005,11,18066391
+California Central,2006,11,18128259
+California Central,2007,11,18193392
+California Central,2008,11,18324793
+California Central,2009,11,18494921
+California Central,2010,11,18599971
+California Central,2011,11,18747260
+California Central,2012,11,18885534
+California Central,2013,11,19015360
+California Central,2014,11,19141521
+California Central,2015,11,19264031
+California Central,2016,11,19356201
+California Central,2017,11,19420732
+California Central,2018,11,19439697
+California Central,2019,11,19441046
+California Central,2020,11,19364899
+California Central,2021,11,19171286
+California Central,2022,11,19145446
+California Central,2023,11,19149353
+California Central,2024,11,19233598
+Colorado,1980,12,2889735
+Colorado,1981,12,2977899
+Colorado,1982,12,3061562
+Colorado,1983,12,3133634
+Colorado,1984,12,3169995
+Colorado,1985,12,3208726
+Colorado,1986,12,3237448
+Colorado,1987,12,3260477
+Colorado,1988,12,3262280
+Colorado,1989,12,3275815
+Colorado,1990,12,3303862
+Colorado,1991,12,3367567
+Colorado,1992,12,3459995
+Colorado,1993,12,3560884
+Colorado,1994,12,3653910
+Colorado,1995,12,3738061
+Colorado,1996,12,3812716
+Colorado,1997,12,3891293
+Colorado,1998,12,3968967
+Colorado,1999,12,4056133
+Colorado,2000,12,4328070
+Colorado,2001,12,4433068
+Colorado,2002,12,4504265
+Colorado,2003,12,4548775
+Colorado,2004,12,4599681
+Colorado,2005,12,4660780
+Colorado,2006,12,4753044
+Colorado,2007,12,4842259
+Colorado,2008,12,4935213
+Colorado,2009,12,5024748
+Colorado,2010,12,5047349
+Colorado,2011,12,5121108
+Colorado,2012,12,5192647
+Colorado,2013,12,5269035
+Colorado,2014,12,5350101
+Colorado,2015,12,5450623
+Colorado,2016,12,5539215
+Colorado,2017,12,5611885
+Colorado,2018,12,5691287
+Colorado,2019,12,5758736
+Colorado,2020,12,5787129
+Colorado,2021,12,5814036
+Colorado,2022,12,5850935
+Colorado,2023,12,5901339
+Colorado,2024,12,5957493
+Connecticut,1980,13,3107564
+Connecticut,1981,13,3128837
+Connecticut,1982,13,3139014
+Connecticut,1983,13,3162355
+Connecticut,1984,13,3180014
+Connecticut,1985,13,3201131
+Connecticut,1986,13,3223741
+Connecticut,1987,13,3247290
+Connecticut,1988,13,3271954
+Connecticut,1989,13,3283404
+Connecticut,1990,13,3289056
+Connecticut,1991,13,3288640
+Connecticut,1992,13,3274997
+Connecticut,1993,13,3272325
+Connecticut,1994,13,3268346
+Connecticut,1995,13,3265293
+Connecticut,1996,13,3267030
+Connecticut,1997,13,3268514
+Connecticut,1998,13,3272563
+Connecticut,1999,13,3282031
+Connecticut,2000,13,3411726
+Connecticut,2001,13,3428433
+Connecticut,2002,13,3448382
+Connecticut,2003,13,3467673
+Connecticut,2004,13,3474610
+Connecticut,2005,13,3477416
+Connecticut,2006,13,3485162
+Connecticut,2007,13,3488633
+Connecticut,2008,13,3502932
+Connecticut,2009,13,3518288
+Connecticut,2010,13,3579114
+Connecticut,2011,13,3588283
+Connecticut,2012,13,3594547
+Connecticut,2013,13,3594841
+Connecticut,2014,13,3594524
+Connecticut,2015,13,3587122
+Connecticut,2016,13,3578141
+Connecticut,2017,13,3573297
+Connecticut,2018,13,3571520
+Connecticut,2019,13,3565287
+Connecticut,2020,13,3579918
+Connecticut,2021,13,3606607
+Connecticut,2022,13,3617925
+Connecticut,2023,13,3643023
+Connecticut,2024,13,3675069
+Delaware,1980,14,594338
+Delaware,1981,14,595974
+Delaware,1982,14,599148
+Delaware,1983,14,605459
+Delaware,1984,14,611565
+Delaware,1985,14,618279
+Delaware,1986,14,627559
+Delaware,1987,14,636946
+Delaware,1988,14,647621
+Delaware,1989,14,658274
+Delaware,1990,14,669063
+Delaware,1991,14,680495
+Delaware,1992,14,690158
+Delaware,1993,14,699475
+Delaware,1994,14,708416
+Delaware,1995,14,718265
+Delaware,1996,14,727090
+Delaware,1997,14,735024
+Delaware,1998,14,744066
+Delaware,1999,14,753538
+Delaware,2000,14,786411
+Delaware,2001,14,794620
+Delaware,2002,14,804131
+Delaware,2003,14,814905
+Delaware,2004,14,826639
+Delaware,2005,14,839906
+Delaware,2006,14,853022
+Delaware,2007,14,864896
+Delaware,2008,14,876211
+Delaware,2009,14,885122
+Delaware,2010,14,899593
+Delaware,2011,14,907381
+Delaware,2012,14,915179
+Delaware,2013,14,923576
+Delaware,2014,14,932487
+Delaware,2015,14,941252
+Delaware,2016,14,948921
+Delaware,2017,14,956823
+Delaware,2018,14,965479
+Delaware,2019,14,973764
+Delaware,2020,14,991928
+Delaware,2021,14,1005062
+Delaware,2022,14,1020625
+Delaware,2023,14,1036423
+Delaware,2024,14,1051917
+District of Columbia,1980,15,638432
+District of Columbia,1981,15,636893
+District of Columbia,1982,15,634174
+District of Columbia,1983,15,632433
+District of Columbia,1984,15,633382
+District of Columbia,1985,15,634549
+District of Columbia,1986,15,638269
+District of Columbia,1987,15,636930
+District of Columbia,1988,15,630432
+District of Columbia,1989,15,624168
+District of Columbia,1990,15,603814
+District of Columbia,1991,15,593239
+District of Columbia,1992,15,584183
+District of Columbia,1993,15,576358
+District of Columbia,1994,15,564982
+District of Columbia,1995,15,551273
+District of Columbia,1996,15,538273
+District of Columbia,1997,15,528752
+District of Columbia,1998,15,521426
+District of Columbia,1999,15,519000
+District of Columbia,2000,15,571744
+District of Columbia,2001,15,578042
+District of Columbia,2002,15,579585
+District of Columbia,2003,15,577777
+District of Columbia,2004,15,579796
+District of Columbia,2005,15,582049
+District of Columbia,2006,15,583978
+District of Columbia,2007,15,586409
+District of Columbia,2008,15,590074
+District of Columbia,2009,15,599657
+District of Columbia,2010,15,605226
+District of Columbia,2011,15,619800
+District of Columbia,2012,15,634924
+District of Columbia,2013,15,650581
+District of Columbia,2014,15,662328
+District of Columbia,2015,15,675400
+District of Columbia,2016,15,685815
+District of Columbia,2017,15,694906
+District of Columbia,2018,15,701547
+District of Columbia,2019,15,705749
+District of Columbia,2020,15,670917
+District of Columbia,2021,15,669256
+District of Columbia,2022,15,676725
+District of Columbia,2023,15,687324
+District of Columbia,2024,15,702250
+Florida Middle,1980,16,5148125
+Florida Middle,1981,16,5374754
+Florida Middle,1982,16,5550199
+Florida Middle,1983,16,5734007
+Florida Middle,1984,16,5933257
+Florida Middle,1985,16,6133191
+Florida Middle,1986,16,6332802
+Florida Middle,1987,16,6529794
+Florida Middle,1988,16,6712437
+Florida Middle,1989,16,6906028
+Florida Middle,1990,16,7153019
+Florida Middle,1991,16,7302817
+Florida Middle,1992,16,7415836
+Florida Middle,1993,16,7529544
+Florida Middle,1994,16,7655835
+Florida Middle,1995,16,7768629
+Florida Middle,1996,16,7896471
+Florida Middle,1997,16,8043920
+Florida Middle,1998,16,8181280
+Florida Middle,1999,16,8301619
+Florida Middle,2000,16,8851342
+Florida Middle,2001,16,9036916
+Florida Middle,2002,16,9235569
+Florida Middle,2003,16,9431356
+Florida Middle,2004,16,9696734
+Florida Middle,2005,16,9982765
+Florida Middle,2006,16,10225445
+Florida Middle,2007,16,10388741
+Florida Middle,2008,16,10477813
+Florida Middle,2009,16,10537091
+Florida Middle,2010,16,10763700
+Florida Middle,2011,16,10872012
+Florida Middle,2012,16,11011771
+Florida Middle,2013,16,11164466
+Florida Middle,2014,16,11367602
+Florida Middle,2015,16,11621204
+Florida Middle,2016,16,11902499
+Florida Middle,2017,16,12155799
+Florida Middle,2018,16,12380165
+Florida Middle,2019,16,12574370
+Florida Middle,2020,16,12696657
+Florida Middle,2021,16,12921983
+Florida Middle,2022,16,13311992
+Florida Middle,2023,16,13657115
+Florida Middle,2024,16,13951903
+Florida Northern,1980,17,1036244
+Florida Northern,1981,17,1066047
+Florida Northern,1982,17,1088264
+Florida Northern,1983,17,1112454
+Florida Northern,1984,17,1133404
+Florida Northern,1985,17,1158318
+Florida Northern,1986,17,1181332
+Florida Northern,1987,17,1207641
+Florida Northern,1988,17,1222363
+Florida Northern,1989,17,1248221
+Florida Northern,1990,17,1268548
+Florida Northern,1991,17,1297584
+Florida Northern,1992,17,1322439
+Florida Northern,1993,17,1347005
+Florida Northern,1994,17,1374409
+Florida Northern,1995,17,1396940
+Florida Northern,1996,17,1417455
+Florida Northern,1997,17,1439759
+Florida Northern,1998,17,1453268
+Florida Northern,1999,17,1461761
+Florida Northern,2000,17,1533183
+Florida Northern,2001,17,1550617
+Florida Northern,2002,17,1572771
+Florida Northern,2003,17,1595326
+Florida Northern,2004,17,1620168
+Florida Northern,2005,17,1644434
+Florida Northern,2006,17,1667674
+Florida Northern,2007,17,1679846
+Florida Northern,2008,17,1692740
+Florida Northern,2009,17,1700254
+Florida Northern,2010,17,1723120
+Florida Northern,2011,17,1733251
+Florida Northern,2012,17,1755431
+Florida Northern,2013,17,1766709
+Florida Northern,2014,17,1782428
+Florida Northern,2015,17,1801789
+Florida Northern,2016,17,1820560
+Florida Northern,2017,17,1840944
+Florida Northern,2018,17,1860617
+Florida Northern,2019,17,1865042
+Florida Northern,2020,17,1887447
+Florida Northern,2021,17,1907027
+Florida Northern,2022,17,1937795
+Florida Northern,2023,17,1971262
+Florida Northern,2024,17,2000794
+Florida Southern,1980,18,3562590
+Florida Southern,1981,18,3751974
+Florida Southern,1982,18,3832942
+Florida Southern,1983,18,3903388
+Florida Southern,1984,18,3973264
+Florida Southern,1985,18,4059611
+Florida Southern,1986,18,4153369
+Florida Southern,1987,18,4259847
+Florida Southern,1988,18,4371600
+Florida Southern,1989,18,4483469
+Florida Southern,1990,18,4596798
+Florida Southern,1991,18,4689096
+Florida Southern,1992,18,4766500
+Florida Southern,1993,18,4837044
+Florida Southern,1994,18,4931554
+Florida Southern,1995,18,5019834
+Florida Southern,1996,18,5112985
+Florida Southern,1997,18,5199671
+Florida Southern,1998,18,5273682
+Florida Southern,1999,18,5347864
+Florida Southern,2000,18,5662593
+Florida Southern,2001,18,5766336
+Florida Southern,2002,18,5871969
+Florida Southern,2003,18,5954501
+Florida Southern,2004,18,6058357
+Florida Southern,2005,18,6156669
+Florida Southern,2006,18,6195386
+Florida Southern,2007,18,6209301
+Florida Southern,2008,18,6253325
+Florida Southern,2009,18,6300624
+Florida Southern,2010,18,6358717
+Florida Southern,2011,18,6447974
+Florida Southern,2012,18,6530620
+Florida Southern,2013,18,6614446
+Florida Southern,2014,18,6695881
+Florida Southern,2015,18,6786049
+Florida Southern,2016,18,6890418
+Florida Southern,2017,18,6966870
+Florida Southern,2018,18,7003535
+Florida Southern,2019,18,7038325
+Florida Southern,2020,18,7007931
+Florida Southern,2021,18,7002939
+Florida Southern,2022,18,7129525
+Florida Southern,2023,18,7276491
+Florida Southern,2024,18,7419518
+Georgia Southern,1980,19,1039704
+Georgia Southern,1981,19,1056306
+Georgia Southern,1982,19,1070368
+Georgia Southern,1983,19,1077573
+Georgia Southern,1984,19,1091653
+Georgia Southern,1985,19,1105752
+Georgia Southern,1986,19,1120424
+Georgia Southern,1987,19,1131137
+Georgia Southern,1988,19,1139739
+Georgia Southern,1989,19,1151952
+Georgia Southern,1990,19,1167949
+Georgia Southern,1991,19,1187238
+Georgia Southern,1992,19,1216037
+Georgia Southern,1993,19,1227349
+Georgia Southern,1994,19,1244447
+Georgia Southern,1995,19,1255937
+Georgia Southern,1996,19,1266146
+Georgia Southern,1997,19,1281181
+Georgia Southern,1998,19,1290436
+Georgia Southern,1999,19,1299188
+Georgia Southern,2000,19,1332465
+Georgia Southern,2001,19,1341071
+Georgia Southern,2002,19,1353494
+Georgia Southern,2003,19,1363155
+Georgia Southern,2004,19,1377663
+Georgia Southern,2005,19,1390298
+Georgia Southern,2006,19,1406748
+Georgia Southern,2007,19,1427329
+Georgia Southern,2008,19,1441877
+Georgia Southern,2009,19,1461790
+Georgia Southern,2010,19,1511031
+Georgia Southern,2011,19,1525968
+Georgia Southern,2012,19,1537698
+Georgia Southern,2013,19,1540496
+Georgia Southern,2014,19,1551536
+Georgia Southern,2015,19,1562454
+Georgia Southern,2016,19,1573368
+Georgia Southern,2017,19,1583644
+Georgia Southern,2018,19,1591752
+Georgia Southern,2019,19,1604213
+Georgia Southern,2020,19,1614290
+Georgia Southern,2021,19,1623245
+Georgia Southern,2022,19,1644963
+Georgia Southern,2023,19,1661377
+Georgia Southern,2024,19,1676212
+Georgia Northern,1980,20,2895966
+Georgia Northern,1981,20,2968936
+Georgia Northern,1982,20,3023585
+Georgia Northern,1983,20,3089263
+Georgia Northern,1984,20,3173316
+Georgia Northern,1985,20,3277440
+Georgia Northern,1986,20,3379803
+Georgia Northern,1987,20,3484754
+Georgia Northern,1988,20,3578910
+Georgia Northern,1989,20,3655103
+Georgia Northern,1990,20,3729038
+Georgia Northern,1991,20,3813870
+Georgia Northern,1992,20,3903261
+Georgia Northern,1993,20,4006663
+Georgia Northern,1994,20,4123141
+Georgia Northern,1995,20,4240719
+Georgia Northern,1996,20,4356730
+Georgia Northern,1997,20,4474856
+Georgia Northern,1998,20,4600875
+Georgia Northern,1999,20,4729338
+Georgia Northern,2000,20,5067470
+Georgia Northern,2001,20,5234514
+Georgia Northern,2002,20,5371640
+Georgia Northern,2003,20,5501889
+Georgia Northern,2004,20,5644099
+Georgia Northern,2005,20,5801804
+Georgia Northern,2006,20,5993697
+Georgia Northern,2007,20,6158841
+Georgia Northern,2008,20,6289225
+Georgia Northern,2009,20,6385643
+Georgia Northern,2010,20,6208868
+Georgia Northern,2011,20,6275244
+Georgia Northern,2012,20,6355878
+Georgia Northern,2013,20,6424976
+Georgia Northern,2014,20,6511599
+Georgia Northern,2015,20,6612473
+Georgia Northern,2016,20,6723739
+Georgia Northern,2017,20,6818280
+Georgia Northern,2018,20,6900674
+Georgia Northern,2019,20,6983784
+Georgia Northern,2020,20,7062308
+Georgia Northern,2021,20,7110328
+Georgia Northern,2022,20,7215655
+Georgia Northern,2023,20,7313255
+Georgia Northern,2024,20,7399785
+Georgia Middle,1980,21,1527319
+Georgia Middle,1981,21,1543104
+Georgia Middle,1982,21,1555835
+Georgia Middle,1983,21,1561412
+Georgia Middle,1984,21,1569974
+Georgia Middle,1985,21,1579447
+Georgia Middle,1986,21,1584418
+Georgia Middle,1987,21,1592588
+Georgia Middle,1988,21,1597490
+Georgia Middle,1989,21,1604062
+Georgia Middle,1990,21,1609544
+Georgia Middle,1991,21,1620171
+Georgia Middle,1992,21,1640176
+Georgia Middle,1993,21,1660080
+Georgia Middle,1994,21,1678312
+Georgia Middle,1995,21,1691882
+Georgia Middle,1996,21,1709349
+Georgia Middle,1997,21,1730057
+Georgia Middle,1998,21,1745211
+Georgia Middle,1999,21,1759714
+Georgia Middle,2000,21,1830226
+Georgia Middle,2001,21,1844009
+Georgia Middle,2002,21,1860401
+Georgia Middle,2003,21,1870215
+Georgia Middle,2004,21,1891914
+Georgia Middle,2005,21,1905326
+Georgia Middle,2006,21,1929641
+Georgia Middle,2007,21,1947591
+Georgia Middle,2008,21,1966736
+Georgia Middle,2009,21,1981778
+Georgia Middle,2010,21,1991982
+Georgia Middle,2011,21,2001219
+Georgia Middle,2012,21,2007854
+Georgia Middle,2013,21,2007007
+Georgia Middle,2014,21,2004143
+Georgia Middle,2015,21,2003520
+Georgia Middle,2016,21,2004783
+Georgia Middle,2017,21,2008406
+Georgia Middle,2018,21,2018705
+Georgia Middle,2019,21,2029426
+Georgia Middle,2020,21,2056290
+Georgia Middle,2021,21,2058487
+Georgia Middle,2022,21,2071187
+Georgia Middle,2023,21,2089800
+Georgia Middle,2024,21,2104881
+Hawaii,1980,22,964691
+Hawaii,1981,22,978195
+Hawaii,1982,22,993780
+Hawaii,1983,22,1012717
+Hawaii,1984,22,1027922
+Hawaii,1985,22,1039698
+Hawaii,1986,22,1051762
+Hawaii,1987,22,1067917
+Hawaii,1988,22,1079827
+Hawaii,1989,22,1094588
+Hawaii,1990,22,1112703
+Hawaii,1991,22,1131412
+Hawaii,1992,22,1149926
+Hawaii,1993,22,1161508
+Hawaii,1994,22,1173903
+Hawaii,1995,22,1180490
+Hawaii,1996,22,1184434
+Hawaii,1997,22,1189322
+Hawaii,1998,22,1190472
+Hawaii,1999,22,1185497
+Hawaii,2000,22,1211566
+Hawaii,2001,22,1218305
+Hawaii,2002,22,1228069
+Hawaii,2003,22,1239298
+Hawaii,2004,22,1252782
+Hawaii,2005,22,1266117
+Hawaii,2006,22,1275599
+Hawaii,2007,22,1276832
+Hawaii,2008,22,1287481
+Hawaii,2009,22,1295178
+Hawaii,2010,22,1363963
+Hawaii,2011,22,1379329
+Hawaii,2012,22,1394804
+Hawaii,2013,22,1408243
+Hawaii,2014,22,1414538
+Hawaii,2015,22,1422052
+Hawaii,2016,22,1427559
+Hawaii,2017,22,1424393
+Hawaii,2018,22,1420593
+Hawaii,2019,22,1415872
+Hawaii,2020,22,1451252
+Hawaii,2021,22,1447029
+Hawaii,2022,22,1440359
+Hawaii,2023,22,1441387
+Hawaii,2024,22,1446146
+Idaho,1980,23,944127
+Idaho,1981,23,962204
+Idaho,1982,23,973719
+Idaho,1983,23,981866
+Idaho,1984,23,990841
+Idaho,1985,23,994052
+Idaho,1986,23,990222
+Idaho,1987,23,984997
+Idaho,1988,23,985661
+Idaho,1989,23,994422
+Idaho,1990,23,1011882
+Idaho,1991,23,1038915
+Idaho,1992,23,1066490
+Idaho,1993,23,1101204
+Idaho,1994,23,1135459
+Idaho,1995,23,1165000
+Idaho,1996,23,1187706
+Idaho,1997,23,1210638
+Idaho,1998,23,1230923
+Idaho,1999,23,1251700
+Idaho,2000,23,1299551
+Idaho,2001,23,1321170
+Idaho,2002,23,1342149
+Idaho,2003,23,1364109
+Idaho,2004,23,1391718
+Idaho,2005,23,1425862
+Idaho,2006,23,1464413
+Idaho,2007,23,1499245
+Idaho,2008,23,1527506
+Idaho,2009,23,1545801
+Idaho,2010,23,1570746
+Idaho,2011,23,1583910
+Idaho,2012,23,1595324
+Idaho,2013,23,1611206
+Idaho,2014,23,1631112
+Idaho,2015,23,1651059
+Idaho,2016,23,1682380
+Idaho,2017,23,1717715
+Idaho,2018,23,1750536
+Idaho,2019,23,1787065
+Idaho,2020,23,1849415
+Idaho,2021,23,1904848
+Idaho,2022,23,1944299
+Idaho,2023,23,1971122
+Idaho,2024,23,2001619
+Illinois Southern,1980,24,1264841
+Illinois Southern,1981,24,1278566
+Illinois Southern,1982,24,1271820
+Illinois Southern,1983,24,1272489
+Illinois Southern,1984,24,1268136
+Illinois Southern,1985,24,1266768
+Illinois Southern,1986,24,1264094
+Illinois Southern,1987,24,1259210
+Illinois Southern,1988,24,1251936
+Illinois Southern,1989,24,1244998
+Illinois Southern,1990,24,1242159
+Illinois Southern,1991,24,1244736
+Illinois Southern,1992,24,1249164
+Illinois Southern,1993,24,1258186
+Illinois Southern,1994,24,1262744
+Illinois Southern,1995,24,1267935
+Illinois Southern,1996,24,1269843
+Illinois Southern,1997,24,1270736
+Illinois Southern,1998,24,1269960
+Illinois Southern,1999,24,1267854
+Illinois Southern,2000,24,1263987
+Illinois Southern,2001,24,1262992
+Illinois Southern,2002,24,1263370
+Illinois Southern,2003,24,1266133
+Illinois Southern,2004,24,1268221
+Illinois Southern,2005,24,1269644
+Illinois Southern,2006,24,1271856
+Illinois Southern,2007,24,1272360
+Illinois Southern,2008,24,1273214
+Illinois Southern,2009,24,1273840
+Illinois Southern,2010,24,1289811
+Illinois Southern,2011,24,1288281
+Illinois Southern,2012,24,1281755
+Illinois Southern,2013,24,1277357
+Illinois Southern,2014,24,1272133
+Illinois Southern,2015,24,1267208
+Illinois Southern,2016,24,1260213
+Illinois Southern,2017,24,1255369
+Illinois Southern,2018,24,1248939
+Illinois Southern,2019,24,1241320
+Illinois Southern,2020,24,1235922
+Illinois Southern,2021,24,1230193
+Illinois Southern,2022,24,1221953
+Illinois Southern,2023,24,1218388
+Illinois Southern,2024,24,1215505
+Illinois Northern,1980,25,7981009
+Illinois Northern,1981,25,7975168
+Illinois Northern,1982,25,7981300
+Illinois Northern,1983,25,7981281
+Illinois Northern,1984,25,8007660
+Illinois Northern,1985,25,8017220
+Illinois Northern,1986,25,8031229
+Illinois Northern,1987,25,8054005
+Illinois Northern,1988,25,8067203
+Illinois Northern,1989,25,8098799
+Illinois Northern,1990,25,8140076
+Illinois Northern,1991,25,8216131
+Illinois Northern,1992,25,8300959
+Illinois Northern,1993,25,8380312
+Illinois Northern,1994,25,8451604
+Illinois Northern,1995,25,8518048
+Illinois Northern,1996,25,8584643
+Illinois Northern,1997,25,8641774
+Illinois Northern,1998,25,8701649
+Illinois Northern,1999,25,8762486
+Illinois Northern,2000,25,9063284
+Illinois Northern,2001,25,9139529
+Illinois Northern,2002,25,9191065
+Illinois Northern,2003,25,9231246
+Illinois Northern,2004,25,9277202
+Illinois Northern,2005,25,9305885
+Illinois Northern,2006,25,9344539
+Illinois Northern,2007,25,9399727
+Illinois Northern,2008,25,9461702
+Illinois Northern,2009,25,9523751
+Illinois Northern,2010,25,9405801
+Illinois Northern,2011,25,9433033
+Illinois Northern,2012,25,9456266
+Illinois Northern,2013,25,9475984
+Illinois Northern,2014,25,9480009
+Illinois Northern,2015,25,9470824
+Illinois Northern,2016,25,9449792
+Illinois Northern,2017,25,9426021
+Illinois Northern,2018,25,9391247
+Illinois Northern,2019,25,9360149
+Illinois Northern,2020,25,9499407
+Illinois Northern,2021,25,9416592
+Illinois Northern,2022,25,9358498
+Illinois Northern,2023,25,9384848
+Illinois Northern,2024,25,9453752
+Illinois Central,1980,26,2181579
+Illinois Central,1981,26,2189727
+Illinois Central,1982,26,2170293
+Illinois Central,1983,26,2155047
+Illinois Central,1984,26,2136332
+Illinois Central,1985,26,2115815
+Illinois Central,1986,26,2091933
+Illinois Central,1987,26,2077961
+Illinois Central,1988,26,2071047
+Illinois Central,1989,26,2065985
+Illinois Central,1990,26,2064744
+Illinois Central,1991,26,2075106
+Illinois Central,1992,26,2085074
+Illinois Central,1993,26,2087486
+Illinois Central,1994,26,2090638
+Illinois Central,1995,26,2098952
+Illinois Central,1996,26,2098517
+Illinois Central,1997,26,2098999
+Illinois Central,1998,26,2098165
+Illinois Central,1999,26,2098030
+Illinois Central,2000,26,2110374
+Illinois Central,2001,26,2105312
+Illinois Central,2002,26,2103794
+Illinois Central,2003,26,2100602
+Illinois Central,2004,26,2099872
+Illinois Central,2005,26,2098923
+Illinois Central,2006,26,2101616
+Illinois Central,2007,26,2107330
+Illinois Central,2008,26,2108038
+Illinois Central,2009,26,2112818
+Illinois Central,2010,26,2144891
+Illinois Central,2011,26,2146140
+Illinois Central,2012,26,2144489
+Illinois Central,2013,26,2141788
+Illinois Central,2014,26,2132351
+Illinois Central,2015,26,2120881
+Illinois Central,2016,26,2110522
+Illinois Central,2017,26,2097438
+Illinois Central,2018,26,2082885
+Illinois Central,2019,26,2070352
+Illinois Central,2020,26,2063759
+Illinois Central,2021,26,2053856
+Illinois Central,2022,26,2041370
+Illinois Central,2023,26,2039023
+Illinois Central,2024,26,2040901
+Indiana Northern,1980,27,2276677
+Indiana Northern,1981,27,2262986
+Indiana Northern,1982,27,2253420
+Indiana Northern,1983,27,2239345
+Indiana Northern,1984,27,2241407
+Indiana Northern,1985,27,2242954
+Indiana Northern,1986,27,2237387
+Indiana Northern,1987,27,2244998
+Indiana Northern,1988,27,2255658
+Indiana Northern,1989,27,2271037
+Indiana Northern,1990,27,2280101
+Indiana Northern,1991,27,2294599
+Indiana Northern,1992,27,2309284
+Indiana Northern,1993,27,2326006
+Indiana Northern,1994,27,2338553
+Indiana Northern,1995,27,2354214
+Indiana Northern,1996,27,2368691
+Indiana Northern,1997,27,2380593
+Indiana Northern,1998,27,2395205
+Indiana Northern,1999,27,2405549
+Indiana Northern,2000,27,2464850
+Indiana Northern,2001,27,2470985
+Indiana Northern,2002,27,2473401
+Indiana Northern,2003,27,2481070
+Indiana Northern,2004,27,2488464
+Indiana Northern,2005,27,2501496
+Indiana Northern,2006,27,2516854
+Indiana Northern,2007,27,2530608
+Indiana Northern,2008,27,2543216
+Indiana Northern,2009,27,2550429
+Indiana Northern,2010,27,2563160
+Indiana Northern,2011,27,2568171
+Indiana Northern,2012,27,2570947
+Indiana Northern,2013,27,2576669
+Indiana Northern,2014,27,2583318
+Indiana Northern,2015,27,2584032
+Indiana Northern,2016,27,2587903
+Indiana Northern,2017,27,2590887
+Indiana Northern,2018,27,2601217
+Indiana Northern,2019,27,2611070
+Indiana Northern,2020,27,2632726
+Indiana Northern,2021,27,2638885
+Indiana Northern,2022,27,2645738
+Indiana Northern,2023,27,2653181
+Indiana Northern,2024,27,2663434
+Indiana Southern,1980,28,3213533
+Indiana Southern,1981,28,3217454
+Indiana Southern,1982,28,3214498
+Indiana Southern,1983,28,3211051
+Indiana Southern,1984,28,3216915
+Indiana Southern,1985,28,3216260
+Indiana Southern,1986,28,3216716
+Indiana Southern,1987,28,3228025
+Indiana Southern,1988,28,3236075
+Indiana Southern,1989,28,3252642
+Indiana Southern,1990,28,3274996
+Indiana Southern,1991,28,3307463
+Indiana Southern,1992,28,3339365
+Indiana Southern,1993,28,3375959
+Indiana Southern,1994,28,3407073
+Indiana Southern,1995,28,3437605
+Indiana Southern,1996,28,3466217
+Indiana Southern,1997,28,3491777
+Indiana Southern,1998,28,3512412
+Indiana Southern,1999,28,3537352
+Indiana Southern,2000,28,3626799
+Indiana Southern,2001,28,3653982
+Indiana Southern,2002,28,3675606
+Indiana Southern,2003,28,3700719
+Indiana Southern,2004,28,3725990
+Indiana Southern,2005,28,3751624
+Indiana Southern,2006,28,3784846
+Indiana Southern,2007,28,3815505
+Indiana Southern,2008,28,3845093
+Indiana Southern,2009,28,3872684
+Indiana Southern,2010,28,3927272
+Indiana Southern,2011,28,3948357
+Indiana Southern,2012,28,3966756
+Indiana Southern,2013,28,3992044
+Indiana Southern,2014,28,4010326
+Indiana Southern,2015,28,4024390
+Indiana Southern,2016,28,4046401
+Indiana Southern,2017,28,4067191
+Indiana Southern,2018,28,4094280
+Indiana Southern,2019,28,4121149
+Indiana Southern,2020,28,4157771
+Indiana Southern,2021,28,4177022
+Indiana Southern,2022,28,4198807
+Indiana Southern,2023,28,4226950
+Indiana Southern,2024,28,4260841
+Iowa Southern,1980,29,1523516
+Iowa Southern,1981,29,1524509
+Iowa Southern,1982,29,1517886
+Iowa Southern,1983,29,1511061
+Iowa Southern,1984,29,1507982
+Iowa Southern,1985,29,1498255
+Iowa Southern,1986,29,1486718
+Iowa Southern,1987,29,1480204
+Iowa Southern,1988,29,1483550
+Iowa Southern,1989,29,1487484
+Iowa Southern,1990,29,1497841
+Iowa Southern,1991,29,1506115
+Iowa Southern,1992,29,1517403
+Iowa Southern,1993,29,1527330
+Iowa Southern,1994,29,1533931
+Iowa Southern,1995,29,1542810
+Iowa Southern,1996,29,1550457
+Iowa Southern,1997,29,1556957
+Iowa Southern,1998,29,1564724
+Iowa Southern,1999,29,1574253
+Iowa Southern,2000,29,1607535
+Iowa Southern,2001,29,1613930
+Iowa Southern,2002,29,1619317
+Iowa Southern,2003,29,1626117
+Iowa Southern,2004,29,1636140
+Iowa Southern,2005,29,1647056
+Iowa Southern,2006,29,1662506
+Iowa Southern,2007,29,1676754
+Iowa Southern,2008,29,1690529
+Iowa Southern,2009,29,1703670
+Iowa Southern,2010,29,1725802
+Iowa Southern,2011,29,1739832
+Iowa Southern,2012,29,1750868
+Iowa Southern,2013,29,1767179
+Iowa Southern,2014,29,1782987
+Iowa Southern,2015,29,1794131
+Iowa Southern,2016,29,1805677
+Iowa Southern,2017,29,1817723
+Iowa Southern,2018,29,1826300
+Iowa Southern,2019,29,1833643
+Iowa Southern,2020,29,1852016
+Iowa Southern,2021,29,1862931
+Iowa Southern,2022,29,1870379
+Iowa Southern,2023,29,1883916
+Iowa Southern,2024,29,1902032
+Iowa Northern,1980,30,1390292
+Iowa Northern,1981,30,1383476
+Iowa Northern,1982,30,1370304
+Iowa Northern,1983,30,1359486
+Iowa Northern,1984,30,1350633
+Iowa Northern,1985,30,1331429
+Iowa Northern,1986,30,1305251
+Iowa Northern,1987,30,1286802
+Iowa Northern,1988,30,1284843
+Iowa Northern,1989,30,1283106
+Iowa Northern,1990,30,1281928
+Iowa Northern,1991,30,1285112
+Iowa Northern,1992,30,1289520
+Iowa Northern,1993,30,1293195
+Iowa Northern,1994,30,1295491
+Iowa Northern,1995,30,1298050
+Iowa Northern,1996,30,1298016
+Iowa Northern,1997,30,1297439
+Iowa Northern,1998,30,1296301
+Iowa Northern,1999,30,1295160
+Iowa Northern,2000,30,1320649
+Iowa Northern,2001,30,1315494
+Iowa Northern,2002,30,1309947
+Iowa Northern,2003,30,1306682
+Iowa Northern,2004,30,1305218
+Iowa Northern,2005,30,1302394
+Iowa Northern,2006,30,1301885
+Iowa Northern,2007,30,1301965
+Iowa Northern,2008,30,1303458
+Iowa Northern,2009,30,1304186
+Iowa Northern,2010,30,1324943
+Iowa Northern,2011,30,1326504
+Iowa Northern,2012,30,1325322
+Iowa Northern,2013,30,1325818
+Iowa Northern,2014,30,1326363
+Iowa Northern,2015,30,1326829
+Iowa Northern,2016,30,1325694
+Iowa Northern,2017,30,1323827
+Iowa Northern,2018,30,1322318
+Iowa Northern,2019,30,1321427
+Iowa Northern,2020,30,1339125
+Iowa Northern,2021,30,1335682
+Iowa Northern,2022,30,1332441
+Iowa Northern,2023,30,1334498
+Iowa Northern,2024,30,1339456
+Kansas,1980,31,2364236
+Kansas,1981,31,2384853
+Kansas,1982,31,2401207
+Kansas,1983,31,2415529
+Kansas,1984,31,2424088
+Kansas,1985,31,2427401
+Kansas,1986,31,2432614
+Kansas,1987,31,2445367
+Kansas,1988,31,2461995
+Kansas,1989,31,2472838
+Kansas,1990,31,2480683
+Kansas,1991,31,2495209
+Kansas,1992,31,2526042
+Kansas,1993,31,2547605
+Kansas,1994,31,2569118
+Kansas,1995,31,2586942
+Kansas,1996,31,2598266
+Kansas,1997,31,2616339
+Kansas,1998,31,2638667
+Kansas,1999,31,2654052
+Kansas,2000,31,2692810
+Kansas,2001,31,2701456
+Kansas,2002,31,2712598
+Kansas,2003,31,2721955
+Kansas,2004,31,2730765
+Kansas,2005,31,2741771
+Kansas,2006,31,2755700
+Kansas,2007,31,2775586
+Kansas,2008,31,2797375
+Kansas,2009,31,2818747
+Kansas,2010,31,2858190
+Kansas,2011,31,2869225
+Kansas,2012,31,2885257
+Kansas,2013,31,2893212
+Kansas,2014,31,2900475
+Kansas,2015,31,2909011
+Kansas,2016,31,2910844
+Kansas,2017,31,2908718
+Kansas,2018,31,2911359
+Kansas,2019,31,2913314
+Kansas,2020,31,2938172
+Kansas,2021,31,2938338
+Kansas,2022,31,2937324
+Kansas,2023,31,2951500
+Kansas,2024,31,2970606
+Kentucky Western,1980,32,1873342
+Kentucky Western,1981,32,1873665
+Kentucky Western,1982,32,1882350
+Kentucky Western,1983,32,1886271
+Kentucky Western,1984,32,1887259
+Kentucky Western,1985,32,1883074
+Kentucky Western,1986,32,1877808
+Kentucky Western,1987,32,1873152
+Kentucky Western,1988,32,1869884
+Kentucky Western,1989,32,1870143
+Kentucky Western,1990,32,1874993
+Kentucky Western,1991,32,1879171
+Kentucky Western,1992,32,1899493
+Kentucky Western,1993,32,1914218
+Kentucky Western,1994,32,1928103
+Kentucky Western,1995,32,1943080
+Kentucky Western,1996,32,1954335
+Kentucky Western,1997,32,1965821
+Kentucky Western,1998,32,1975667
+Kentucky Western,1999,32,1985800
+Kentucky Western,2000,32,2031050
+Kentucky Western,2001,32,2039903
+Kentucky Western,2002,32,2049303
+Kentucky Western,2003,32,2061629
+Kentucky Western,2004,32,2073410
+Kentucky Western,2005,32,2086962
+Kentucky Western,2006,32,2101632
+Kentucky Western,2007,32,2121168
+Kentucky Western,2008,32,2134765
+Kentucky Western,2009,32,2146096
+Kentucky Western,2010,32,2185135
+Kentucky Western,2011,32,2195653
+Kentucky Western,2012,32,2207307
+Kentucky Western,2013,32,2218662
+Kentucky Western,2014,32,2223138
+Kentucky Western,2015,32,2228093
+Kentucky Western,2016,32,2234735
+Kentucky Western,2017,32,2243641
+Kentucky Western,2018,32,2248484
+Kentucky Western,2019,32,2252181
+Kentucky Western,2020,32,2279744
+Kentucky Western,2021,32,2280578
+Kentucky Western,2022,32,2287156
+Kentucky Western,2023,32,2303995
+Kentucky Western,2024,32,2325441
+Kentucky Eastern,1980,33,1786992
+Kentucky Eastern,1981,33,1796730
+Kentucky Eastern,1982,33,1801099
+Kentucky Eastern,1983,33,1808198
+Kentucky Eastern,1984,33,1808200
+Kentucky Eastern,1985,33,1811742
+Kentucky Eastern,1986,33,1809997
+Kentucky Eastern,1987,33,1810178
+Kentucky Eastern,1988,33,1810118
+Kentucky Eastern,1989,33,1807175
+Kentucky Eastern,1990,33,1817591
+Kentucky Eastern,1991,33,1835515
+Kentucky Eastern,1992,33,1856865
+Kentucky Eastern,1993,33,1878070
+Kentucky Eastern,1994,33,1895112
+Kentucky Eastern,1995,33,1912168
+Kentucky Eastern,1996,33,1926716
+Kentucky Eastern,1997,33,1941995
+Kentucky Eastern,1998,33,1958643
+Kentucky Eastern,1999,33,1975025
+Kentucky Eastern,2000,33,2017853
+Kentucky Eastern,2001,33,2029288
+Kentucky Eastern,2002,33,2042027
+Kentucky Eastern,2003,33,2056998
+Kentucky Eastern,2004,33,2074560
+Kentucky Eastern,2005,33,2095331
+Kentucky Eastern,2006,33,2117742
+Kentucky Eastern,2007,33,2135110
+Kentucky Eastern,2008,33,2153166
+Kentucky Eastern,2009,33,2168017
+Kentucky Eastern,2010,33,2163046
+Kentucky Eastern,2011,33,2174168
+Kentucky Eastern,2012,33,2179039
+Kentucky Eastern,2013,33,2185997
+Kentucky Eastern,2014,33,2191211
+Kentucky Eastern,2015,33,2197883
+Kentucky Eastern,2016,33,2203447
+Kentucky Eastern,2017,33,2208627
+Kentucky Eastern,2018,33,2212669
+Kentucky Eastern,2019,33,2215492
+Kentucky Eastern,2020,33,2228574
+Kentucky Eastern,2021,33,2227005
+Kentucky Eastern,2022,33,2232077
+Kentucky Eastern,2023,33,2246600
+Kentucky Eastern,2024,33,2262931
+Louisiana Middle,1980,34,591383
+Louisiana Middle,1981,34,606705
+Louisiana Middle,1982,34,618386
+Louisiana Middle,1983,34,628340
+Louisiana Middle,1984,34,633436
+Louisiana Middle,1985,34,636971
+Louisiana Middle,1986,34,636761
+Louisiana Middle,1987,34,629017
+Louisiana Middle,1988,34,625135
+Louisiana Middle,1989,34,623372
+Louisiana Middle,1990,34,624709
+Louisiana Middle,1991,34,632178
+Louisiana Middle,1992,34,641721
+Louisiana Middle,1993,34,649375
+Louisiana Middle,1994,34,654226
+Louisiana Middle,1995,34,658598
+Louisiana Middle,1996,34,663438
+Louisiana Middle,1997,34,668542
+Louisiana Middle,1998,34,673407
+Louisiana Middle,1999,34,678302
+Louisiana Middle,2000,34,707429
+Louisiana Middle,2001,34,709848
+Louisiana Middle,2002,34,713558
+Louisiana Middle,2003,34,719116
+Louisiana Middle,2004,34,725570
+Louisiana Middle,2005,34,729886
+Louisiana Middle,2006,34,764799
+Louisiana Middle,2007,34,772041
+Louisiana Middle,2008,34,779340
+Louisiana Middle,2009,34,786947
+Louisiana Middle,2010,34,804296
+Louisiana Middle,2011,34,808308
+Louisiana Middle,2012,34,813125
+Louisiana Middle,2013,34,818787
+Louisiana Middle,2014,34,823780
+Louisiana Middle,2015,34,828269
+Louisiana Middle,2016,34,833967
+Louisiana Middle,2017,34,831727
+Louisiana Middle,2018,34,832247
+Louisiana Middle,2019,34,832993
+Louisiana Middle,2020,34,849356
+Louisiana Middle,2021,34,852093
+Louisiana Middle,2022,34,853104
+Louisiana Middle,2023,34,856994
+Louisiana Middle,2024,34,862602
+Louisiana Western,1980,35,1986664
+Louisiana Western,1981,35,2020756
+Louisiana Western,1982,35,2052265
+Louisiana Western,1983,35,2070689
+Louisiana Western,1984,35,2070024
+Louisiana Western,1985,35,2073279
+Louisiana Western,1986,35,2075729
+Louisiana Western,1987,35,2046702
+Louisiana Western,1988,35,2015493
+Louisiana Western,1989,35,1996335
+Louisiana Western,1990,35,1975963
+Louisiana Western,1991,35,1982657
+Louisiana Western,1992,35,1992091
+Louisiana Western,1993,35,1991594
+Louisiana Western,1994,35,2001083
+Louisiana Western,1995,35,2012000
+Louisiana Western,1996,35,2018166
+Louisiana Western,1997,35,2022955
+Louisiana Western,1998,35,2026094
+Louisiana Western,1999,35,2028974
+Louisiana Western,2000,35,2062226
+Louisiana Western,2001,35,2055342
+Louisiana Western,2002,35,2055247
+Louisiana Western,2003,35,2056162
+Louisiana Western,2004,35,2059701
+Louisiana Western,2005,35,2063047
+Louisiana Western,2006,35,2085730
+Louisiana Western,2007,35,2088060
+Louisiana Western,2008,35,2093829
+Louisiana Western,2009,35,2103890
+Louisiana Western,2010,35,2144754
+Louisiana Western,2011,35,2151584
+Louisiana Western,2012,35,2158681
+Louisiana Western,2013,35,2161047
+Louisiana Western,2014,35,2163584
+Louisiana Western,2015,35,2165975
+Louisiana Western,2016,35,2165281
+Louisiana Western,2017,35,2156991
+Louisiana Western,2018,35,2145462
+Louisiana Western,2019,35,2134353
+Louisiana Western,2020,35,2125689
+Louisiana Western,2021,35,2103939
+Louisiana Western,2022,35,2088850
+Louisiana Western,2023,35,2085716
+Louisiana Western,2024,35,2087124
+Louisiana Eastern,1980,36,1628077
+Louisiana Eastern,1981,36,1655836
+Louisiana Eastern,1982,36,1681958
+Louisiana Eastern,1983,36,1696282
+Louisiana Eastern,1984,36,1697014
+Louisiana Eastern,1985,36,1697863
+Louisiana Eastern,1986,36,1694432
+Louisiana Eastern,1987,36,1668432
+Louisiana Eastern,1988,36,1648231
+Louisiana Eastern,1989,36,1633189
+Louisiana Eastern,1990,36,1618507
+Louisiana Eastern,1991,36,1626115
+Louisiana Eastern,1992,36,1637037
+Louisiana Eastern,1993,36,1643780
+Louisiana Eastern,1994,36,1651191
+Louisiana Eastern,1995,36,1657380
+Louisiana Eastern,1996,36,1657159
+Louisiana Eastern,1997,36,1659893
+Louisiana Eastern,1998,36,1663257
+Louisiana Eastern,1999,36,1664759
+Louisiana Eastern,2000,36,1699324
+Louisiana Eastern,2001,36,1695626
+Louisiana Eastern,2002,36,1697263
+Louisiana Eastern,2003,36,1699448
+Louisiana Eastern,2004,36,1704056
+Louisiana Eastern,2005,36,1704758
+Louisiana Eastern,2006,36,1389798
+Louisiana Eastern,2007,36,1516021
+Louisiana Eastern,2008,36,1578344
+Louisiana Eastern,2009,36,1601239
+Louisiana Eastern,2010,36,1595482
+Louisiana Eastern,2011,36,1615733
+Louisiana Eastern,2012,36,1629166
+Louisiana Eastern,2013,36,1644693
+Louisiana Eastern,2014,36,1656649
+Louisiana Eastern,2015,36,1670384
+Louisiana Eastern,2016,36,1678887
+Louisiana Eastern,2017,36,1681842
+Louisiana Eastern,2018,36,1681981
+Louisiana Eastern,2019,36,1681448
+Louisiana Eastern,2020,36,1677256
+Louisiana Eastern,2021,36,1671939
+Louisiana Eastern,2022,36,1651733
+Louisiana Eastern,2023,36,1645361
+Louisiana Eastern,2024,36,1648014
+Maine,1980,37,1125043
+Maine,1981,37,1133033
+Maine,1982,37,1136683
+Maine,1983,37,1144772
+Maine,1984,37,1155634
+Maine,1985,37,1162935
+Maine,1986,37,1170126
+Maine,1987,37,1184577
+Maine,1988,37,1203840
+Maine,1989,37,1219961
+Maine,1990,37,1231296
+Maine,1991,37,1235439
+Maine,1992,37,1235748
+Maine,1993,37,1238256
+Maine,1994,37,1237687
+Maine,1995,37,1237438
+Maine,1996,37,1241436
+Maine,1997,37,1245215
+Maine,1998,37,1247554
+Maine,1999,37,1253040
+Maine,2000,37,1277211
+Maine,2001,37,1284791
+Maine,2002,37,1293938
+Maine,2003,37,1303102
+Maine,2004,37,1308253
+Maine,2005,37,1311631
+Maine,2006,37,1314963
+Maine,2007,37,1317308
+Maine,2008,37,1319691
+Maine,2009,37,1318301
+Maine,2010,37,1327629
+Maine,2011,37,1328284
+Maine,2012,37,1327729
+Maine,2013,37,1328009
+Maine,2014,37,1330513
+Maine,2015,37,1328262
+Maine,2016,37,1331317
+Maine,2017,37,1334612
+Maine,2018,37,1339057
+Maine,2019,37,1344212
+Maine,2020,37,1364571
+Maine,2021,37,1378931
+Maine,2022,37,1390922
+Maine,2023,37,1399646
+Maine,2024,37,1405012
+Maryland,1980,38,4216933
+Maryland,1981,38,4261905
+Maryland,1982,38,4282923
+Maryland,1983,38,4313329
+Maryland,1984,38,4365246
+Maryland,1985,38,4413072
+Maryland,1986,38,4486956
+Maryland,1987,38,4565558
+Maryland,1988,38,4657903
+Maryland,1989,38,4727303
+Maryland,1990,38,4797431
+Maryland,1991,38,4856176
+Maryland,1992,38,4902545
+Maryland,1993,38,4942504
+Maryland,1994,38,4985411
+Maryland,1995,38,5023650
+Maryland,1996,38,5057142
+Maryland,1997,38,5092914
+Maryland,1998,38,5130072
+Maryland,1999,38,5171634
+Maryland,2000,38,5310579
+Maryland,2001,38,5375033
+Maryland,2002,38,5439913
+Maryland,2003,38,5496708
+Maryland,2004,38,5542659
+Maryland,2005,38,5582520
+Maryland,2006,38,5612196
+Maryland,2007,38,5634242
+Maryland,2008,38,5658655
+Maryland,2009,38,5699478
+Maryland,2010,38,5788645
+Maryland,2011,38,5839419
+Maryland,2012,38,5886992
+Maryland,2013,38,5923188
+Maryland,2014,38,5957283
+Maryland,2015,38,5985562
+Maryland,2016,38,6003323
+Maryland,2017,38,6023868
+Maryland,2018,38,6035802
+Maryland,2019,38,6045680
+Maryland,2020,38,6177935
+Maryland,2021,38,6179403
+Maryland,2022,38,6192440
+Maryland,2023,38,6217062
+Maryland,2024,38,6263220
+Massachusetts,1980,39,5737093
+Massachusetts,1981,39,5768685
+Massachusetts,1982,39,5771222
+Massachusetts,1983,39,5799405
+Massachusetts,1984,39,5840774
+Massachusetts,1985,39,5880734
+Massachusetts,1986,39,5902677
+Massachusetts,1987,39,5935205
+Massachusetts,1988,39,5979983
+Massachusetts,1989,39,6015478
+Massachusetts,1990,39,6018664
+Massachusetts,1991,39,5998652
+Massachusetts,1992,39,5993474
+Massachusetts,1993,39,6010884
+Massachusetts,1994,39,6031352
+Massachusetts,1995,39,6062335
+Massachusetts,1996,39,6085393
+Massachusetts,1997,39,6115476
+Massachusetts,1998,39,6144407
+Massachusetts,1999,39,6175169
+Massachusetts,2000,39,6363015
+Massachusetts,2001,39,6411730
+Massachusetts,2002,39,6440978
+Massachusetts,2003,39,6451637
+Massachusetts,2004,39,6451279
+Massachusetts,2005,39,6453031
+Massachusetts,2006,39,6466399
+Massachusetts,2007,39,6499275
+Massachusetts,2008,39,6543595
+Massachusetts,2009,39,6593587
+Massachusetts,2010,39,6566307
+Massachusetts,2011,39,6613583
+Massachusetts,2012,39,6663005
+Massachusetts,2013,39,6713315
+Massachusetts,2014,39,6762596
+Massachusetts,2015,39,6794228
+Massachusetts,2016,39,6823608
+Massachusetts,2017,39,6859789
+Massachusetts,2018,39,6882635
+Massachusetts,2019,39,6892503
+Massachusetts,2020,39,6994598
+Massachusetts,2021,39,7000474
+Massachusetts,2022,39,7022468
+Massachusetts,2023,39,7066568
+Massachusetts,2024,39,7136171
+Michigan Eastern,1980,40,6401504
+Michigan Eastern,1981,40,6319187
+Michigan Eastern,1982,40,6243188
+Michigan Eastern,1983,40,6189981
+Michigan Eastern,1984,40,6182021
+Michigan Eastern,1985,40,6189392
+Michigan Eastern,1986,40,6220287
+Michigan Eastern,1987,40,6251973
+Michigan Eastern,1988,40,6249677
+Michigan Eastern,1989,40,6261248
+Michigan Eastern,1990,40,6290649
+Michigan Eastern,1991,40,6341019
+Michigan Eastern,1992,40,6388778
+Michigan Eastern,1993,40,6421025
+Michigan Eastern,1994,40,6452661
+Michigan Eastern,1995,40,6505697
+Michigan Eastern,1996,40,6557180
+Michigan Eastern,1997,40,6579566
+Michigan Eastern,1998,40,6594495
+Michigan Eastern,1999,40,6615058
+Michigan Eastern,2000,40,6633292
+Michigan Eastern,2001,40,6663916
+Michigan Eastern,2002,40,6678163
+Michigan Eastern,2003,40,6690731
+Michigan Eastern,2004,40,6701158
+Michigan Eastern,2005,40,6697293
+Michigan Eastern,2006,40,6685021
+Michigan Eastern,2007,40,6648115
+Michigan Eastern,2008,40,6596913
+Michigan Eastern,2009,40,6566277
+Michigan Eastern,2010,40,6461114
+Michigan Eastern,2011,40,6457144
+Michigan Eastern,2012,40,6459119
+Michigan Eastern,2013,40,6458509
+Michigan Eastern,2014,40,6460236
+Michigan Eastern,2015,40,6454031
+Michigan Eastern,2016,40,6457963
+Michigan Eastern,2017,40,6462869
+Michigan Eastern,2018,40,6460943
+Michigan Eastern,2019,40,6454795
+Michigan Eastern,2020,40,6527895
+Michigan Eastern,2021,40,6505043
+Michigan Eastern,2022,40,6492789
+Michigan Eastern,2023,40,6506570
+Michigan Eastern,2024,40,6542991
+Minnesota,1980,41,4075970
+Minnesota,1981,41,4111733
+Minnesota,1982,41,4131450
+Minnesota,1983,41,4141458
+Minnesota,1984,41,4157705
+Minnesota,1985,41,4184301
+Minnesota,1986,41,4205213
+Minnesota,1987,41,4235136
+Minnesota,1988,41,4296163
+Minnesota,1989,41,4338056
+Minnesota,1990,41,4387283
+Minnesota,1991,41,4427429
+Minnesota,1992,41,4471503
+Minnesota,1993,41,4521709
+Minnesota,1994,41,4566028
+Minnesota,1995,41,4605445
+Minnesota,1996,41,4647723
+Minnesota,1997,41,4687726
+Minnesota,1998,41,4726411
+Minnesota,1999,41,4775508
+Minnesota,2000,41,4933958
+Minnesota,2001,41,4982813
+Minnesota,2002,41,5017458
+Minnesota,2003,41,5047862
+Minnesota,2004,41,5079344
+Minnesota,2005,41,5106560
+Minnesota,2006,41,5148346
+Minnesota,2007,41,5191206
+Minnesota,2008,41,5230567
+Minnesota,2009,41,5266214
+Minnesota,2010,41,5310828
+Minnesota,2011,41,5346143
+Minnesota,2012,41,5376643
+Minnesota,2013,41,5413479
+Minnesota,2014,41,5451079
+Minnesota,2015,41,5482032
+Minnesota,2016,41,5522744
+Minnesota,2017,41,5566230
+Minnesota,2018,41,5606249
+Minnesota,2019,41,5639632
+Minnesota,2020,41,5710735
+Minnesota,2021,41,5718660
+Minnesota,2022,41,5721621
+Minnesota,2023,41,5753048
+Minnesota,2024,41,5793151
+Mississippi Northern,1980,42,884259
+Mississippi Northern,1981,42,884512
+Mississippi Northern,1982,42,885162
+Mississippi Northern,1983,42,885123
+Mississippi Northern,1984,42,887604
+Mississippi Northern,1985,42,887033
+Mississippi Northern,1986,42,887082
+Mississippi Northern,1987,42,885871
+Mississippi Northern,1988,42,888169
+Mississippi Northern,1989,42,888966
+Mississippi Northern,1990,42,893845
+Mississippi Northern,1991,42,901584
+Mississippi Northern,1992,42,906942
+Mississippi Northern,1993,42,914536
+Mississippi Northern,1994,42,922210
+Mississippi Northern,1995,42,932138
+Mississippi Northern,1996,42,939820
+Mississippi Northern,1997,42,948264
+Mississippi Northern,1998,42,954165
+Mississippi Northern,1999,42,960793
+Mississippi Northern,2000,42,996972
+Mississippi Northern,2001,42,999474
+Mississippi Northern,2002,42,1001494
+Mississippi Northern,2003,42,1005436
+Mississippi Northern,2004,42,1010474
+Mississippi Northern,2005,42,1014918
+Mississippi Northern,2006,42,1027398
+Mississippi Northern,2007,42,1035160
+Mississippi Northern,2008,42,1040888
+Mississippi Northern,2009,42,1044246
+Mississippi Northern,2010,42,1053142
+Mississippi Northern,2011,42,1053360
+Mississippi Northern,2012,42,1055902
+Mississippi Northern,2013,42,1058272
+Mississippi Northern,2014,42,1058230
+Mississippi Northern,2015,42,1058317
+Mississippi Northern,2016,42,1058127
+Mississippi Northern,2017,42,1058383
+Mississippi Northern,2018,42,1055986
+Mississippi Northern,2019,42,1055430
+Mississippi Northern,2020,42,1046827
+Mississippi Northern,2021,42,1044800
+Mississippi Northern,2022,42,1043584
+Mississippi Northern,2023,42,1044571
+Mississippi Northern,2024,42,1044902
+Mississippi Southern,1980,43,1636511
+Mississippi Southern,1981,43,1654520
+Mississippi Southern,1982,43,1671614
+Mississippi Southern,1983,43,1682596
+Mississippi Southern,1984,43,1690449
+Mississippi Southern,1985,43,1701070
+Mississippi Southern,1986,43,1706514
+Mississippi Southern,1987,43,1702674
+Mississippi Southern,1988,43,1692180
+Mississippi Southern,1989,43,1685306
+Mississippi Southern,1990,43,1683581
+Mississippi Southern,1991,43,1689646
+Mississippi Southern,1992,43,1703251
+Mississippi Southern,1993,43,1721038
+Mississippi Southern,1994,43,1741240
+Mississippi Southern,1995,43,1758650
+Mississippi Southern,1996,43,1770105
+Mississippi Southern,1997,43,1783562
+Mississippi Southern,1998,43,1797170
+Mississippi Southern,1999,43,1807826
+Mississippi Southern,2000,43,1851338
+Mississippi Southern,2001,43,1853839
+Mississippi Southern,2002,43,1857149
+Mississippi Southern,2003,43,1862242
+Mississippi Southern,2004,43,1875532
+Mississippi Southern,2005,43,1885198
+Mississippi Southern,2006,43,1869752
+Mississippi Southern,2007,43,1886563
+Mississippi Southern,2008,43,1899324
+Mississippi Southern,2009,43,1907750
+Mississippi Southern,2010,43,1917406
+Mississippi Southern,2011,43,1925371
+Mississippi Southern,2012,43,1927914
+Mississippi Southern,2013,43,1930439
+Mississippi Southern,2014,43,1932238
+Mississippi Southern,2015,43,1930154
+Mississippi Southern,2016,43,1929811
+Mississippi Southern,2017,43,1930127
+Mississippi Southern,2018,43,1925034
+Mississippi Southern,2019,43,1920719
+Mississippi Southern,2020,43,1911709
+Mississippi Southern,2021,43,1902409
+Mississippi Southern,2022,43,1898355
+Mississippi Southern,2023,43,1898601
+Mississippi Southern,2024,43,1898143
+Missouri Eastern,1980,44,2585532
+Missouri Eastern,1981,44,2589707
+Missouri Eastern,1982,44,2584667
+Missouri Eastern,1983,44,2587517
+Missouri Eastern,1984,44,2599619
+Missouri Eastern,1985,44,2612081
+Missouri Eastern,1986,44,2620286
+Missouri Eastern,1987,44,2634390
+Missouri Eastern,1988,44,2644075
+Missouri Eastern,1989,44,2646291
+Missouri Eastern,1990,44,2656518
+Missouri Eastern,1991,44,2665834
+Missouri Eastern,1992,44,2674459
+Missouri Eastern,1993,44,2687054
+Missouri Eastern,1994,44,2696349
+Missouri Eastern,1995,44,2708720
+Missouri Eastern,1996,44,2720001
+Missouri Eastern,1997,44,2729988
+Missouri Eastern,1998,44,2737153
+Missouri Eastern,1999,44,2747487
+Missouri Eastern,2000,44,2800573
+Missouri Eastern,2001,44,2815169
+Missouri Eastern,2002,44,2826804
+Missouri Eastern,2003,44,2834340
+Missouri Eastern,2004,44,2849911
+Missouri Eastern,2005,44,2865050
+Missouri Eastern,2006,44,2881100
+Missouri Eastern,2007,44,2893202
+Missouri Eastern,2008,44,2902492
+Missouri Eastern,2009,44,2910039
+Missouri Eastern,2010,44,2907549
+Missouri Eastern,2011,44,2913304
+Missouri Eastern,2012,44,2916535
+Missouri Eastern,2013,44,2921378
+Missouri Eastern,2014,44,2926120
+Missouri Eastern,2015,44,2930184
+Missouri Eastern,2016,44,2927996
+Missouri Eastern,2017,44,2926861
+Missouri Eastern,2018,44,2925220
+Missouri Eastern,2019,44,2925030
+Missouri Eastern,2020,44,2925931
+Missouri Eastern,2021,44,2923204
+Missouri Eastern,2022,44,2915253
+Missouri Eastern,2023,44,2919075
+Missouri Eastern,2024,44,2928889
+Missouri Western,1980,45,2331234
+Missouri Western,1981,45,2342362
+Missouri Western,1982,45,2344789
+Missouri Western,1983,45,2356218
+Missouri Western,1984,45,2375657
+Missouri Western,1985,45,2388179
+Missouri Western,1986,45,2402769
+Missouri Western,1987,45,2422312
+Missouri Western,1988,45,2437662
+Missouri Western,1989,45,2449553
+Missouri Western,1990,45,2469852
+Missouri Western,1991,45,2491936
+Missouri Western,1992,45,2519227
+Missouri Western,1993,45,2550703
+Missouri Western,1994,45,2584857
+Missouri Western,1995,45,2615890
+Missouri Western,1996,45,2647887
+Missouri Western,1997,45,2677125
+Missouri Western,1998,45,2700409
+Missouri Western,1999,45,2720851
+Missouri Western,2000,45,2805492
+Missouri Western,2001,45,2828817
+Missouri Western,2002,45,2854048
+Missouri Western,2003,45,2880507
+Missouri Western,2004,45,2908533
+Missouri Western,2005,45,2941589
+Missouri Western,2006,45,2980472
+Missouri Western,2007,45,3016622
+Missouri Western,2008,45,3053843
+Missouri Western,2009,45,3077541
+Missouri Western,2010,45,3088425
+Missouri Western,2011,45,3096971
+Missouri Western,2012,45,3107832
+Missouri Western,2013,45,3119337
+Missouri Western,2014,45,3130082
+Missouri Western,2015,45,3141548
+Missouri Western,2016,45,3159139
+Missouri Western,2017,45,3179809
+Missouri Western,2018,45,3196403
+Missouri Western,2019,45,3212398
+Missouri Western,2020,45,3228813
+Missouri Western,2021,45,3248170
+Missouri Western,2022,45,3264161
+Missouri Western,2023,45,3288963
+Missouri Western,2024,45,3316577
+Montana,1980,46,786690
+Montana,1981,46,795325
+Montana,1982,46,803984
+Montana,1983,46,814029
+Montana,1984,46,820904
+Montana,1985,46,822320
+Montana,1986,46,813738
+Montana,1987,46,805064
+Montana,1988,46,800200
+Montana,1989,46,799634
+Montana,1990,46,799824
+Montana,1991,46,807837
+Montana,1992,46,822436
+Montana,1993,46,839876
+Montana,1994,46,854923
+Montana,1995,46,868522
+Montana,1996,46,876656
+Montana,1997,46,878706
+Montana,1998,46,879533
+Montana,1999,46,882779
+Montana,2000,46,903293
+Montana,2001,46,905873
+Montana,2002,46,909868
+Montana,2003,46,916750
+Montana,2004,46,925887
+Montana,2005,46,934801
+Montana,2006,46,946230
+Montana,2007,46,957225
+Montana,2008,46,968035
+Montana,2009,46,974989
+Montana,2010,46,990697
+Montana,2011,46,997316
+Montana,2012,46,1003783
+Montana,2013,46,1013569
+Montana,2014,46,1021869
+Montana,2015,46,1030475
+Montana,2016,46,1040859
+Montana,2017,46,1052482
+Montana,2018,46,1060665
+Montana,2019,46,1068778
+Montana,2020,46,1087230
+Montana,2021,46,1106522
+Montana,2022,46,1122095
+Montana,2023,46,1131302
+Montana,2024,46,1137233
+Nebraska,1980,47,1569825
+Nebraska,1981,47,1578517
+Nebraska,1982,47,1581776
+Nebraska,1983,47,1584293
+Nebraska,1984,47,1588638
+Nebraska,1985,47,1584661
+Nebraska,1986,47,1574328
+Nebraska,1987,47,1566544
+Nebraska,1988,47,1571477
+Nebraska,1989,47,1574858
+Nebraska,1990,47,1580664
+Nebraska,1991,47,1590805
+Nebraska,1992,47,1602406
+Nebraska,1993,47,1612149
+Nebraska,1994,47,1621551
+Nebraska,1995,47,1635142
+Nebraska,1996,47,1647657
+Nebraska,1997,47,1656042
+Nebraska,1998,47,1660772
+Nebraska,1999,47,1666028
+Nebraska,2000,47,1713345
+Nebraska,2001,47,1717948
+Nebraska,2002,47,1725083
+Nebraska,2003,47,1733680
+Nebraska,2004,47,1742184
+Nebraska,2005,47,1751721
+Nebraska,2006,47,1760435
+Nebraska,2007,47,1769912
+Nebraska,2008,47,1781949
+Nebraska,2009,47,1796619
+Nebraska,2010,47,1829542
+Nebraska,2011,47,1840672
+Nebraska,2012,47,1853303
+Nebraska,2013,47,1865279
+Nebraska,2014,47,1879321
+Nebraska,2015,47,1891277
+Nebraska,2016,47,1905616
+Nebraska,2017,47,1915947
+Nebraska,2018,47,1925614
+Nebraska,2019,47,1934408
+Nebraska,2020,47,1963387
+Nebraska,2021,47,1964537
+Nebraska,2022,47,1972246
+Nebraska,2023,47,1987864
+Nebraska,2024,47,2005465
+Nevada,1980,48,800508
+Nevada,1981,48,847656
+Nevada,1982,48,881538
+Nevada,1983,48,901978
+Nevada,1984,48,924921
+Nevada,1985,48,951032
+Nevada,1986,48,980614
+Nevada,1987,48,1023374
+Nevada,1988,48,1075023
+Nevada,1989,48,1137382
+Nevada,1990,48,1218629
+Nevada,1991,48,1285046
+Nevada,1992,48,1330694
+Nevada,1993,48,1380197
+Nevada,1994,48,1456388
+Nevada,1995,48,1525777
+Nevada,1996,48,1596476
+Nevada,1997,48,1675581
+Nevada,1998,48,1743772
+Nevada,1999,48,1809253
+Nevada,2000,48,2018211
+Nevada,2001,48,2094509
+Nevada,2002,48,2166214
+Nevada,2003,48,2236949
+Nevada,2004,48,2328703
+Nevada,2005,48,2408804
+Nevada,2006,48,2493405
+Nevada,2007,48,2567752
+Nevada,2008,48,2615772
+Nevada,2009,48,2643085
+Nevada,2010,48,2702405
+Nevada,2011,48,2712730
+Nevada,2012,48,2743996
+Nevada,2013,48,2775970
+Nevada,2014,48,2817628
+Nevada,2015,48,2866939
+Nevada,2016,48,2917563
+Nevada,2017,48,2969905
+Nevada,2018,48,3027341
+Nevada,2019,48,3080156
+Nevada,2020,48,3116967
+Nevada,2021,48,3148141
+Nevada,2022,48,3176116
+Nevada,2023,48,3214363
+Nevada,2024,48,3267467
+New Hampshire,1980,49,920610
+New Hampshire,1981,49,936621
+New Hampshire,1982,49,947720
+New Hampshire,1983,49,958134
+New Hampshire,1984,49,976863
+New Hampshire,1985,49,996753
+New Hampshire,1986,49,1025054
+New Hampshire,1987,49,1054289
+New Hampshire,1988,49,1082576
+New Hampshire,1989,49,1104523
+New Hampshire,1990,49,1111831
+New Hampshire,1991,49,1107055
+New Hampshire,1992,49,1112766
+New Hampshire,1993,49,1122191
+New Hampshire,1994,49,1133054
+New Hampshire,1995,49,1145604
+New Hampshire,1996,49,1160768
+New Hampshire,1997,49,1173239
+New Hampshire,1998,49,1185823
+New Hampshire,1999,49,1201134
+New Hampshire,2000,49,1240446
+New Hampshire,2001,49,1256879
+New Hampshire,2002,49,1271163
+New Hampshire,2003,49,1281871
+New Hampshire,2004,49,1292766
+New Hampshire,2005,49,1301415
+New Hampshire,2006,49,1311894
+New Hampshire,2007,49,1317343
+New Hampshire,2008,49,1321872
+New Hampshire,2009,49,1324575
+New Hampshire,2010,49,1316762
+New Hampshire,2011,49,1320202
+New Hampshire,2012,49,1324232
+New Hampshire,2013,49,1326622
+New Hampshire,2014,49,1333341
+New Hampshire,2015,49,1336350
+New Hampshire,2016,49,1342307
+New Hampshire,2017,49,1348787
+New Hampshire,2018,49,1353465
+New Hampshire,2019,49,1359711
+New Hampshire,2020,49,1378756
+New Hampshire,2021,49,1387677
+New Hampshire,2022,49,1396678
+New Hampshire,2023,49,1402199
+New Hampshire,2024,49,1409032
+New Jersey,1980,50,7365011
+New Jersey,1981,50,7407471
+New Jersey,1982,50,7430970
+New Jersey,1983,50,7467784
+New Jersey,1984,50,7515474
+New Jersey,1985,50,7565530
+New Jersey,1986,50,7622161
+New Jersey,1987,50,7670741
+New Jersey,1988,50,7712333
+New Jersey,1989,50,7726086
+New Jersey,1990,50,7757158
+New Jersey,1991,50,7784269
+New Jersey,1992,50,7827770
+New Jersey,1993,50,7874891
+New Jersey,1994,50,7918796
+New Jersey,1995,50,7965523
+New Jersey,1996,50,8009624
+New Jersey,1997,50,8054178
+New Jersey,1998,50,8095542
+New Jersey,1999,50,8143412
+New Jersey,2000,50,8430921
+New Jersey,2001,50,8489469
+New Jersey,2002,50,8544115
+New Jersey,2003,50,8583481
+New Jersey,2004,50,8611530
+New Jersey,2005,50,8621837
+New Jersey,2006,50,8623721
+New Jersey,2007,50,8636043
+New Jersey,2008,50,8663398
+New Jersey,2009,50,8707739
+New Jersey,2010,50,8799446
+New Jersey,2011,50,8828117
+New Jersey,2012,50,8844942
+New Jersey,2013,50,8856972
+New Jersey,2014,50,8864525
+New Jersey,2015,50,8867949
+New Jersey,2016,50,8870827
+New Jersey,2017,50,8885525
+New Jersey,2018,50,8886025
+New Jersey,2019,50,8882190
+New Jersey,2020,50,9272794
+New Jersey,2021,50,9270541
+New Jersey,2022,50,9295227
+New Jersey,2023,50,9379642
+New Jersey,2024,50,9500851
+New Mexico,1980,51,1303303
+New Mexico,1981,51,1332747
+New Mexico,1982,51,1363822
+New Mexico,1983,51,1394362
+New Mexico,1984,51,1416719
+New Mexico,1985,51,1438360
+New Mexico,1986,51,1462728
+New Mexico,1987,51,1478519
+New Mexico,1988,51,1490336
+New Mexico,1989,51,1503901
+New Mexico,1990,51,1519933
+New Mexico,1991,51,1547115
+New Mexico,1992,51,1580750
+New Mexico,1993,51,1614937
+New Mexico,1994,51,1653329
+New Mexico,1995,51,1682417
+New Mexico,1996,51,1706151
+New Mexico,1997,51,1722939
+New Mexico,1998,51,1733535
+New Mexico,1999,51,1739844
+New Mexico,2000,51,1820813
+New Mexico,2001,51,1828809
+New Mexico,2002,51,1850035
+New Mexico,2003,51,1869683
+New Mexico,2004,51,1891829
+New Mexico,2005,51,1916538
+New Mexico,2006,51,1942608
+New Mexico,2007,51,1968731
+New Mexico,2008,51,1986763
+New Mexico,2009,51,2009671
+New Mexico,2010,51,2064552
+New Mexico,2011,51,2080450
+New Mexico,2012,51,2087309
+New Mexico,2013,51,2092273
+New Mexico,2014,51,2089568
+New Mexico,2015,51,2089291
+New Mexico,2016,51,2091630
+New Mexico,2017,51,2091784
+New Mexico,2018,51,2092741
+New Mexico,2019,51,2096829
+New Mexico,2020,51,2118606
+New Mexico,2021,51,2117333
+New Mexico,2022,51,2113868
+New Mexico,2023,51,2121164
+New Mexico,2024,51,2130256
+New York Southern,1980,52,4411253
+New York Southern,1981,52,4408552
+New York Southern,1982,52,4409472
+New York Southern,1983,52,4447185
+New York Southern,1984,52,4487732
+New York Southern,1985,52,4509052
+New York Southern,1986,52,4538741
+New York Southern,1987,52,4568307
+New York Southern,1988,52,4591849
+New York Southern,1989,52,4598480
+New York Southern,1990,52,4599514
+New York Southern,1991,52,4599243
+New York Southern,1992,52,4612822
+New York Southern,1993,52,4636927
+New York Southern,1994,52,4654329
+New York Southern,1995,52,4674137
+New York Southern,1996,52,4690029
+New York Southern,1997,52,4706851
+New York Southern,1998,52,4725752
+New York Southern,1999,52,4750496
+New York Southern,2000,52,4929801
+New York Southern,2001,52,4979842
+New York Southern,2002,52,5009774
+New York Southern,2003,52,5041151
+New York Southern,2004,52,5071180
+New York Southern,2005,52,5098592
+New York Southern,2006,52,5113940
+New York Southern,2007,52,5146567
+New York Southern,2008,52,5165681
+New York Southern,2009,52,5183610
+New York Southern,2010,52,5136620
+New York Southern,2011,52,5175309
+New York Southern,2012,52,5208053
+New York Southern,2013,52,5228683
+New York Southern,2014,52,5242791
+New York Southern,2015,52,5259235
+New York Southern,2016,52,5265390
+New York Southern,2017,52,5260229
+New York Southern,2018,52,5252536
+New York Southern,2019,52,5240306
+New York Southern,2020,52,5398556
+New York Southern,2021,52,5266937
+New York Southern,2022,52,5245829
+New York Southern,2023,52,5280656
+New York Southern,2024,52,5337471
+New York Northern,1980,53,3199251
+New York Northern,1981,53,3196558
+New York Northern,1982,53,3197285
+New York Northern,1983,53,3205215
+New York Northern,1984,53,3212930
+New York Northern,1985,53,3224187
+New York Northern,1986,53,3225754
+New York Northern,1987,53,3235668
+New York Northern,1988,53,3263335
+New York Northern,1989,53,3293182
+New York Northern,1990,53,3319728
+New York Northern,1991,53,3340587
+New York Northern,1992,53,3355414
+New York Northern,1993,53,3363794
+New York Northern,1994,53,3359850
+New York Northern,1995,53,3338579
+New York Northern,1996,53,3316139
+New York Northern,1997,53,3294515
+New York Northern,1998,53,3279740
+New York Northern,1999,53,3271991
+New York Northern,2000,53,3312062
+New York Northern,2001,53,3310113
+New York Northern,2002,53,3315916
+New York Northern,2003,53,3322648
+New York Northern,2004,53,3327598
+New York Northern,2005,53,3326244
+New York Northern,2006,53,3327524
+New York Northern,2007,53,3328456
+New York Northern,2008,53,3328278
+New York Northern,2009,53,3333280
+New York Northern,2010,53,3390037
+New York Northern,2011,53,3387985
+New York Northern,2012,53,3386686
+New York Northern,2013,53,3381950
+New York Northern,2014,53,3374352
+New York Northern,2015,53,3359284
+New York Northern,2016,53,3344460
+New York Northern,2017,53,3337171
+New York Northern,2018,53,3329216
+New York Northern,2019,53,3315291
+New York Northern,2020,53,3361696
+New York Northern,2021,53,3373158
+New York Northern,2022,53,3357655
+New York Northern,2023,53,3353798
+New York Northern,2024,53,3359997
+New York Eastern,1980,54,7080195
+New York Eastern,1981,54,7100094
+New York Eastern,1982,54,7126110
+New York Eastern,1983,54,7190842
+New York Eastern,1984,54,7220708
+New York Eastern,1985,54,7243420
+New York Eastern,1986,54,7263823
+New York Eastern,1987,54,7265637
+New York Eastern,1988,54,7276851
+New York Eastern,1989,54,7263080
+New York Eastern,1990,54,7239319
+New York Eastern,1991,54,7235521
+New York Eastern,1992,54,7248337
+New York Eastern,1993,54,7269982
+New York Eastern,1994,54,7276972
+New York Eastern,1995,54,7281071
+New York Eastern,1996,54,7289824
+New York Eastern,1997,54,7310101
+New York Eastern,1998,54,7337857
+New York Eastern,1999,54,7371123
+New York Eastern,2000,54,7900923
+New York Eastern,2001,54,7951366
+New York Eastern,2002,54,7995131
+New York Eastern,2003,54,8034539
+New York Eastern,2004,54,8076317
+New York Eastern,2005,54,8102477
+New York Eastern,2006,54,8125665
+New York Eastern,2007,54,8164632
+New York Eastern,2008,54,8192466
+New York Eastern,2009,54,8241444
+New York Eastern,2010,54,8050152
+New York Eastern,2011,54,8112435
+New York Eastern,2012,54,8157884
+New York Eastern,2013,54,8196211
+New York Eastern,2014,54,8222416
+New York Eastern,2015,54,8233788
+New York Eastern,2016,54,8231651
+New York Eastern,2017,54,8206806
+New York Eastern,2018,54,8167303
+New York Eastern,2019,54,8123429
+New York Eastern,2020,54,8514140
+New York Eastern,2021,54,8382704
+New York Eastern,2022,54,8291277
+New York Eastern,2023,54,8297474
+New York Eastern,2024,54,8361031
+New York Western,1980,55,2867466
+New York Western,1981,55,2862527
+New York Western,1982,55,2856870
+New York Western,1983,55,2843665
+New York Western,1984,55,2824306
+New York Western,1985,55,2815019
+New York Western,1986,55,2805103
+New York Western,1987,55,2799232
+New York Western,1988,55,2809274
+New York Western,1989,55,2828342
+New York Western,1990,55,2844294
+New York Western,1991,55,2854181
+New York Western,1992,55,2865459
+New York Western,1993,55,2870191
+New York Western,1994,55,2865501
+New York Western,1995,55,2857141
+New York Western,1996,55,2847813
+New York Western,1997,55,2831717
+New York Western,1998,55,2815826
+New York Western,1999,55,2802991
+New York Western,2000,55,2855258
+New York Western,2001,55,2847657
+New York Western,2002,55,2841052
+New York Western,2003,55,2832763
+New York Western,2004,55,2822838
+New York Western,2005,55,2803578
+New York Western,2006,55,2789435
+New York Western,2007,55,2783122
+New York Western,2008,55,2781364
+New York Western,2009,55,2783119
+New York Western,2010,55,2823069
+New York Western,2011,55,2823512
+New York Western,2012,55,2820309
+New York Western,2013,55,2817603
+New York Western,2014,55,2811490
+New York Western,2015,55,2802359
+New York Western,2016,55,2791927
+New York Western,2017,55,2785366
+New York Western,2018,55,2781296
+New York Western,2019,55,2774535
+New York Western,2020,55,2830779
+New York Western,2021,55,2825477
+New York Western,2022,55,2808986
+New York Western,2023,55,2805439
+New York Western,2024,55,2808749
+North Carolina Middle,1980,56,1847320
+North Carolina Middle,1981,56,1867965
+North Carolina Middle,1982,56,1884434
+North Carolina Middle,1983,56,1899272
+North Carolina Middle,1984,56,1918793
+North Carolina Middle,1985,56,1941262
+North Carolina Middle,1986,56,1962040
+North Carolina Middle,1987,56,1988007
+North Carolina Middle,1988,56,2010951
+North Carolina Middle,1989,56,2031972
+North Carolina Middle,1990,56,2056789
+North Carolina Middle,1991,56,2081480
+North Carolina Middle,1992,56,2106536
+North Carolina Middle,1993,56,2136540
+North Carolina Middle,1994,56,2169032
+North Carolina Middle,1995,56,2201513
+North Carolina Middle,1996,56,2234073
+North Carolina Middle,1997,56,2266086
+North Carolina Middle,1998,56,2296547
+North Carolina Middle,1999,56,2323596
+North Carolina Middle,2000,56,2458262
+North Carolina Middle,2001,56,2493815
+North Carolina Middle,2002,56,2520741
+North Carolina Middle,2003,56,2540776
+North Carolina Middle,2004,56,2564228
+North Carolina Middle,2005,56,2598430
+North Carolina Middle,2006,56,2647400
+North Carolina Middle,2007,56,2697650
+North Carolina Middle,2008,56,2746645
+North Carolina Middle,2009,56,2780959
+North Carolina Middle,2010,56,2805924
+North Carolina Middle,2011,56,2826425
+North Carolina Middle,2012,56,2848250
+North Carolina Middle,2013,56,2870341
+North Carolina Middle,2014,56,2894557
+North Carolina Middle,2015,56,2918780
+North Carolina Middle,2016,56,2951772
+North Carolina Middle,2017,56,2981044
+North Carolina Middle,2018,56,3012560
+North Carolina Middle,2019,56,3041744
+North Carolina Middle,2020,56,3052974
+North Carolina Middle,2021,56,3085454
+North Carolina Middle,2022,56,3122841
+North Carolina Middle,2023,56,3163906
+North Carolina Middle,2024,56,3203604
+North Carolina Eastern,1980,57,2227845
+North Carolina Eastern,1981,57,2257619
+North Carolina Eastern,1982,57,2282116
+North Carolina Eastern,1983,57,2315557
+North Carolina Eastern,1984,57,2355478
+North Carolina Eastern,1985,57,2397321
+North Carolina Eastern,1986,57,2428882
+North Carolina Eastern,1987,57,2461127
+North Carolina Eastern,1988,57,2489475
+North Carolina Eastern,1989,57,2529604
+North Carolina Eastern,1990,57,2567896
+North Carolina Eastern,1991,57,2604801
+North Carolina Eastern,1992,57,2637555
+North Carolina Eastern,1993,57,2689213
+North Carolina Eastern,1994,57,2733227
+North Carolina Eastern,1995,57,2785119
+North Carolina Eastern,1996,57,2833493
+North Carolina Eastern,1997,57,2881137
+North Carolina Eastern,1998,57,2927325
+North Carolina Eastern,1999,57,2963025
+North Carolina Eastern,2000,57,3115897
+North Carolina Eastern,2001,57,3161391
+North Carolina Eastern,2002,57,3212205
+North Carolina Eastern,2003,57,3259128
+North Carolina Eastern,2004,57,3311146
+North Carolina Eastern,2005,57,3363477
+North Carolina Eastern,2006,57,3440814
+North Carolina Eastern,2007,57,3519288
+North Carolina Eastern,2008,57,3595132
+North Carolina Eastern,2009,57,3656167
+North Carolina Eastern,2010,57,3771988
+North Carolina Eastern,2011,57,3809924
+North Carolina Eastern,2012,57,3848963
+North Carolina Eastern,2013,57,3885837
+North Carolina Eastern,2014,57,3919289
+North Carolina Eastern,2015,57,3954380
+North Carolina Eastern,2016,57,3998876
+North Carolina Eastern,2017,57,4038817
+North Carolina Eastern,2018,57,4083280
+North Carolina Eastern,2019,57,4125131
+North Carolina Eastern,2020,57,4068368
+North Carolina Eastern,2021,57,4118476
+North Carolina Eastern,2022,57,4178819
+North Carolina Eastern,2023,57,4250812
+North Carolina Eastern,2024,57,4318251
+North Carolina Western,1980,58,1804931
+North Carolina Western,1981,58,1831069
+North Carolina Western,1982,58,1852558
+North Carolina Western,1983,58,1862230
+North Carolina Western,1984,58,1889733
+North Carolina Western,1985,58,1915374
+North Carolina Western,1986,58,1930654
+North Carolina Western,1987,58,1954559
+North Carolina Western,1988,58,1980165
+North Carolina Western,1989,58,2003886
+North Carolina Western,1990,58,2032302
+North Carolina Western,1991,58,2061854
+North Carolina Western,1992,58,2087759
+North Carolina Western,1993,58,2121659
+North Carolina Western,1994,58,2158700
+North Carolina Western,1995,58,2198771
+North Carolina Western,1996,58,2240092
+North Carolina Western,1997,58,2281449
+North Carolina Western,1998,58,2321956
+North Carolina Western,1999,58,2364168
+North Carolina Western,2000,58,2505224
+North Carolina Western,2001,58,2548245
+North Carolina Western,2002,58,2583671
+North Carolina Western,2003,58,2616547
+North Carolina Western,2004,58,2655909
+North Carolina Western,2005,58,2707545
+North Carolina Western,2006,58,2778763
+North Carolina Western,2007,58,2847136
+North Carolina Western,2008,58,2905357
+North Carolina Western,2009,58,2943758
+North Carolina Western,2010,58,2996411
+North Carolina Western,2011,58,3021243
+North Carolina Western,2012,58,3052263
+North Carolina Western,2013,58,3087158
+North Carolina Western,2014,58,3119041
+North Carolina Western,2015,58,3158486
+North Carolina Western,2016,58,3204140
+North Carolina Western,2017,58,3248372
+North Carolina Western,2018,58,3285775
+North Carolina Western,2019,58,3321209
+North Carolina Western,2020,58,3328310
+North Carolina Western,2021,58,3360390
+North Carolina Western,2022,58,3409133
+North Carolina Western,2023,58,3466471
+North Carolina Western,2024,58,3524169
+North Dakota,1980,59,652717
+North Dakota,1981,59,659504
+North Dakota,1982,59,668972
+North Dakota,1983,59,676687
+North Dakota,1984,59,680499
+North Dakota,1985,59,676979
+North Dakota,1986,59,669513
+North Dakota,1987,59,661141
+North Dakota,1988,59,655330
+North Dakota,1989,59,646351
+North Dakota,1990,59,637364
+North Dakota,1991,59,634199
+North Dakota,1992,59,635427
+North Dakota,1993,59,637229
+North Dakota,1994,59,639762
+North Dakota,1995,59,641548
+North Dakota,1996,59,642858
+North Dakota,1997,59,640945
+North Dakota,1998,59,637808
+North Dakota,1999,59,633666
+North Dakota,2000,59,641200
+North Dakota,2001,59,636267
+North Dakota,2002,59,633617
+North Dakota,2003,59,632809
+North Dakota,2004,59,636303
+North Dakota,2005,59,635365
+North Dakota,2006,59,636771
+North Dakota,2007,59,638202
+North Dakota,2008,59,641421
+North Dakota,2009,59,646844
+North Dakota,2010,59,674715
+North Dakota,2011,59,685225
+North Dakota,2012,59,701176
+North Dakota,2013,59,722036
+North Dakota,2014,59,737401
+North Dakota,2015,59,754066
+North Dakota,2016,59,754434
+North Dakota,2017,59,754942
+North Dakota,2018,59,758080
+North Dakota,2019,59,762062
+North Dakota,2020,59,779563
+North Dakota,2021,59,777966
+North Dakota,2022,59,781057
+North Dakota,2023,59,789047
+North Dakota,2024,59,796568
+Ohio Northern,1980,60,5913431
+Ohio Northern,1981,60,5890837
+Ohio Northern,1982,60,5860048
+Ohio Northern,1983,60,5837870
+Ohio Northern,1984,60,5823538
+Ohio Northern,1985,60,5801086
+Ohio Northern,1986,60,5777441
+Ohio Northern,1987,60,5769052
+Ohio Northern,1988,60,5770159
+Ohio Northern,1989,60,5774518
+Ohio Northern,1990,60,5775090
+Ohio Northern,1991,60,5798211
+Ohio Northern,1992,60,5822944
+Ohio Northern,1993,60,5841259
+Ohio Northern,1994,60,5853273
+Ohio Northern,1995,60,5865124
+Ohio Northern,1996,60,5872897
+Ohio Northern,1997,60,5869676
+Ohio Northern,1998,60,5863361
+Ohio Northern,1999,60,5857829
+Ohio Northern,2000,60,5917435
+Ohio Northern,2001,60,5915642
+Ohio Northern,2002,60,5910960
+Ohio Northern,2003,60,5904282
+Ohio Northern,2004,60,5895133
+Ohio Northern,2005,60,5877603
+Ohio Northern,2006,60,5859723
+Ohio Northern,2007,60,5848829
+Ohio Northern,2008,60,5834158
+Ohio Northern,2009,60,5822902
+Ohio Northern,2010,60,5792683
+Ohio Northern,2011,60,5778626
+Ohio Northern,2012,60,5764147
+Ohio Northern,2013,60,5762125
+Ohio Northern,2014,60,5757425
+Ohio Northern,2015,60,5743612
+Ohio Northern,2016,60,5731272
+Ohio Northern,2017,60,5718645
+Ohio Northern,2018,60,5708472
+Ohio Northern,2019,60,5696847
+Ohio Northern,2020,60,5755519
+Ohio Northern,2021,60,5726858
+Ohio Northern,2022,60,5713757
+Ohio Northern,2023,60,5716257
+Ohio Northern,2024,60,5725292
+Ohio Southern,1980,61,4884173
+Ohio Southern,1981,61,4897499
+Ohio Southern,1982,61,4897037
+Ohio Southern,1983,61,4899761
+Ohio Southern,1984,61,4914205
+Ohio Southern,1985,61,4933840
+Ohio Southern,1986,61,4952831
+Ohio Southern,1987,61,4991029
+Ohio Southern,1988,61,5028395
+Ohio Southern,1989,61,5054698
+Ohio Southern,1990,61,5086747
+Ohio Southern,1991,61,5135472
+Ohio Southern,1992,61,5184665
+Ohio Southern,1993,61,5229126
+Ohio Southern,1994,61,5258178
+Ohio Southern,1995,61,5290369
+Ohio Southern,1996,61,5314135
+Ohio Southern,1997,61,5342822
+Ohio Southern,1998,61,5374391
+Ohio Southern,1999,61,5398825
+Ohio Southern,2000,61,5446409
+Ohio Southern,2001,61,5481232
+Ohio Southern,2002,61,5510021
+Ohio Southern,2003,61,5540898
+Ohio Southern,2004,61,5569460
+Ohio Southern,2005,61,5597659
+Ohio Southern,2006,61,5632772
+Ohio Southern,2007,61,5671986
+Ohio Southern,2008,61,5693914
+Ohio Southern,2009,61,5719743
+Ohio Southern,2010,61,5746653
+Ohio Southern,2011,61,5766037
+Ohio Southern,2012,61,5784776
+Ohio Southern,2013,61,5814559
+Ohio Southern,2014,61,5845275
+Ohio Southern,2015,61,5873915
+Ohio Southern,2016,61,5903098
+Ohio Southern,2017,61,5941005
+Ohio Southern,2018,61,5967869
+Ohio Southern,2019,61,5992253
+Ohio Southern,2020,61,6043386
+Ohio Southern,2021,61,6040486
+Ohio Southern,2022,61,6064117
+Ohio Southern,2023,61,6107777
+Ohio Southern,2024,61,6158012
+Oklahoma Western,1980,62,1601361
+Oklahoma Western,1981,62,1648032
+Oklahoma Western,1982,62,1723075
+Oklahoma Western,1983,62,1770799
+Oklahoma Western,1984,62,1764608
+Oklahoma Western,1985,62,1753186
+Oklahoma Western,1986,62,1734468
+Oklahoma Western,1987,62,1703014
+Oklahoma Western,1988,62,1682021
+Oklahoma Western,1989,62,1672758
+Oklahoma Western,1990,62,1665189
+Oklahoma Western,1991,62,1671662
+Oklahoma Western,1992,62,1694523
+Oklahoma Western,1993,62,1706497
+Oklahoma Western,1994,62,1714049
+Oklahoma Western,1995,62,1721279
+Oklahoma Western,1996,62,1730544
+Oklahoma Western,1997,62,1738550
+Oklahoma Western,1998,62,1747494
+Oklahoma Western,1999,62,1752455
+Oklahoma Western,2000,62,1808531
+Oklahoma Western,2001,62,1814742
+Oklahoma Western,2002,62,1825763
+Oklahoma Western,2003,62,1835537
+Oklahoma Western,2004,62,1848817
+Oklahoma Western,2005,62,1860269
+Oklahoma Western,2006,62,1884165
+Oklahoma Western,2007,62,1904056
+Oklahoma Western,2008,62,1921464
+Oklahoma Western,2009,62,1947178
+Oklahoma Western,2010,62,1995006
+Oklahoma Western,2011,62,2016253
+Oklahoma Western,2012,62,2040532
+Oklahoma Western,2013,62,2066174
+Oklahoma Western,2014,62,2083795
+Oklahoma Western,2015,62,2104392
+Oklahoma Western,2016,62,2113627
+Oklahoma Western,2017,62,2116458
+Oklahoma Western,2018,62,2124504
+Oklahoma Western,2019,62,2137029
+Oklahoma Western,2020,62,2152737
+Oklahoma Western,2021,62,2166587
+Oklahoma Western,2022,62,2186162
+Oklahoma Western,2023,62,2205947
+Oklahoma Western,2024,62,2222762
+Oklahoma Eastern,1980,63,629754
+Oklahoma Eastern,1981,63,633595
+Oklahoma Eastern,1982,63,641511
+Oklahoma Eastern,1983,63,659500
+Oklahoma Eastern,1984,63,659545
+Oklahoma Eastern,1985,63,658686
+Oklahoma Eastern,1986,63,658515
+Oklahoma Eastern,1987,63,656047
+Oklahoma Eastern,1988,63,645814
+Oklahoma Eastern,1989,63,640989
+Oklahoma Eastern,1990,63,639200
+Oklahoma Eastern,1991,63,641625
+Oklahoma Eastern,1992,63,647071
+Oklahoma Eastern,1993,63,652794
+Oklahoma Eastern,1994,63,657706
+Oklahoma Eastern,1995,63,664887
+Oklahoma Eastern,1996,63,670513
+Oklahoma Eastern,1997,63,675524
+Oklahoma Eastern,1998,63,679350
+Oklahoma Eastern,1999,63,682690
+Oklahoma Eastern,2000,63,698019
+Oklahoma Eastern,2001,63,697250
+Oklahoma Eastern,2002,63,700551
+Oklahoma Eastern,2003,63,702855
+Oklahoma Eastern,2004,63,705661
+Oklahoma Eastern,2005,63,708439
+Oklahoma Eastern,2006,63,715056
+Oklahoma Eastern,2007,63,720680
+Oklahoma Eastern,2008,63,726091
+Oklahoma Eastern,2009,63,731902
+Oklahoma Eastern,2010,63,747225
+Oklahoma Eastern,2011,63,748376
+Oklahoma Eastern,2012,63,748285
+Oklahoma Eastern,2013,63,748461
+Oklahoma Eastern,2014,63,747950
+Oklahoma Eastern,2015,63,748206
+Oklahoma Eastern,2016,63,749236
+Oklahoma Eastern,2017,63,749653
+Oklahoma Eastern,2018,63,749328
+Oklahoma Eastern,2019,63,750089
+Oklahoma Eastern,2020,63,727610
+Oklahoma Eastern,2021,63,733693
+Oklahoma Eastern,2022,63,739194
+Oklahoma Eastern,2023,63,746193
+Oklahoma Eastern,2024,63,750723
+Oklahoma Northern,1980,64,794372
+Oklahoma Northern,1981,64,814532
+Oklahoma Northern,1982,64,841543
+Oklahoma Northern,1983,64,860105
+Oklahoma Northern,1984,64,861382
+Oklahoma Northern,1985,64,859461
+Oklahoma Northern,1986,64,859752
+Oklahoma Northern,1987,64,851063
+Oklahoma Northern,1988,64,839229
+Oklahoma Northern,1989,64,836557
+Oklahoma Northern,1990,64,842716
+Oklahoma Northern,1991,64,853184
+Oklahoma Northern,1992,64,862580
+Oklahoma Northern,1993,64,869538
+Oklahoma Northern,1994,64,874364
+Oklahoma Northern,1995,64,879381
+Oklahoma Northern,1996,64,888577
+Oklahoma Northern,1997,64,900185
+Oklahoma Northern,1998,64,912634
+Oklahoma Northern,1999,64,922899
+Oklahoma Northern,2000,64,947393
+Oklahoma Northern,2001,64,952737
+Oklahoma Northern,2002,64,958440
+Oklahoma Northern,2003,64,960295
+Oklahoma Northern,2004,64,959971
+Oklahoma Northern,2005,64,964061
+Oklahoma Northern,2006,64,975113
+Oklahoma Northern,2007,64,987450
+Oklahoma Northern,2008,64,996470
+Oklahoma Northern,2009,64,1007970
+Oklahoma Northern,2010,64,1017713
+Oklahoma Northern,2011,64,1023750
+Oklahoma Northern,2012,64,1029997
+Oklahoma Northern,2013,64,1038579
+Oklahoma Northern,2014,64,1046442
+Oklahoma Northern,2015,64,1056902
+Oklahoma Northern,2016,64,1063468
+Oklahoma Northern,2017,64,1065205
+Oklahoma Northern,2018,64,1066403
+Oklahoma Northern,2019,64,1069853
+Oklahoma Northern,2020,64,1085068
+Oklahoma Northern,2021,64,1091958
+Oklahoma Northern,2022,64,1100873
+Oklahoma Northern,2023,64,1111742
+Oklahoma Northern,2024,64,1121908
+Oregon,1980,65,2633156
+Oregon,1981,65,2667985
+Oregon,1982,65,2664919
+Oregon,1983,65,2653071
+Oregon,1984,65,2666589
+Oregon,1985,65,2672648
+Oregon,1986,65,2683526
+Oregon,1987,65,2700996
+Oregon,1988,65,2741297
+Oregon,1989,65,2790579
+Oregon,1990,65,2858547
+Oregon,1991,65,2918745
+Oregon,1992,65,2973934
+Oregon,1993,65,3034490
+Oregon,1994,65,3087142
+Oregon,1995,65,3141421
+Oregon,1996,65,3195087
+Oregon,1997,65,3243254
+Oregon,1998,65,3282055
+Oregon,1999,65,3316154
+Oregon,2000,65,3430891
+Oregon,2001,65,3470382
+Oregon,2002,65,3517111
+Oregon,2003,65,3550180
+Oregon,2004,65,3573505
+Oregon,2005,65,3617869
+Oregon,2006,65,3677545
+Oregon,2007,65,3732957
+Oregon,2008,65,3782991
+Oregon,2009,65,3825657
+Oregon,2010,65,3837491
+Oregon,2011,65,3872036
+Oregon,2012,65,3899001
+Oregon,2013,65,3922468
+Oregon,2014,65,3963244
+Oregon,2015,65,4015792
+Oregon,2016,65,4089976
+Oregon,2017,65,4143625
+Oregon,2018,65,4181886
+Oregon,2019,65,4217737
+Oregon,2020,65,4243779
+Oregon,2021,65,4254280
+Oregon,2022,65,4247372
+Oregon,2023,65,4253653
+Oregon,2024,65,4272371
+Pennsylvania Western,1980,66,4214938
+Pennsylvania Western,1981,66,4193463
+Pennsylvania Western,1982,66,4180139
+Pennsylvania Western,1983,66,4165179
+Pennsylvania Western,1984,66,4128439
+Pennsylvania Western,1985,66,4071115
+Pennsylvania Western,1986,66,4034469
+Pennsylvania Western,1987,66,4000670
+Pennsylvania Western,1988,66,3975096
+Pennsylvania Western,1989,66,3957099
+Pennsylvania Western,1990,66,3954354
+Pennsylvania Western,1991,66,3961488
+Pennsylvania Western,1992,66,3969769
+Pennsylvania Western,1993,66,3975325
+Pennsylvania Western,1994,66,3969242
+Pennsylvania Western,1995,66,3959719
+Pennsylvania Western,1996,66,3946126
+Pennsylvania Western,1997,66,3926294
+Pennsylvania Western,1998,66,3904941
+Pennsylvania Western,1999,66,3884543
+Pennsylvania Western,2000,66,3914422
+Pennsylvania Western,2001,66,3897439
+Pennsylvania Western,2002,66,3883168
+Pennsylvania Western,2003,66,3869473
+Pennsylvania Western,2004,66,3848661
+Pennsylvania Western,2005,66,3826670
+Pennsylvania Western,2006,66,3814076
+Pennsylvania Western,2007,66,3806004
+Pennsylvania Western,2008,66,3800272
+Pennsylvania Western,2009,66,3796587
+Pennsylvania Western,2010,66,3805845
+Pennsylvania Western,2011,66,3805074
+Pennsylvania Western,2012,66,3799622
+Pennsylvania Western,2013,66,3790938
+Pennsylvania Western,2014,66,3779137
+Pennsylvania Western,2015,66,3760995
+Pennsylvania Western,2016,66,3741404
+Pennsylvania Western,2017,66,3719681
+Pennsylvania Western,2018,66,3703880
+Pennsylvania Western,2019,66,3689314
+Pennsylvania Western,2020,66,3746260
+Pennsylvania Western,2021,66,3733153
+Pennsylvania Western,2022,66,3707626
+Pennsylvania Western,2023,66,3699035
+Pennsylvania Western,2024,66,3696369
+Pennsylvania Eastern,1980,67,4855072
+Pennsylvania Eastern,1981,67,4860778
+Pennsylvania Eastern,1982,67,4861258
+Pennsylvania Eastern,1983,67,4867491
+Pennsylvania Eastern,1984,67,4880144
+Pennsylvania Eastern,1985,67,4893329
+Pennsylvania Eastern,1986,67,4932003
+Pennsylvania Eastern,1987,67,4980099
+Pennsylvania Eastern,1988,67,5014455
+Pennsylvania Eastern,1989,67,5027869
+Pennsylvania Eastern,1990,67,5031133
+Pennsylvania Eastern,1991,67,5045735
+Pennsylvania Eastern,1992,67,5052355
+Pennsylvania Eastern,1993,67,5065999
+Pennsylvania Eastern,1994,67,5075436
+Pennsylvania Eastern,1995,67,5076918
+Pennsylvania Eastern,1996,67,5074471
+Pennsylvania Eastern,1997,67,5070457
+Pennsylvania Eastern,1998,67,5076665
+Pennsylvania Eastern,1999,67,5085075
+Pennsylvania Eastern,2000,67,5278642
+Pennsylvania Eastern,2001,67,5303847
+Pennsylvania Eastern,2002,67,5331091
+Pennsylvania Eastern,2003,67,5360607
+Pennsylvania Eastern,2004,67,5396138
+Pennsylvania Eastern,2005,67,5427886
+Pennsylvania Eastern,2006,67,5464940
+Pennsylvania Eastern,2007,67,5503927
+Pennsylvania Eastern,2008,67,5538624
+Pennsylvania Eastern,2009,67,5569973
+Pennsylvania Eastern,2010,67,5593905
+Pennsylvania Eastern,2011,67,5623089
+Pennsylvania Eastern,2012,67,5646869
+Pennsylvania Eastern,2013,67,5664738
+Pennsylvania Eastern,2014,67,5687014
+Pennsylvania Eastern,2015,67,5702550
+Pennsylvania Eastern,2016,67,5719727
+Pennsylvania Eastern,2017,67,5741695
+Pennsylvania Eastern,2018,67,5763066
+Pennsylvania Eastern,2019,67,5776476
+Pennsylvania Eastern,2020,67,5884091
+Pennsylvania Eastern,2021,67,5900020
+Pennsylvania Eastern,2022,67,5890896
+Pennsylvania Eastern,2023,67,5915669
+Pennsylvania Eastern,2024,67,5959918
+Pennsylvania Middle,1980,68,2794710
+Pennsylvania Middle,1981,68,2804328
+Pennsylvania Middle,1982,68,2803749
+Pennsylvania Middle,1983,68,2805056
+Pennsylvania Middle,1984,68,2806592
+Pennsylvania Middle,1985,68,2806421
+Pennsylvania Middle,1986,68,2816282
+Pennsylvania Middle,1987,68,2830100
+Pennsylvania Middle,1988,68,2856204
+Pennsylvania Middle,1989,68,2881024
+Pennsylvania Middle,1990,68,2910117
+Pennsylvania Middle,1991,68,2935937
+Pennsylvania Middle,1992,68,2958695
+Pennsylvania Middle,1993,68,2980804
+Pennsylvania Middle,1994,68,2997867
+Pennsylvania Middle,1995,68,3008143
+Pennsylvania Middle,1996,68,3017411
+Pennsylvania Middle,1997,68,3019137
+Pennsylvania Middle,1998,68,3020723
+Pennsylvania Middle,1999,68,3024398
+Pennsylvania Middle,2000,68,3092440
+Pennsylvania Middle,2001,68,3098247
+Pennsylvania Middle,2002,68,3112043
+Pennsylvania Middle,2003,68,3127444
+Pennsylvania Middle,2004,68,3143569
+Pennsylvania Middle,2005,68,3163605
+Pennsylvania Middle,2006,68,3192126
+Pennsylvania Middle,2007,68,3212600
+Pennsylvania Middle,2008,68,3227472
+Pennsylvania Middle,2009,68,3238207
+Pennsylvania Middle,2010,68,3311410
+Pennsylvania Middle,2011,68,3317652
+Pennsylvania Middle,2012,68,3320627
+Pennsylvania Middle,2013,68,3320633
+Pennsylvania Middle,2014,68,3322162
+Pennsylvania Middle,2015,68,3321281
+Pennsylvania Middle,2016,68,3321144
+Pennsylvania Middle,2017,68,3326265
+Pennsylvania Middle,2018,68,3333976
+Pennsylvania Middle,2019,68,3336199
+Pennsylvania Middle,2020,68,3365792
+Pennsylvania Middle,2021,68,3382398
+Pennsylvania Middle,2022,68,3386468
+Pennsylvania Middle,2023,68,3403017
+Pennsylvania Middle,2024,68,3422464
+Rhode Island,1980,69,947154
+Rhode Island,1981,69,953012
+Rhode Island,1982,69,954170
+Rhode Island,1983,69,956382
+Rhode Island,1984,69,961895
+Rhode Island,1985,69,968956
+Rhode Island,1986,69,977340
+Rhode Island,1987,69,989605
+Rhode Island,1988,69,996407
+Rhode Island,1989,69,1000666
+Rhode Island,1990,69,1004649
+Rhode Island,1991,69,1003990
+Rhode Island,1992,69,1000571
+Rhode Island,1993,69,997852
+Rhode Island,1994,69,993412
+Rhode Island,1995,69,989203
+Rhode Island,1996,69,987858
+Rhode Island,1997,69,986966
+Rhode Island,1998,69,987704
+Rhode Island,1999,69,990819
+Rhode Island,2000,69,1050736
+Rhode Island,2001,69,1058051
+Rhode Island,2002,69,1066034
+Rhode Island,2003,69,1071504
+Rhode Island,2004,69,1071414
+Rhode Island,2005,69,1064989
+Rhode Island,2006,69,1060196
+Rhode Island,2007,69,1055009
+Rhode Island,2008,69,1053502
+Rhode Island,2009,69,1053209
+Rhode Island,2010,69,1053959
+Rhode Island,2011,69,1053649
+Rhode Island,2012,69,1054621
+Rhode Island,2013,69,1055081
+Rhode Island,2014,69,1055936
+Rhode Island,2015,69,1056065
+Rhode Island,2016,69,1056770
+Rhode Island,2017,69,1055673
+Rhode Island,2018,69,1058287
+Rhode Island,2019,69,1059361
+Rhode Island,2020,69,1096530
+Rhode Island,2021,69,1097246
+Rhode Island,2022,69,1099498
+Rhode Island,2023,69,1103429
+Rhode Island,2024,69,1112308
+South Carolina,1980,70,3120737
+South Carolina,1981,70,3179255
+South Carolina,1982,70,3207611
+South Carolina,1983,70,3234068
+South Carolina,1984,70,3271864
+South Carolina,1985,70,3303211
+South Carolina,1986,70,3342759
+South Carolina,1987,70,3380507
+South Carolina,1988,70,3412097
+South Carolina,1989,70,3456777
+South Carolina,1990,70,3499064
+South Carolina,1991,70,3559470
+South Carolina,1992,70,3600576
+South Carolina,1993,70,3634507
+South Carolina,1994,70,3666456
+South Carolina,1995,70,3699943
+South Carolina,1996,70,3738974
+South Carolina,1997,70,3790066
+South Carolina,1998,70,3839578
+South Carolina,1999,70,3885736
+South Carolina,2000,70,4023570
+South Carolina,2001,70,4062701
+South Carolina,2002,70,4103934
+South Carolina,2003,70,4146474
+South Carolina,2004,70,4201306
+South Carolina,2005,70,4256199
+South Carolina,2006,70,4339399
+South Carolina,2007,70,4424232
+South Carolina,2008,70,4503280
+South Carolina,2009,70,4561242
+South Carolina,2010,70,4635649
+South Carolina,2011,70,4671994
+South Carolina,2012,70,4717354
+South Carolina,2013,70,4764080
+South Carolina,2014,70,4823617
+South Carolina,2015,70,4891938
+South Carolina,2016,70,4957968
+South Carolina,2017,70,5021268
+South Carolina,2018,70,5084156
+South Carolina,2019,70,5148714
+South Carolina,2020,70,5132249
+South Carolina,2021,70,5194274
+South Carolina,2022,70,5287935
+South Carolina,2023,70,5387830
+South Carolina,2024,70,5478831
+South Dakota,1980,71,690768
+South Dakota,1981,71,689584
+South Dakota,1982,71,690597
+South Dakota,1983,71,693009
+South Dakota,1984,71,697250
+South Dakota,1985,71,698404
+South Dakota,1986,71,696036
+South Dakota,1987,71,696034
+South Dakota,1988,71,698160
+South Dakota,1989,71,696698
+South Dakota,1990,71,696667
+South Dakota,1991,71,701445
+South Dakota,1992,71,708698
+South Dakota,1993,71,716258
+South Dakota,1994,71,723038
+South Dakota,1995,71,728251
+South Dakota,1996,71,730699
+South Dakota,1997,71,730855
+South Dakota,1998,71,730789
+South Dakota,1999,71,733133
+South Dakota,2000,71,755694
+South Dakota,2001,71,758983
+South Dakota,2002,71,762107
+South Dakota,2003,71,766975
+South Dakota,2004,71,774283
+South Dakota,2005,71,780084
+South Dakota,2006,71,788519
+South Dakota,2007,71,797035
+South Dakota,2008,71,804532
+South Dakota,2009,71,812383
+South Dakota,2010,71,816166
+South Dakota,2011,71,823579
+South Dakota,2012,71,833566
+South Dakota,2013,71,842316
+South Dakota,2014,71,849129
+South Dakota,2015,71,853988
+South Dakota,2016,71,862996
+South Dakota,2017,71,872868
+South Dakota,2018,71,878698
+South Dakota,2019,71,884659
+South Dakota,2020,71,887948
+South Dakota,2021,71,896492
+South Dakota,2022,71,909723
+South Dakota,2023,71,918305
+South Dakota,2024,71,924669
+Tennessee Western,1980,72,1318575
+Tennessee Western,1981,72,1315454
+Tennessee Western,1982,72,1317117
+Tennessee Western,1983,72,1317520
+Tennessee Western,1984,72,1321895
+Tennessee Western,1985,72,1331528
+Tennessee Western,1986,72,1337402
+Tennessee Western,1987,72,1345845
+Tennessee Western,1988,72,1357310
+Tennessee Western,1989,72,1363642
+Tennessee Western,1990,72,1368600
+Tennessee Western,1991,72,1378654
+Tennessee Western,1992,72,1388973
+Tennessee Western,1993,72,1401008
+Tennessee Western,1994,72,1414357
+Tennessee Western,1995,72,1428124
+Tennessee Western,1996,72,1437814
+Tennessee Western,1997,72,1444359
+Tennessee Western,1998,72,1452935
+Tennessee Western,1999,72,1463368
+Tennessee Western,2000,72,1509181
+Tennessee Western,2001,72,1512943
+Tennessee Western,2002,72,1516733
+Tennessee Western,2003,72,1520537
+Tennessee Western,2004,72,1524676
+Tennessee Western,2005,72,1531133
+Tennessee Western,2006,72,1542903
+Tennessee Western,2007,72,1547841
+Tennessee Western,2008,72,1550919
+Tennessee Western,2009,72,1553930
+Tennessee Western,2010,72,1571338
+Tennessee Western,2011,72,1575360
+Tennessee Western,2012,72,1580745
+Tennessee Western,2013,72,1578522
+Tennessee Western,2014,72,1575757
+Tennessee Western,2015,72,1572508
+Tennessee Western,2016,72,1568466
+Tennessee Western,2017,72,1568176
+Tennessee Western,2018,72,1569624
+Tennessee Western,2019,72,1569575
+Tennessee Western,2020,72,1565918
+Tennessee Western,2021,72,1558847
+Tennessee Western,2022,72,1556931
+Tennessee Western,2023,72,1555642
+Tennessee Western,2024,72,1555135
+Tennessee Middle,1980,73,1344026
+Tennessee Middle,1981,73,1359327
+Tennessee Middle,1982,73,1368976
+Tennessee Middle,1983,73,1378399
+Tennessee Middle,1984,73,1396564
+Tennessee Middle,1985,73,1415790
+Tennessee Middle,1986,73,1437468
+Tennessee Middle,1987,73,1464852
+Tennessee Middle,1988,73,1483566
+Tennessee Middle,1989,73,1501278
+Tennessee Middle,1990,73,1522048
+Tennessee Middle,1991,73,1543983
+Tennessee Middle,1992,73,1575857
+Tennessee Middle,1993,73,1608602
+Tennessee Middle,1994,73,1646209
+Tennessee Middle,1995,73,1682347
+Tennessee Middle,1996,73,1720142
+Tennessee Middle,1997,73,1754822
+Tennessee Middle,1998,73,1783759
+Tennessee Middle,1999,73,1808617
+Tennessee Middle,2000,73,1896252
+Tennessee Middle,2001,73,1925620
+Tennessee Middle,2002,73,1951189
+Tennessee Middle,2003,73,1978807
+Tennessee Middle,2004,73,2015014
+Tennessee Middle,2005,73,2060212
+Tennessee Middle,2006,73,2106539
+Tennessee Middle,2007,73,2155592
+Tennessee Middle,2008,73,2193933
+Tennessee Middle,2009,73,2229242
+Tennessee Middle,2010,73,2258043
+Tennessee Middle,2011,73,2285796
+Tennessee Middle,2012,73,2323456
+Tennessee Middle,2013,73,2355162
+Tennessee Middle,2014,73,2394921
+Tennessee Middle,2015,73,2436000
+Tennessee Middle,2016,73,2477784
+Tennessee Middle,2017,73,2521262
+Tennessee Middle,2018,73,2561666
+Tennessee Middle,2019,73,2599721
+Tennessee Middle,2020,73,2676403
+Tennessee Middle,2021,73,2699986
+Tennessee Middle,2022,73,2757786
+Tennessee Middle,2023,73,2806400
+Tennessee Middle,2024,73,2854100
+Tennessee Eastern,1980,74,1928422
+Tennessee Eastern,1981,74,1952881
+Tennessee Eastern,1982,74,1959950
+Tennessee Eastern,1983,74,1963838
+Tennessee Eastern,1984,74,1968284
+Tennessee Eastern,1985,74,1967974
+Tennessee Eastern,1986,74,1963838
+Tennessee Eastern,1987,74,1972242
+Tennessee Eastern,1988,74,1981562
+Tennessee Eastern,1989,74,1989512
+Tennessee Eastern,1990,74,1999978
+Tennessee Eastern,1991,74,2024249
+Tennessee Eastern,1992,74,2049169
+Tennessee Eastern,1993,74,2076056
+Tennessee Eastern,1994,74,2102450
+Tennessee Eastern,1995,74,2130697
+Tennessee Eastern,1996,74,2155620
+Tennessee Eastern,1997,74,2179252
+Tennessee Eastern,1998,74,2195985
+Tennessee Eastern,1999,74,2211550
+Tennessee Eastern,2000,74,2297810
+Tennessee Eastern,2001,74,2316880
+Tennessee Eastern,2002,74,2335384
+Tennessee Eastern,2003,74,2357178
+Tennessee Eastern,2004,74,2377072
+Tennessee Eastern,2005,74,2404403
+Tennessee Eastern,2006,74,2440011
+Tennessee Eastern,2007,74,2469429
+Tennessee Eastern,2008,74,2495604
+Tennessee Eastern,2009,74,2513082
+Tennessee Eastern,2010,74,2525930
+Tennessee Eastern,2011,74,2538135
+Tennessee Eastern,2012,74,2549697
+Tennessee Eastern,2013,74,2560656
+Tennessee Eastern,2014,74,2570545
+Tennessee Eastern,2015,74,2582662
+Tennessee Eastern,2016,74,2599760
+Tennessee Eastern,2017,74,2619361
+Tennessee Eastern,2018,74,2640341
+Tennessee Eastern,2019,74,2659878
+Tennessee Eastern,2020,74,2685583
+Tennessee Eastern,2021,74,2706907
+Tennessee Eastern,2022,74,2747500
+Tennessee Eastern,2023,74,2786262
+Tennessee Eastern,2024,74,2818515
+Texas Southern,1980,75,4652641
+Texas Southern,1981,75,4887174
+Texas Southern,1982,75,5150475
+Texas Southern,1983,75,5299640
+Texas Southern,1984,75,5339896
+Texas Southern,1985,75,5362796
+Texas Southern,1986,75,5427251
+Texas Southern,1987,75,5388120
+Texas Southern,1988,75,5380375
+Texas Southern,1989,75,5444599
+Texas Southern,1990,75,5566370
+Texas Southern,1991,75,5704775
+Texas Southern,1992,75,5846829
+Texas Southern,1993,75,5982972
+Texas Southern,1994,75,6099659
+Texas Southern,1995,75,6203180
+Texas Southern,1996,75,6312298
+Texas Southern,1997,75,6430539
+Texas Southern,1998,75,6559861
+Texas Southern,1999,75,6682763
+Texas Southern,2000,75,6956923
+Texas Southern,2001,75,7094702
+Texas Southern,2002,75,7256623
+Texas Southern,2003,75,7400957
+Texas Southern,2004,75,7546130
+Texas Southern,2005,75,7693002
+Texas Southern,2006,75,7913619
+Texas Southern,2007,75,8058781
+Texas Southern,2008,75,8226173
+Texas Southern,2009,75,8410543
+Texas Southern,2010,75,8613785
+Texas Southern,2011,75,8756924
+Texas Southern,2012,75,8916087
+Texas Southern,2013,75,9089660
+Texas Southern,2014,75,9289434
+Texas Southern,2015,75,9487956
+Texas Southern,2016,75,9642259
+Texas Southern,2017,75,9746860
+Texas Southern,2018,75,9828045
+Texas Southern,2019,75,9929496
+Texas Southern,2020,75,9984307
+Texas Southern,2021,75,10072095
+Texas Southern,2022,75,10242999
+Texas Southern,2023,75,10462732
+Texas Southern,2024,75,10680332
+Texas Eastern,1980,76,1924256
+Texas Eastern,1981,76,1981883
+Texas Eastern,1982,76,2044600
+Texas Eastern,1983,76,2094403
+Texas Eastern,1984,76,2136340
+Texas Eastern,1985,76,2174333
+Texas Eastern,1986,76,2204352
+Texas Eastern,1987,76,2227328
+Texas Eastern,1988,76,2248782
+Texas Eastern,1989,76,2267261
+Texas Eastern,1990,76,2298291
+Texas Eastern,1991,76,2331086
+Texas Eastern,1992,76,2367090
+Texas Eastern,1993,76,2418092
+Texas Eastern,1994,76,2469805
+Texas Eastern,1995,76,2534833
+Texas Eastern,1996,76,2592546
+Texas Eastern,1997,76,2655816
+Texas Eastern,1998,76,2719217
+Texas Eastern,1999,76,2783384
+Texas Eastern,2000,76,2924550
+Texas Eastern,2001,76,2992497
+Texas Eastern,2002,76,3059846
+Texas Eastern,2003,76,3122696
+Texas Eastern,2004,76,3186722
+Texas Eastern,2005,76,3252747
+Texas Eastern,2006,76,3332573
+Texas Eastern,2007,76,3405040
+Texas Eastern,2008,76,3469251
+Texas Eastern,2009,76,3533087
+Texas Eastern,2010,76,3578831
+Texas Eastern,2011,76,3631098
+Texas Eastern,2012,76,3677447
+Texas Eastern,2013,76,3719718
+Texas Eastern,2014,76,3781018
+Texas Eastern,2015,76,3850315
+Texas Eastern,2016,76,3921073
+Texas Eastern,2017,76,3992137
+Texas Eastern,2018,76,4057481
+Texas Eastern,2019,76,4128184
+Texas Eastern,2020,76,4190027
+Texas Eastern,2021,76,4279490
+Texas Eastern,2022,76,4387809
+Texas Eastern,2023,76,4498534
+Texas Eastern,2024,76,4599809
+Texas Western,1980,77,3376098
+Texas Western,1981,77,3487029
+Texas Western,1982,77,3617032
+Texas Western,1983,77,3724683
+Texas Western,1984,77,3808646
+Texas Western,1985,77,3917197
+Texas Western,1986,77,4010901
+Texas Western,1987,77,4054755
+Texas Western,1988,77,4074194
+Texas Western,1989,77,4104930
+Texas Western,1990,77,4147557
+Texas Western,1991,77,4213267
+Texas Western,1992,77,4297428
+Texas Western,1993,77,4404848
+Texas Western,1994,77,4516541
+Texas Western,1995,77,4615931
+Texas Western,1996,77,4703798
+Texas Western,1997,77,4795344
+Texas Western,1998,77,4883504
+Texas Western,1999,77,4964801
+Texas Western,2000,77,5134860
+Texas Western,2001,77,5227715
+Texas Western,2002,77,5308716
+Texas Western,2003,77,5388358
+Texas Western,2004,77,5479062
+Texas Western,2005,77,5577757
+Texas Western,2006,77,5724940
+Texas Western,2007,77,5873487
+Texas Western,2008,77,6011058
+Texas Western,2009,77,6131099
+Texas Western,2010,77,6342795
+Texas Western,2011,77,6467893
+Texas Western,2012,77,6603943
+Texas Western,2013,77,6710565
+Texas Western,2014,77,6840202
+Texas Western,2015,77,6975651
+Texas Western,2016,77,7095688
+Texas Western,2017,77,7212411
+Texas Western,2018,77,7331146
+Texas Western,2019,77,7458787
+Texas Western,2020,77,7565922
+Texas Western,2021,77,7671416
+Texas Western,2022,77,7819325
+Texas Western,2023,77,7973612
+Texas Western,2024,77,8104885
+Texas Northern,1980,78,4272517
+Texas Northern,1981,78,4390232
+Texas Northern,1982,78,4519301
+Texas Northern,1983,78,4632948
+Texas Northern,1984,78,4722206
+Texas Northern,1985,78,4818396
+Texas Northern,1986,78,4918599
+Texas Northern,1987,78,4951564
+Texas Northern,1988,78,4963689
+Texas Northern,1989,78,4989939
+Texas Northern,1990,78,5032496
+Texas Northern,1991,78,5090776
+Texas Northern,1992,78,5139132
+Texas Northern,1993,78,5190852
+Texas Northern,1994,78,5252314
+Texas Northern,1995,78,5325762
+Texas Northern,1996,78,5397598
+Texas Northern,1997,78,5473728
+Texas Northern,1998,78,5549807
+Texas Northern,1999,78,5613193
+Texas Northern,2000,78,5929630
+Texas Northern,2001,78,6017933
+Texas Northern,2002,78,6085603
+Texas Northern,2003,78,6145790
+Texas Northern,2004,78,6206405
+Texas Northern,2005,78,6278414
+Texas Northern,2006,78,6397892
+Texas Northern,2007,78,6500393
+Texas Northern,2008,78,6597808
+Texas Northern,2009,78,6707573
+Texas Northern,2010,78,6706560
+Texas Northern,2011,78,6789714
+Texas Northern,2012,78,6887004
+Texas Northern,2013,78,6960323
+Texas Northern,2014,78,7053679
+Texas Northern,2015,78,7156134
+Texas Northern,2016,78,7255390
+Texas Northern,2017,78,7343865
+Texas Northern,2018,78,7411994
+Texas Northern,2019,78,7479414
+Texas Northern,2020,78,7499314
+Texas Northern,2021,78,7547350
+Texas Northern,2022,78,7663355
+Texas Northern,2023,78,7793012
+Texas Northern,2024,78,7905805
+Utah,1980,79,1461037
+Utah,1981,79,1515472
+Utah,1982,79,1558314
+Utah,1983,79,1594943
+Utah,1984,79,1622342
+Utah,1985,79,1642910
+Utah,1986,79,1662833
+Utah,1987,79,1678120
+Utah,1988,79,1689372
+Utah,1989,79,1705865
+Utah,1990,79,1729722
+Utah,1991,79,1771941
+Utah,1992,79,1821498
+Utah,1993,79,1875993
+Utah,1994,79,1913717
+Utah,1995,79,1976774
+Utah,1996,79,2022253
+Utah,1997,79,2065397
+Utah,1998,79,2100562
+Utah,1999,79,2129836
+Utah,2000,79,2244314
+Utah,2001,79,2291250
+Utah,2002,79,2334473
+Utah,2003,79,2379938
+Utah,2004,79,2438915
+Utah,2005,79,2499637
+Utah,2006,79,2583724
+Utah,2007,79,2663796
+Utah,2008,79,2727343
+Utah,2009,79,2784572
+Utah,2010,79,2775332
+Utah,2011,79,2814384
+Utah,2012,79,2853375
+Utah,2013,79,2897640
+Utah,2014,79,2936879
+Utah,2015,79,2981835
+Utah,2016,79,3041868
+Utah,2017,79,3101042
+Utah,2018,79,3153550
+Utah,2019,79,3205958
+Utah,2020,79,3284077
+Utah,2021,79,3339738
+Utah,2022,79,3391011
+Utah,2023,79,3443222
+Utah,2024,79,3503613
+Vermont,1980,80,511456
+Vermont,1981,80,515594
+Vermont,1982,80,519108
+Vermont,1983,80,523302
+Vermont,1984,80,526658
+Vermont,1985,80,530035
+Vermont,1986,80,534066
+Vermont,1987,80,540267
+Vermont,1988,80,549763
+Vermont,1989,80,557708
+Vermont,1990,80,564526
+Vermont,1991,80,567141
+Vermont,1992,80,570115
+Vermont,1993,80,574004
+Vermont,1994,80,524406
+Vermont,1995,80,582827
+Vermont,1996,80,586352
+Vermont,1997,80,588665
+Vermont,1998,80,590579
+Vermont,1999,80,593740
+Vermont,2000,80,609903
+Vermont,2001,80,612153
+Vermont,2002,80,614950
+Vermont,2003,80,616559
+Vermont,2004,80,618145
+Vermont,2005,80,618814
+Vermont,2006,80,619985
+Vermont,2007,80,620460
+Vermont,2008,80,621049
+Vermont,2009,80,621760
+Vermont,2010,80,625879
+Vermont,2011,80,627049
+Vermont,2012,80,626090
+Vermont,2013,80,626210
+Vermont,2014,80,625214
+Vermont,2015,80,625216
+Vermont,2016,80,623657
+Vermont,2017,80,624344
+Vermont,2018,80,624358
+Vermont,2019,80,623989
+Vermont,2020,80,642977
+Vermont,2021,80,647210
+Vermont,2022,80,648142
+Vermont,2023,80,648708
+Vermont,2024,80,648493
+Virginia Eastern,1980,81,3485654
+Virginia Eastern,1981,81,3573159
+Virginia Eastern,1982,81,3617481
+Virginia Eastern,1983,81,3687815
+Virginia Eastern,1984,81,3764782
+Virginia Eastern,1985,81,3833533
+Virginia Eastern,1986,81,3929237
+Virginia Eastern,1987,81,4038617
+Virginia Eastern,1988,81,4132477
+Virginia Eastern,1989,81,4204037
+Virginia Eastern,1990,81,4278694
+Virginia Eastern,1991,81,4335386
+Virginia Eastern,1992,81,4422366
+Virginia Eastern,1993,81,4489872
+Virginia Eastern,1994,81,4548120
+Virginia Eastern,1995,81,4599000
+Virginia Eastern,1996,81,4653771
+Virginia Eastern,1997,81,4712773
+Virginia Eastern,1998,81,4761112
+Virginia Eastern,1999,81,4836494
+Virginia Eastern,2000,81,4996598
+Virginia Eastern,2001,81,5075050
+Virginia Eastern,2002,81,5158036
+Virginia Eastern,2003,81,5237851
+Virginia Eastern,2004,81,5321075
+Virginia Eastern,2005,81,5394807
+Virginia Eastern,2006,81,5453331
+Virginia Eastern,2007,81,5507394
+Virginia Eastern,2008,81,5568285
+Virginia Eastern,2009,81,5646454
+Virginia Eastern,2010,81,5745454
+Virginia Eastern,2011,81,5817915
+Virginia Eastern,2012,81,5896258
+Virginia Eastern,2013,81,5957770
+Virginia Eastern,2014,81,6010590
+Virginia Eastern,2015,81,6059801
+Virginia Eastern,2016,81,6104102
+Virginia Eastern,2017,81,6152185
+Virginia Eastern,2018,81,6185153
+Virginia Eastern,2019,81,6217848
+Virginia Eastern,2020,81,6313119
+Virginia Eastern,2021,81,6329310
+Virginia Eastern,2022,81,6351194
+Virginia Eastern,2023,81,6393691
+Virginia Eastern,2024,81,6459954
+Virginia Western,1980,82,1861143
+Virginia Western,1981,82,1870935
+Virginia Western,1982,82,1875304
+Virginia Western,1983,82,1876847
+Virginia Western,1984,82,1879086
+Virginia Western,1985,82,1881616
+Virginia Western,1986,82,1882455
+Virginia Western,1987,82,1893656
+Virginia Western,1988,82,1904431
+Virginia Western,1989,82,1916209
+Virginia Western,1990,82,1934832
+Virginia Western,1991,82,1948467
+Virginia Western,1992,82,1960949
+Virginia Western,1993,82,1974923
+Virginia Western,1994,82,1988651
+Virginia Western,1995,82,2002392
+Virginia Western,1996,82,2011720
+Virginia Western,1997,82,2020105
+Virginia Western,1998,82,2028113
+Virginia Western,1999,82,2036418
+Virginia Western,2000,82,2107935
+Virginia Western,2001,82,2116254
+Virginia Western,2002,82,2125505
+Virginia Western,2003,82,2135843
+Virginia Western,2004,82,2147839
+Virginia Western,2005,82,2169080
+Virginia Western,2006,82,2193665
+Virginia Western,2007,82,2212355
+Virginia Western,2008,82,2227139
+Virginia Western,2009,82,2236136
+Virginia Western,2010,82,2278245
+Virginia Western,2011,82,2283240
+Virginia Western,2012,82,2288822
+Virginia Western,2013,82,2294657
+Virginia Western,2014,82,2300403
+Virginia Western,2015,82,2302007
+Virginia Western,2016,82,2306004
+Virginia Western,2017,82,2311402
+Virginia Western,2018,82,2316133
+Virginia Western,2019,82,2317671
+Virginia Western,2020,82,2324496
+Virginia Western,2021,82,2329600
+Virginia Western,2022,82,2332220
+Virginia Western,2023,82,2340994
+Virginia Western,2024,82,2351241
+Washington Eastern,1980,83,1023028
+Washington Eastern,1981,83,1041560
+Washington Eastern,1982,83,1049679
+Washington Eastern,1983,83,1053149
+Washington Eastern,1984,83,1060160
+Washington Eastern,1985,83,1064052
+Washington Eastern,1986,83,1061654
+Washington Eastern,1987,83,1062138
+Washington Eastern,1988,83,1066987
+Washington Eastern,1989,83,1075570
+Washington Eastern,1990,83,1094379
+Washington Eastern,1991,83,1120183
+Washington Eastern,1992,83,1149249
+Washington Eastern,1993,83,1180164
+Washington Eastern,1994,83,1207481
+Washington Eastern,1995,83,1231068
+Washington Eastern,1996,83,1243736
+Washington Eastern,1997,83,1254900
+Washington Eastern,1998,83,1266678
+Washington Eastern,1999,83,1276038
+Washington Eastern,2000,83,1309634
+Washington Eastern,2001,83,1317956
+Washington Eastern,2002,83,1332190
+Washington Eastern,2003,83,1346790
+Washington Eastern,2004,83,1363420
+Washington Eastern,2005,83,1378986
+Washington Eastern,2006,83,1399191
+Washington Eastern,2007,83,1420750
+Washington Eastern,2008,83,1445820
+Washington Eastern,2009,83,1472161
+Washington Eastern,2010,83,1500417
+Washington Eastern,2011,83,1515058
+Washington Eastern,2012,83,1524638
+Washington Eastern,2013,83,1531810
+Washington Eastern,2014,83,1543562
+Washington Eastern,2015,83,1559993
+Washington Eastern,2016,83,1580984
+Washington Eastern,2017,83,1603591
+Washington Eastern,2018,83,1623341
+Washington Eastern,2019,83,1641900
+Washington Eastern,2020,83,1673942
+Washington Eastern,2021,83,1681832
+Washington Eastern,2022,83,1697979
+Washington Eastern,2023,83,1710921
+Washington Eastern,2024,83,1726086
+Washington Western,1980,84,3109325
+Washington Western,1981,84,3194168
+Washington Western,1982,84,3226872
+Washington Western,1983,84,3247120
+Washington Western,1984,84,3283497
+Washington Western,1985,84,3336044
+Washington Western,1986,84,3391070
+Washington Western,1987,84,3469765
+Washington Western,1988,84,3572907
+Washington Western,1989,84,3670745
+Washington Western,1990,84,3806401
+Washington Western,1991,84,3893260
+Washington Western,1992,84,3989762
+Washington Western,1993,84,4067540
+Washington Western,1994,84,4127415
+Washington Western,1995,84,4199956
+Washington Western,1996,84,4266227
+Washington Western,1997,84,4349205
+Washington Western,1998,84,4421154
+Washington Western,1999,84,4480323
+Washington Western,2000,84,4601488
+Washington Western,2001,84,4669829
+Washington Western,2002,84,4723997
+Washington Western,2003,84,4766472
+Washington Western,2004,84,4820869
+Washington Western,2005,84,4882296
+Washington Western,2006,84,4973052
+Washington Western,2007,84,5044229
+Washington Western,2008,84,5120253
+Washington Western,2009,84,5192034
+Washington Western,2010,84,5242413
+Washington Western,2011,84,5311569
+Washington Western,2012,84,5372420
+Washington Western,2013,84,5432175
+Washington Western,2014,84,5511093
+Washington Western,2015,84,5603664
+Washington Western,2016,84,5713787
+Washington Western,2017,84,5819771
+Washington Western,2018,84,5900528
+Washington Western,2019,84,5972993
+Washington Western,2020,84,6053267
+Washington Western,2021,84,6061928
+Washington Western,2022,84,6096144
+Washington Western,2023,84,6146399
+Washington Western,2024,84,6232094
+West Virginia Northern,1980,85,808008
+West Virginia Northern,1981,85,811813
+West Virginia Northern,1982,85,810996
+West Virginia Northern,1983,85,810052
+West Virginia Northern,1984,85,805131
+West Virginia Northern,1985,85,797945
+West Virginia Northern,1986,85,789020
+West Virginia Northern,1987,85,783481
+West Virginia Northern,1988,85,777685
+West Virginia Northern,1989,85,772794
+West Virginia Northern,1990,85,770547
+West Virginia Northern,1991,85,774923
+West Virginia Northern,1992,85,779715
+West Virginia Northern,1993,85,785388
+West Virginia Northern,1994,85,787999
+West Virginia Northern,1995,85,789944
+West Virginia Northern,1996,85,790722
+West Virginia Northern,1997,85,790629
+West Virginia Northern,1998,85,791462
+West Virginia Northern,1999,85,791412
+West Virginia Northern,2000,85,798496
+West Virginia Northern,2001,85,799003
+West Virginia Northern,2002,85,802325
+West Virginia Northern,2003,85,807823
+West Virginia Northern,2004,85,812649
+West Virginia Northern,2005,85,818124
+West Virginia Northern,2006,85,824182
+West Virginia Northern,2007,85,828595
+West Virginia Northern,2008,85,832689
+West Virginia Northern,2009,85,835878
+West Virginia Northern,2010,85,861225
+West Virginia Northern,2011,85,864452
+West Virginia Northern,2012,85,866563
+West Virginia Northern,2013,85,868067
+West Virginia Northern,2014,85,869801
+West Virginia Northern,2015,85,870463
+West Virginia Northern,2016,85,869441
+West Virginia Northern,2017,85,867677
+West Virginia Northern,2018,85,866303
+West Virginia Northern,2019,85,864741
+West Virginia Northern,2020,85,861879
+West Virginia Northern,2021,85,864054
+West Virginia Northern,2022,85,863656
+West Virginia Northern,2023,85,866576
+West Virginia Northern,2024,85,870897
+West Virginia Southern,1980,86,1142175
+West Virginia Southern,1981,86,1142312
+West Virginia Southern,1982,86,1138609
+West Virginia Southern,1983,86,1135006
+West Virginia Southern,1984,86,1122565
+West Virginia Southern,1985,86,1108886
+West Virginia Southern,1986,86,1093332
+West Virginia Southern,1987,86,1074102
+West Virginia Southern,1988,86,1052528
+West Virginia Southern,1989,86,1033776
+West Virginia Southern,1990,86,1021934
+West Virginia Southern,1991,86,1023289
+West Virginia Southern,1992,86,1025747
+West Virginia Southern,1993,86,1030791
+West Virginia Southern,1994,86,1030491
+West Virginia Southern,1995,86,1030616
+West Virginia Southern,1996,86,1028261
+West Virginia Southern,1997,86,1024959
+West Virginia Southern,1998,86,1020226
+West Virginia Southern,1999,86,1015516
+West Virginia Southern,2000,86,1008466
+West Virginia Southern,2001,86,999579
+West Virginia Southern,2002,86,997086
+West Virginia Southern,2003,86,994415
+West Virginia Southern,2004,86,990653
+West Virginia Southern,2005,86,985796
+West Virginia Southern,2006,86,983055
+West Virginia Southern,2007,86,982603
+West Virginia Southern,2008,86,982184
+West Virginia Southern,2009,86,983899
+West Virginia Southern,2010,86,993014
+West Virginia Southern,2011,86,991849
+West Virginia Southern,2012,86,990309
+West Virginia Southern,2013,86,985847
+West Virginia Southern,2014,86,979688
+West Virginia Southern,2015,86,971587
+West Virginia Southern,2016,86,961582
+West Virginia Southern,2017,86,949327
+West Virginia Southern,2018,86,937988
+West Virginia Southern,2019,86,927406
+West Virginia Southern,2020,86,929767
+West Virginia Southern,2021,86,921564
+West Virginia Southern,2022,86,910466
+West Virginia Southern,2023,86,903919
+West Virginia Southern,2024,86,899082
+Wisconsin Western,1980,87,1849593
+Wisconsin Western,1981,87,1871295
+Wisconsin Western,1982,87,1873627
+Wisconsin Western,1983,87,1872673
+Wisconsin Western,1984,87,1881423
+Wisconsin Western,1985,87,1884060
+Wisconsin Western,1986,87,1885905
+Wisconsin Western,1987,87,1893357
+Wisconsin Western,1988,87,1910967
+Wisconsin Western,1989,87,1922539
+Wisconsin Western,1990,87,1939399
+Wisconsin Western,1991,87,1962130
+Wisconsin Western,1992,87,1987288
+Wisconsin Western,1993,87,2015336
+Wisconsin Western,1994,87,2037503
+Wisconsin Western,1995,87,2060121
+Wisconsin Western,1996,87,2079403
+Wisconsin Western,1997,87,2096185
+Wisconsin Western,1998,87,2107566
+Wisconsin Western,1999,87,2122022
+Wisconsin Western,2000,87,2157031
+Wisconsin Western,2001,87,2171977
+Wisconsin Western,2002,87,2187537
+Wisconsin Western,2003,87,2201286
+Wisconsin Western,2004,87,2219586
+Wisconsin Western,2005,87,2236852
+Wisconsin Western,2006,87,2253674
+Wisconsin Western,2007,87,2270826
+Wisconsin Western,2008,87,2284914
+Wisconsin Western,2009,87,2296837
+Wisconsin Western,2010,87,2322043
+Wisconsin Western,2011,87,2329589
+Wisconsin Western,2012,87,2336333
+Wisconsin Western,2013,87,2346189
+Wisconsin Western,2014,87,2353876
+Wisconsin Western,2015,87,2361527
+Wisconsin Western,2016,87,2371491
+Wisconsin Western,2017,87,2383513
+Wisconsin Western,2018,87,2394695
+Wisconsin Western,2019,87,2403284
+Wisconsin Western,2020,87,2452104
+Wisconsin Western,2021,87,2449215
+Wisconsin Western,2022,87,2467579
+Wisconsin Western,2023,87,2484329
+Wisconsin Western,2024,87,2499828
+Wyoming,1980,88,469557
+Wyoming,1981,88,491712
+Wyoming,1982,88,506400
+Wyoming,1983,88,510344
+Wyoming,1984,88,504895
+Wyoming,1985,88,499696
+Wyoming,1986,88,495633
+Wyoming,1987,88,476966
+Wyoming,1988,88,465103
+Wyoming,1989,88,458373
+Wyoming,1990,88,453401
+Wyoming,1991,88,457739
+Wyoming,1992,88,463491
+Wyoming,1993,88,469033
+Wyoming,1994,88,474982
+Wyoming,1995,88,478447
+Wyoming,1996,88,480085
+Wyoming,1997,88,480031
+Wyoming,1998,88,480045
+Wyoming,1999,88,479602
+Wyoming,2000,88,493958
+Wyoming,2001,88,492982
+Wyoming,2002,88,497069
+Wyoming,2003,88,499189
+Wyoming,2004,88,502988
+Wyoming,2005,88,506242
+Wyoming,2006,88,512841
+Wyoming,2007,88,523414
+Wyoming,2008,88,532981
+Wyoming,2009,88,544270
+Wyoming,2010,88,564487
+Wyoming,2011,88,567299
+Wyoming,2012,88,576305
+Wyoming,2013,88,582122
+Wyoming,2014,88,582531
+Wyoming,2015,88,585613
+Wyoming,2016,88,584215
+Wyoming,2017,88,578931
+Wyoming,2018,88,577601
+Wyoming,2019,88,578759
+Wyoming,2020,88,577681
+Wyoming,2021,88,579636
+Wyoming,2022,88,581978
+Wyoming,2023,88,585067
+Wyoming,2024,88,587618
+Michigan Western,1980,89,2860540
+Michigan Western,1981,89,2890100
+Michigan Western,1982,89,2872008
+Michigan Western,1983,89,2857783
+Michigan Western,1984,89,2867433
+Michigan Western,1985,89,2886895
+Michigan Western,1986,89,2907487
+Michigan Western,1987,89,2935511
+Michigan Western,1988,89,2968325
+Michigan Western,1989,89,2992050
+Michigan Western,1990,89,3019813
+Michigan Western,1991,89,3054003
+Michigan Western,1992,89,3081545
+Michigan Western,1993,89,3108215
+Michigan Western,1994,89,3131820
+Michigan Western,1995,89,3154174
+Michigan Western,1996,89,3182004
+Michigan Western,1997,89,3205884
+Michigan Western,1998,89,3225736
+Michigan Western,1999,89,3248717
+Michigan Western,2000,89,3322016
+Michigan Western,2001,89,3342177
+Michigan Western,2002,89,3360604
+Michigan Western,2003,89,3375620
+Michigan Western,2004,89,3388147
+Michigan Western,2005,89,3393261
+Michigan Western,2006,89,3397417
+Michigan Western,2007,89,3402732
+Michigan Western,2008,89,3405573
+Michigan Western,2009,89,3403450
+Michigan Western,2010,89,3416396
+Michigan Western,2011,89,3425268
+Michigan Western,2012,89,3438026
+Michigan Western,2013,89,3454556
+Michigan Western,2014,89,3469612
+Michigan Western,2015,89,3477684
+Michigan Western,2016,89,3492608
+Michigan Western,2017,89,3510245
+Michigan Western,2018,89,3523129
+Michigan Western,2019,89,3532062
+Michigan Western,2020,89,3544808
+Michigan Western,2021,89,3536308
+Michigan Western,2022,89,3558088
+Michigan Western,2023,89,3576786
+Michigan Western,2024,89,3597468
+Wisconsin Eastern,1980,90,2856049
+Wisconsin Eastern,1981,90,2855050
+Wisconsin Eastern,1982,90,2855235
+Wisconsin Eastern,1983,90,2848765
+Wisconsin Eastern,1984,90,2854148
+Wisconsin Eastern,1985,90,2863705
+Wisconsin Eastern,1986,90,2869720
+Wisconsin Eastern,1987,90,2884566
+Wisconsin Eastern,1988,90,2911424
+Wisconsin Eastern,1989,90,2934029
+Wisconsin Eastern,1990,90,2962866
+Wisconsin Eastern,1991,90,2990545
+Wisconsin Eastern,1992,90,3017348
+Wisconsin Eastern,1993,90,3039982
+Wisconsin Eastern,1994,90,3058001
+Wisconsin Eastern,1995,90,3076883
+Wisconsin Eastern,1996,90,3094425
+Wisconsin Eastern,1997,90,3104050
+Wisconsin Eastern,1998,90,3114558
+Wisconsin Eastern,1999,90,3128424
+Wisconsin Eastern,2000,90,3217223
+Wisconsin Eastern,2001,90,3236792
+Wisconsin Eastern,2002,90,3259229
+Wisconsin Eastern,2003,90,3275510
+Wisconsin Eastern,2004,90,3291799
+Wisconsin Eastern,2005,90,3304591
+Wisconsin Eastern,2006,90,3318006
+Wisconsin Eastern,2007,90,3330745
+Wisconsin Eastern,2008,90,3342696
+Wisconsin Eastern,2009,90,3357937
+Wisconsin Eastern,2010,90,3368432
+Wisconsin Eastern,2011,90,3375699
+Wisconsin Eastern,2012,90,3383627
+Wisconsin Eastern,2013,90,3390565
+Wisconsin Eastern,2014,90,3397649
+Wisconsin Eastern,2015,90,3399413
+Wisconsin Eastern,2016,90,3401137
+Wisconsin Eastern,2017,90,3406673
+Wisconsin Eastern,2018,90,3412711
+Wisconsin Eastern,2019,90,3419150
+Wisconsin Eastern,2020,90,3445271
+Wisconsin Eastern,2021,90,3432393
+Wisconsin Eastern,2022,90,3436396
+Wisconsin Eastern,2023,90,3446076
+Wisconsin Eastern,2024,90,3461147
+American Samoa,1980,91,32418
+American Samoa,1981,91,33595
+American Samoa,1982,91,34706
+American Samoa,1983,91,35838
+American Samoa,1984,91,37092
+American Samoa,1985,91,38633
+American Samoa,1986,91,40164
+American Samoa,1987,91,41876
+American Samoa,1988,91,43623
+American Samoa,1989,91,45384
+American Samoa,1990,91,47199
+American Samoa,1991,91,48563
+American Samoa,1992,91,49942
+American Samoa,1993,91,51363
+American Samoa,1994,91,52707
+American Samoa,1995,91,53872
+American Samoa,1996,91,54918
+American Samoa,1997,91,55918
+American Samoa,1998,91,56873
+American Samoa,1999,91,57782
+American Samoa,2000,91,57699
+American Samoa,2001,91,57676
+American Samoa,2002,91,57556
+American Samoa,2003,91,57424
+American Samoa,2004,91,57338
+American Samoa,2005,91,57297
+American Samoa,2006,91,57131
+American Samoa,2007,91,56765
+American Samoa,2008,91,56361
+American Samoa,2009,91,55961
+American Samoa,2010,91,55529
+American Samoa,2011,91,55055
+American Samoa,2012,91,54476
+American Samoa,2013,91,53808
+American Samoa,2014,91,53078
+American Samoa,2015,91,52268
+American Samoa,2016,91,51397
+American Samoa,2017,91,50468
+American Samoa,2018,91,49485
+American Samoa,2019,91,48456
+American Samoa,2020,91,47392
+American Samoa,2021,91,46366
+American Samoa,2022,91,45443
+American Samoa,2023,91,44620
+American Samoa,2024,91,43895
+Guam,1980,92,106869
+Guam,1981,92,109166
+Guam,1982,92,109275
+Guam,1983,92,114080
+Guam,1984,92,117296
+Guam,1985,92,120615
+Guam,1986,92,122880
+Guam,1987,92,125724
+Guam,1988,92,127545
+Guam,1989,92,130947
+Guam,1990,92,134125
+Guam,1991,92,138159
+Guam,1992,92,142326
+Guam,1993,92,143825
+Guam,1994,92,143157
+Guam,1995,92,144190
+Guam,1996,92,145324
+Guam,1997,92,146799
+Guam,1998,92,149724
+Guam,1999,92,152590
+Guam,2000,92,155324
+Guam,2001,92,156477
+Guam,2002,92,157352
+Guam,2003,92,158062
+Guam,2004,92,158843
+Guam,2005,92,159580
+Guam,2006,92,160298
+Guam,2007,92,161113
+Guam,2008,92,161917
+Guam,2009,92,162659
+Guam,2010,92,163334
+Guam,2011,92,163950
+Guam,2012,92,164643
+Guam,2013,92,165313
+Guam,2014,92,165864
+Guam,2015,92,166404
+Guam,2016,92,166897
+Guam,2017,92,167357
+Guam,2018,92,167773
+Guam,2019,92,168149
+Guam,2020,92,168489
+Guam,2021,92,168801
+Guam,2022,92,169086
+Guam,2023,92,169330
+Guam,2024,92,169532
+Northern Mariana Islands,1980,93,16890
+Northern Mariana Islands,1981,93,17576
+Northern Mariana Islands,1982,93,18301
+Northern Mariana Islands,1983,93,19139
+Northern Mariana Islands,1984,93,20109
+Northern Mariana Islands,1985,93,21386
+Northern Mariana Islands,1986,93,23026
+Northern Mariana Islands,1987,93,25400
+Northern Mariana Islands,1988,93,29053
+Northern Mariana Islands,1989,93,35294
+Northern Mariana Islands,1990,93,44037
+Northern Mariana Islands,1991,93,46556
+Northern Mariana Islands,1992,93,49214
+Northern Mariana Islands,1993,93,51941
+Northern Mariana Islands,1994,93,54619
+Northern Mariana Islands,1995,93,57237
+Northern Mariana Islands,1996,93,59832
+Northern Mariana Islands,1997,93,62401
+Northern Mariana Islands,1998,93,64904
+Northern Mariana Islands,1999,93,67319
+Northern Mariana Islands,2000,93,69726
+Northern Mariana Islands,2001,93,69424
+Northern Mariana Islands,2002,93,69035
+Northern Mariana Islands,2003,93,68590
+Northern Mariana Islands,2004,93,68174
+Northern Mariana Islands,2005,93,67737
+Northern Mariana Islands,2006,93,66233
+Northern Mariana Islands,2007,93,63650
+Northern Mariana Islands,2008,93,60971
+Northern Mariana Islands,2009,93,58115
+Northern Mariana Islands,2010,93,55121
+Northern Mariana Islands,2011,93,53535
+Northern Mariana Islands,2012,93,53405
+Northern Mariana Islands,2013,93,53260
+Northern Mariana Islands,2014,93,53069
+Northern Mariana Islands,2015,93,52863
+Northern Mariana Islands,2016,93,52653
+Northern Mariana Islands,2017,93,52448
+Northern Mariana Islands,2018,93,52247
+Northern Mariana Islands,2019,93,52048
+Northern Mariana Islands,2020,93,51851
+Northern Mariana Islands,2021,93,51659
+Northern Mariana Islands,2022,93,51475
+Northern Mariana Islands,2023,93,51295
+Northern Mariana Islands,2024,93,51118
+Puerto Rico,1980,94,3209648
+Puerto Rico,1981,94,3238968
+Puerto Rico,1982,94,3279001
+Puerto Rico,1983,94,3316031
+Puerto Rico,1984,94,3350037
+Puerto Rico,1985,94,3382106
+Puerto Rico,1986,94,3413303
+Puerto Rico,1987,94,3444468
+Puerto Rico,1988,94,3474992
+Puerto Rico,1989,94,3505600
+Puerto Rico,1990,94,3536910
+Puerto Rico,1991,94,3562110
+Puerto Rico,1992,94,3585176
+Puerto Rico,1993,94,3615497
+Puerto Rico,1994,94,3649237
+Puerto Rico,1995,94,3683103
+Puerto Rico,1996,94,3724655
+Puerto Rico,1997,94,3759430
+Puerto Rico,1998,94,3781101
+Puerto Rico,1999,94,3800081
+Puerto Rico,2000,94,3810605
+Puerto Rico,2001,94,3818807
+Puerto Rico,2002,94,3823766
+Puerto Rico,2003,94,3826193
+Puerto Rico,2004,94,3827008
+Puerto Rico,2005,94,3821525
+Puerto Rico,2006,94,3805408
+Puerto Rico,2007,94,3783221
+Puerto Rico,2008,94,3761122
+Puerto Rico,2009,94,3740697
+Puerto Rico,2010,94,3721525
+Puerto Rico,2011,94,3678732
+Puerto Rico,2012,94,3634488
+Puerto Rico,2013,94,3593077
+Puerto Rico,2014,94,3534874
+Puerto Rico,2015,94,3473232
+Puerto Rico,2016,94,3406672
+Puerto Rico,2017,94,3325286
+Puerto Rico,2018,94,3193354
+Puerto Rico,2019,94,3193694
+Puerto Rico,2020,94,3190410
+Puerto Rico,2021,94,3142779
+Puerto Rico,2022,94,3098423
+Puerto Rico,2023,94,3057311
+Puerto Rico,2024,94,3019450
+Virgin Islands,1980,95,99636
+Virgin Islands,1981,95,99853
+Virgin Islands,1982,95,100068
+Virgin Islands,1983,95,100348
+Virgin Islands,1984,95,100600
+Virgin Islands,1985,95,100760
+Virgin Islands,1986,95,100842
+Virgin Islands,1987,95,100901
+Virgin Islands,1988,95,100952
+Virgin Islands,1989,95,101041
+Virgin Islands,1990,95,103963
+Virgin Islands,1991,95,104807
+Virgin Islands,1992,95,105712
+Virgin Islands,1993,95,106578
+Virgin Islands,1994,95,107318
+Virgin Islands,1995,95,107818
+Virgin Islands,1996,95,108095
+Virgin Islands,1997,95,108357
+Virgin Islands,1998,95,108537
+Virgin Islands,1999,95,108599
+Virgin Islands,2000,95,108642
+Virgin Islands,2001,95,108549
+Virgin Islands,2002,95,108509
+Virgin Islands,2003,95,108505
+Virgin Islands,2004,95,108466
+Virgin Islands,2005,95,108453
+Virgin Islands,2006,95,108369
+Virgin Islands,2007,95,108337
+Virgin Islands,2008,95,108397
+Virgin Islands,2009,95,108404
+Virgin Islands,2010,95,108357
+Virgin Islands,2011,95,108290
+Virgin Islands,2012,95,108188
+Virgin Islands,2013,95,108041
+Virgin Islands,2014,95,107882
+Virgin Islands,2015,95,107712
+Virgin Islands,2016,95,107516
+Virgin Islands,2017,95,107281
+Virgin Islands,2018,95,107001
+Virgin Islands,2019,95,106669
+Virgin Islands,2020,95,106290
+Virgin Islands,2021,95,105870
+Virgin Islands,2022,95,105413
+Virgin Islands,2023,95,104917
+Virgin Islands,2024,95,104377

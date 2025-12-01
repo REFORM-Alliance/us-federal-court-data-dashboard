@@ -1,0 +1,95 @@
+District_Code,District_Name,State
+0,Maine,Maine
+1,Massachusetts,Massachusetts
+2,New Hampshire,New Hampshire
+3,Rhode Island,Rhode Island
+4,Puerto Rico,Puerto Rico
+5,Connecticut,Connecticut
+6,New York North,New York
+7,New York East,New York
+8,New York South,New York
+9,New York West,New York
+10,Vermont,Vermont
+11,Delaware,Delaware
+12,New Jersey,New Jersey
+13,Penn. East,Pennsylvania
+14,Penn. Mid,Pennsylvania
+15,Penn. West,Pennsylvania
+16,Maryland,Maryland
+17,N Carolina East,North Carolina
+18,N Carolina Mid,North Carolina
+19,N Carolina West,North Carolina
+20,South Carolina,South Carolina
+22,Virginia East,Virginia
+23,Virginia West,Virginia
+24,W Virginia North,West Virginia
+25,W Virginia South,West Virginia
+26,Alabama North,Alabama
+27,Alabama Mid,Alabama
+28,Alabama South,Alabama
+29,Florida North,Florida
+30,Florida Mid,Florida
+31,Florida South,Florida
+32,Georgia North,Georgia
+33,Georgia Mid,Georgia
+34,Georgia South,Georgia
+35,Louisiana East,Louisiana
+36,Louisiana West,Louisiana
+37,Mississippi North,Mississippi
+38,Mississippi South,Mississippi
+39,Texas North,Texas
+40,Texas East,Texas
+41,Texas South,Texas
+42,Texas West,Texas
+43,Kentucky East,Kentucky
+44,Kentucky West,Kentucky
+45,Michigan East,Michigan
+46,Michigan West,Michigan
+47,Ohio North,Ohio
+48,Ohio South,Ohio
+49,Tennessee East,Tennessee
+50,Tennessee Mid,Tennessee
+51,Tennessee West,Tennessee
+52,Illinois North,Illinois
+53,Illinois Cent,Illinois
+54,Illinois South,Illinois
+55,Indiana North,Indiana
+56,Indiana South,Indiana
+57,Wisconsin East,Wisconsin
+58,Wisconsin West,Wisconsin
+60,Arkansas East,Arkansas
+61,Arkansas West,Arkansas
+62,Iowa North,Iowa
+63,Iowa South,Iowa
+64,Minnesota,Minnesota
+65,Missouri East,Missouri
+66,Missouri West,Missouri
+67,Nebraska,Nebraska
+68,North Dakota,North Dakota
+69,South Dakota,South Dakota
+70,Arizona,Arizona
+71,California North,California
+72,California East,California
+73,California Central,California
+74,California South,California
+75,Hawaii,Hawaii
+76,Idaho,Idaho
+77,Montana,Montana
+78,Nevada,Nevada
+79,Oregon,Oregon
+80,Washington East,Washington
+81,Washington West,Washington
+82,Colorado,Colorado
+83,Kansas,Kansas
+84,New Mexico,New Mexico
+85,Oklahoma North,Oklahoma
+86,Oklahoma East,Oklahoma
+87,Oklahoma West,Oklahoma
+88,Utah,Utah
+89,Wyoming,Wyoming
+90,Dist of Columbia,District of Columbia
+91,Virgin Islands,U.S. Virgin Islands
+93,Guam,Guam
+94,N Mariana Islands,Northern Mariana Islands
+95,Alaska,Alaska
+96,Louisiana Middle,Louisiana

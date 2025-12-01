@@ -142,6 +142,105 @@
         "Built": "R 4.5.0; x86_64-pc-linux-gnu; 2025-04-28 20:03:09 UTC; unix"
       }
     },
+    "R.methodsS3": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "R.methodsS3",
+        "Version": "1.8.2",
+        "Depends": "R (>= 2.13.0)",
+        "Imports": "utils",
+        "Suggests": "codetools",
+        "Title": "S3 Methods Simplified",
+        "Authors@R": "c(person(\"Henrik\", \"Bengtsson\", role=c(\"aut\", \"cre\", \"cph\"),\n                                          email = \"henrikb@braju.com\"))",
+        "Author": "Henrik Bengtsson [aut, cre, cph]",
+        "Maintainer": "Henrik Bengtsson <henrikb@braju.com>",
+        "Description": "Methods that simplify the setup of S3 generic functions and S3 methods.  Major effort has been made in making definition of methods as simple as possible with a minimum of maintenance for package developers.  For example, generic functions are created automatically, if missing, and naming conflict are automatically solved, if possible.  The method setMethodS3() is a good start for those who in the future may want to migrate to S4.  This is a cross-platform package implemented in pure R that generates standard S3 methods.",
+        "License": "LGPL (>= 2.1)",
+        "LazyLoad": "TRUE",
+        "URL": "https://github.com/HenrikBengtsson/R.methodsS3",
+        "BugReports": "https://github.com/HenrikBengtsson/R.methodsS3/issues",
+        "NeedsCompilation": "no",
+        "Packaged": "2022-06-13 18:23:35 UTC; hb",
+        "Repository": "RSPM",
+        "Date/Publication": "2022-06-13 22:00:14 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.5.0; ; 2025-04-05 02:58:53 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "R.methodsS3",
+        "RemotePkgRef": "R.methodsS3",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "1.8.2"
+      }
+    },
+    "R.oo": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "R.oo",
+        "Version": "1.27.1",
+        "Depends": "R (>= 2.13.0), R.methodsS3 (>= 1.8.2)",
+        "Imports": "methods, utils",
+        "Suggests": "tools",
+        "Title": "R Object-Oriented Programming with or without References",
+        "Authors@R": "c(person(\"Henrik\", \"Bengtsson\", role=c(\"aut\", \"cre\", \"cph\"),\n                                          email = \"henrikb@braju.com\"))",
+        "Author": "Henrik Bengtsson [aut, cre, cph]",
+        "Maintainer": "Henrik Bengtsson <henrikb@braju.com>",
+        "Description": "Methods and classes for object-oriented programming in R with or without references.  Large effort has been made on making definition of methods as simple as possible with a minimum of maintenance for package developers.  The package has been developed since 2001 and is now considered very stable.  This is a cross-platform package implemented in pure R that defines standard S3 classes without any tricks.",
+        "License": "LGPL (>= 2.1)",
+        "LazyLoad": "TRUE",
+        "URL": "https://henrikbengtsson.github.io/R.oo/,\nhttps://github.com/HenrikBengtsson/R.oo",
+        "BugReports": "https://github.com/HenrikBengtsson/R.oo/issues",
+        "NeedsCompilation": "no",
+        "Packaged": "2025-05-02 20:29:15 UTC; henrik",
+        "Repository": "RSPM",
+        "Date/Publication": "2025-05-02 21:00:05 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.5.0; ; 2025-05-03 04:26:13 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "R.oo",
+        "RemotePkgRef": "R.oo",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "1.27.1"
+      }
+    },
+    "R.utils": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "R.utils",
+        "Version": "2.13.0",
+        "Depends": "R (>= 2.14.0), R.oo",
+        "Imports": "methods, utils, tools, R.methodsS3",
+        "Suggests": "datasets, digest (>= 0.6.10)",
+        "Title": "Various Programming Utilities",
+        "Authors@R": "c(person(\"Henrik\", \"Bengtsson\", role=c(\"aut\", \"cre\", \"cph\"),\n                                          email = \"henrikb@braju.com\"))",
+        "Author": "Henrik Bengtsson [aut, cre, cph]",
+        "Maintainer": "Henrik Bengtsson <henrikb@braju.com>",
+        "Description": "Utility functions useful when programming and developing R packages.",
+        "License": "LGPL (>= 2.1)",
+        "LazyLoad": "TRUE",
+        "URL": "https://henrikbengtsson.github.io/R.utils/,\nhttps://github.com/HenrikBengtsson/R.utils",
+        "BugReports": "https://github.com/HenrikBengtsson/R.utils/issues",
+        "NeedsCompilation": "no",
+        "Packaged": "2025-02-24 19:44:20 UTC; henrik",
+        "Repository": "RSPM",
+        "Date/Publication": "2025-02-24 21:20:02 UTC",
+        "Encoding": "UTF-8",
+        "Built": "R 4.5.0; ; 2025-04-05 02:59:14 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "R.utils",
+        "RemotePkgRef": "R.utils",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "2.13.0"
+      }
+    },
     "R6": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -5557,10 +5656,10 @@
       "checksum": "4c25341033bf4b0d7e0285d2be6db9ba"
     },
     ".Rprofile": {
-      "checksum": "414e40c0aeda069ea8fd42375b0be65e"
+      "checksum": "256ed0581b44f2bbf92156f931af49c1"
     },
     "app.R": {
-      "checksum": "4ac84cbb34533a6b2be70fae96eb1040"
+      "checksum": "ea7f09c1c722051cc282e242e846d100"
     },
     "data-raw/99c8_00.txt": {
       "checksum": "9bc68c37e2293a8672495fc9c7ffbb17"
@@ -6555,6 +6654,9 @@
     "data/us_federal_courts_data.csv": {
       "checksum": "ad5ae703198368e6578ccb57da081119"
     },
+    "data/us_federal_courts_data.csv.gz": {
+      "checksum": "ffb1e398ea8d8164106c812385fc2d70"
+    },
     "logs/selenium.log": {
       "checksum": "acf25fa3d453b162558be102dc4fb9da"
     },
@@ -6568,7 +6670,7 @@
       "checksum": "de10897f0711fe9dc57877354a040d47"
     },
     "renv.lock": {
-      "checksum": "df969bb4247e14a01d4c761ac3fbc458"
+      "checksum": "440aca52d04d67bbc122a66a607d054e"
     }
   },
   "users": null

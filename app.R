@@ -24,13 +24,14 @@ library(bslib)
 library(RColorBrewer)
 library(plotly)
 library(matrixStats)
+library(R.utils)
 
 
 ####Read in Data####
 ##Federal Courts Data
 federal_courts_df <- 
   "data" %>% 
-  here("us_federal_courts_data.csv") %>% 
+  here("us_federal_courts_data.csv.gz") %>% 
   fread(sep = ",", header = TRUE, stringsAsFactors = FALSE) %>% 
   clean_names() %>% 
   filter(!(table_num == "E-1" & variables == "persons_under_supervision" & table_name_date != date)) %>% 

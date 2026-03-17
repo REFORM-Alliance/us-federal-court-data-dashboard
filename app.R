@@ -25,6 +25,7 @@ library(RColorBrewer)
 library(plotly)
 library(matrixStats)
 library(R.utils)
+library(rmapshaper)
 
 
 ####Read in Data####
@@ -92,36 +93,36 @@ federal_courts_df <-
            str_replace_all("Southern Carolina", "South Carolina") %>% 
            str_replace_all("Northern Carolina", "North Carolina") %>% 
            str_replace_all("North Mariana Islands", "Northern Mariana Islands")) %>% 
-  left_join("data-raw" %>% 
-              here("other") %>% 
-              here("districts_with_states.csv") %>% 
-              fread(sep = ",", header = TRUE, stringsAsFactors = FALSE) %>% 
-              clean_names() %>% 
-              mutate(district_name_clean = 
-                       district_name %>% 
-                       str_replace_all("Penn[.]", "Pennsylvania") %>% 
-                       str_replace_all("^N ", "North ") %>% 
-                       str_replace_all("^W ", "West ") %>% 
-                       str_replace_all("Cent$", "Central") %>% 
-                       str_replace_all("Mid$", "Middle") %>% 
-                       str_replace_all("Dist of Columbia", "District of Columbia") %>% 
-                       str_replace_all("^North ", "Northern ") %>% 
-                       str_replace_all("^South ", "Southern ") %>% 
-                       str_replace_all("^East ", "Eastern ") %>% 
-                       str_replace_all("^West ", "Western ") %>% 
-                       str_replace_all("South$", "Southern") %>% 
-                       str_replace_all("West$", "Western") %>% 
-                       str_replace_all("East$", "Eastern") %>% 
-                       str_replace_all("North$", "Northern") %>% 
-                       str_replace_all("Western Virginia", "West Virginia") %>% 
-                       str_replace_all("Southern Dakota", "South Dakota") %>% 
-                       str_replace_all("Northern Dakota", "North Dakota") %>% 
-                       str_replace_all("Southern Carolina", "South Carolina") %>% 
-                       str_replace_all("Northern Carolina", "North Carolina") %>% 
-                       str_replace_all("North Mariana Islands", "Northern Mariana Islands")) %>% 
-              dplyr::select(district_name_clean, district_code) %>% 
-              distinct(),
-            by = c("full_district_name" = "district_name_clean")) %>% 
+  # left_join("data-raw" %>% 
+  #             here("other") %>% 
+  #             here("districts_with_states.csv") %>% 
+  #             fread(sep = ",", header = TRUE, stringsAsFactors = FALSE) %>% 
+  #             clean_names() %>% 
+  #             mutate(district_name_clean = 
+  #                      district_name %>% 
+  #                      str_replace_all("Penn[.]", "Pennsylvania") %>% 
+  #                      str_replace_all("^N ", "North ") %>% 
+  #                      str_replace_all("^W ", "West ") %>% 
+  #                      str_replace_all("Cent$", "Central") %>% 
+  #                      str_replace_all("Mid$", "Middle") %>% 
+  #                      str_replace_all("Dist of Columbia", "District of Columbia") %>% 
+  #                      str_replace_all("^North ", "Northern ") %>% 
+  #                      str_replace_all("^South ", "Southern ") %>% 
+  #                      str_replace_all("^East ", "Eastern ") %>% 
+  #                      str_replace_all("^West ", "Western ") %>% 
+  #                      str_replace_all("South$", "Southern") %>% 
+  #                      str_replace_all("West$", "Western") %>% 
+  #                      str_replace_all("East$", "Western") %>% 
+  #                      str_replace_all("North$", "Northern") %>% 
+  #                      str_replace_all("Western Virginia", "West Virginia") %>% 
+  #                      str_replace_all("Southern Dakota", "South Dakota") %>% 
+  #                      str_replace_all("Northern Dakota", "North Dakota") %>% 
+  #                      str_replace_all("Southern Carolina", "South Carolina") %>% 
+  #                      str_replace_all("Northern Carolina", "North Carolina") %>% 
+  #                      str_replace_all("North Mariana Islands", "Northern Mariana Islands")) %>% 
+  #             dplyr::select(district_name_clean, district_code) %>% 
+  #             distinct(),
+  #           by = c("full_district_name" = "district_name_clean")) %>% 
   dplyr::select(-c(state_abb, district_abb, district_name)) %>% 
   mutate(quarter_name_full = 
            paste0(year, ", Q", date_quarter)) %>% 
@@ -147,13 +148,15 @@ states_sf <-
 judicial_district_sf <- 
   "data" %>% 
   here("judicial_sf_data.rds") %>% 
-  read_rds()
+  read_rds() %>%
+  rmapshaper::ms_simplify(keep = 0.05, keep_shapes = TRUE)
 
 ##Judicial Circuits Geometries
 judicial_circuit_sf <- 
   "data" %>% 
   here("judicial_circuit_sf.rds") %>% 
-  read_rds()
+  read_rds() %>% 
+  rmapshaper::ms_simplify(keep = 0.05, keep_shapes = TRUE)
 
 ##Judicial District Populations
 judicial_district_pops <- 
@@ -164,11 +167,11 @@ judicial_district_pops <-
   right_join(federal_courts_df %>% 
                dplyr::select(state_or_district, state_district, circuit) %>% 
                distinct(), 
-            by = c("state_district")) %>% 
+             by = c("state_district")) %>% 
   dplyr::select(-district_id) %>% 
   {
     df <- .
-
+    
     df %>%
       bind_rows(df %>%
                   group_by(circuit, year) %>%
@@ -215,20 +218,21 @@ federal_courts_df_new <-
            state_or_district %>% 
            na_if("99999"), 
          values_per_capita = 
-           10000 * (values/population))
+           10000 * (values/population),
+         state_or_district = 
+           state_or_district %>% 
+           str_replace_all("^TOTAL$", "Total"), 
+         circuit = 
+           ifelse(state_or_district == "Total", "Total", circuit)) 
 
-
-####App####
 ##Define Theme
 my_theme <- bs_theme(
   version = 4,
   bg = "#FDF6E3",          
   fg = "#2C2C2C",     
   primary = "#009E73", 
-  # secondary = "#DAA520",
   secondary = "#FFBF00",
   warning = "#FFBF00",
-  # warning = "#FF6F61",     
   info = "#4A90E2",        
   success = "#2CA02C",     
   danger = "#D55E00",      
@@ -253,9 +257,19 @@ quarters_full <-
   left_join(quarters, by = c("year", "date_quarter")) %>% 
   tidyr::fill(keep, .direction = "down") %>% 
   filter(is.na(keep) == FALSE) %>% 
-  filter(!(keep == max(keep, na.rm = TRUE) & date_quarter != min(date_quarter, na.rm = TRUE))) %>% 
+  mutate(max_keep = 
+           keep %>% 
+           max(na.rm = TRUE)) %>% 
+  group_by(keep) %>% 
+  mutate(filter_out = 
+           ifelse(keep == max_keep & date_quarter == max(date_quarter, na.rm = TRUE), 1, 0)) %>% 
+  filter(!(filter_out == 1)) %>%  
   pull(quarter_name_full)
-  
+
+# Available years for single-year/quarter selector
+available_years <- sort(unique(federal_courts_df_new$year), decreasing = TRUE)
+available_quarters <- c("Q1 (Jan–Mar)", "Q2 (Apr–Jun)", "Q3 (Jul–Sep)", "Q4 (Oct–Dec)")
+
 selected_quarters <- 
   ifelse(str_detect(quarters_full, "Q1$") == TRUE, quarters_full, "") %>% 
   str_replace_all(", Q[:digit:]", "")
@@ -272,12 +286,14 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
       /* Hide most year range grid labels */
       #year_range .irs-grid-text,
       #year_range_state .irs-grid-text,
-      #year_range_table .irs-grid-text {
+      #year_range_table .irs-grid-text,
+      #year_range_national .irs-grid-text {
         display: none !important;
       }
       #year_range .irs-grid-pol:nth-child(16n+1) + .irs-grid-text,
       #year_range_state .irs-grid-pol:nth-child(16n+1) + .irs-grid-text,
-      #year_range_table .irs-grid-pol:nth-child(16n+1) + .irs-grid-text {
+      #year_range_table .irs-grid-pol:nth-child(16n+1) + .irs-grid-text,
+      #year_range_national .irs-grid-pol:nth-child(16n+1) + .irs-grid-text {
         display: block !important;
         font-size: 10px !important;
       }
@@ -299,29 +315,25 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
       
       /* --- FIXED SIDEBAR & OFFSET LOGIC FOR BOTH TABS --- */
       
-      /* Apply fixed positioning to the Sidebar (.col-sm-2) 
-         inside BOTH #dashboard_main AND #dashboard_state 
-      */
       #dashboard_main .col-sm-2,
-      #dashboard_state .col-sm-2 {
+      #dashboard_state .col-sm-2,
+      #dashboard_national .col-sm-2 {
         position: fixed !important;
         top: 60px !important;
         left: 0 !important;
         width: 16.66667% !important;
-        height: calc(100vh - 60px) !important; /* Full height minus navbar */
-        overflow-y: auto !important; /* Allow sidebar to scroll internally if filters are long */
+        height: calc(100vh - 60px) !important;
+        overflow-y: auto !important;
         z-index: 1000 !important;
         background-color: #FDF6E3 !important;
         padding-right: 15px !important;
         padding-left: 15px !important;
       }
       
-      /* Apply margin offset to the Main Panel (.col-sm-10)
-         inside BOTH #dashboard_main AND #dashboard_state 
-      */
       #dashboard_main .col-sm-10,
-      #dashboard_state .col-sm-10 {
-        margin-left: 16.66667% !important; /* Push content to the right */
+      #dashboard_state .col-sm-10,
+      #dashboard_national .col-sm-10 {
+        margin-left: 16.66667% !important;
         width: 83.33333% !important;
         padding-top: 20px !important;
         padding-left: 30px !important;
@@ -329,15 +341,27 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
       
       /* --- CHART & BOX HELPERS --- */
       
-      /* Ensure box content doesn't get hidden */
       .box {
         width: 100% !important;
         overflow: visible !important;
       }
       
-      /* Ensure plotly charts have proper spacing */
       .plotly {
         margin-left: 0 !important;
+      }
+      
+      /* --- REPORTING NOTE STYLE --- */
+      .reporting-note {
+        font-size: 11px;
+        color: #888;
+        font-style: italic;
+        margin-top: 6px;
+        line-height: 1.4;
+      }
+      
+      /* --- TOGGLE LABEL STYLE --- */
+      .year-mode-toggle .radio label {
+        font-size: 13px;
       }
     "))
                  ),
@@ -355,7 +379,7 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                                                   selected = "Population"),
                                       selectInput("rate_or_count", "Rate or Count",
                                                   choices = c("Per Capita", "Total Count"),
-                                                  selected = "Per Capita"),
+                                                  selected = "Total Count"),
                                       selectInput("supervision_type", "Supervision Type",
                                                   choices = c("Total Supervision", "Supervised Release", "Probation", "Parole", "BOP Custody"),
                                                   selected = "Total Supervision"),
@@ -371,16 +395,18 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                                                     "Judicial District" = "state_district", 
                                                     "Judicial Circuit" = "circuit"
                                                   )),
-                                      sliderTextInput(
-                                        inputId = "year_range",
-                                        label = "Year Range",
-                                        choices = quarters_full,
-                                        selected = c(first(quarters_full), last(quarters_full)),
-                                        grid = FALSE,
-                                        dragRange = TRUE,
-                                        force_edges = TRUE
+                                      # CHANGE 1: Toggle between range and single year/quarter
+                                      div(class = "year-mode-toggle",
+                                          radioButtons("year_mode_map", "Date Selection Mode",
+                                                       choices = c("Year/Quarter Range" = "range",
+                                                                   "Single Year/Quarter" = "single"),
+                                                       selected = "range",
+                                                       inline = FALSE)
                                       ),
-                                      verbatimTextOutput("selected_quarters")
+                                      uiOutput("year_selector_map"),
+                                      # CHANGE 2: Reporting period note
+                                      div(class = "reporting-note",
+                                          "Note: All figures reflect the 12-month reporting period ending on the selected date(s).")
                                     ),
                                     tabPanel(
                                       "Table Filters",
@@ -390,23 +416,26 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                                                   multiple = TRUE),
                                       selectInput("rate_or_count_table", "Rate or Count",
                                                   choices = c("Per Capita", "Total Count"),
-                                                  selected = "Per Capita"),
+                                                  selected = "Total Count"),
                                       selectInput("geo_level_table", "Geography Level", 
                                                   choices = c(
                                                     "State" = "state_name", 
                                                     "Judicial District" = "state_district", 
                                                     "Judicial Circuit" = "circuit"
                                                   )),
-                                      uiOutput("geo_filter_ui"), 
-                                      sliderTextInput(
-                                        inputId = "year_range_table",
-                                        label = "Year Range",
-                                        choices = quarters_full,
-                                        selected = c(first(quarters_full), last(quarters_full)),
-                                        grid = FALSE,
-                                        dragRange = TRUE,
-                                        force_edges = TRUE
-                                      )
+                                      uiOutput("geo_filter_ui"),
+                                      # CHANGE 1: Toggle between range and single year/quarter
+                                      div(class = "year-mode-toggle",
+                                          radioButtons("year_mode_table", "Date Selection Mode",
+                                                       choices = c("Year/Quarter Range" = "range",
+                                                                   "Single Year/Quarter" = "single"),
+                                                       selected = "range",
+                                                       inline = FALSE)
+                                      ),
+                                      uiOutput("year_selector_table"),
+                                      # CHANGE 2: Reporting period note
+                                      div(class = "reporting-note",
+                                          "Note: All figures reflect the 12-month reporting period ending on the selected date(s).")
                                     )
                                   )
                                 ),
@@ -444,7 +473,10 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                                     grid = FALSE,
                                     dragRange = TRUE,
                                     force_edges = TRUE
-                                  )
+                                  ),
+                                  # CHANGE 2: Reporting period note
+                                  div(class = "reporting-note",
+                                      "Note: All figures reflect the 12-month reporting period ending on the selected date(s).")
                                 ),
                                 mainPanel(
                                   width = 10,
@@ -461,11 +493,145 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                                 )
                               )
                           )
+                 ),
+                 
+                 # CHANGE 3: New National Dashboard tab
+                 tabPanel("National Dashboard",
+                          div(id = "dashboard_national",
+                              sidebarLayout(
+                                sidebarPanel(
+                                  width = 2,
+                                  sliderTextInput(
+                                    inputId = "year_range_national",
+                                    label = "Year Range",
+                                    choices = quarters_full,
+                                    selected = c(first(quarters_full), last(quarters_full)),
+                                    grid = FALSE,
+                                    dragRange = TRUE,
+                                    force_edges = TRUE
+                                  ),
+                                  # CHANGE 2: Reporting period note
+                                  div(class = "reporting-note",
+                                      "Note: All figures reflect the 12-month reporting period ending on the selected date(s).")
+                                ),
+                                mainPanel(
+                                  width = 10,
+                                  fluidRow(
+                                    box(width = 12,
+                                        div(style = "width:100%; padding:0; margin:0; text-align:right;",
+                                            plotlyOutput("national_viz_stacked_barplot", height = 600, width = "100%")))
+                                  ),
+                                  fluidRow(
+                                    box(width = 12,
+                                        div(style = "width:100%; padding:0; margin:0; text-align:right;",
+                                            plotlyOutput("national_viz_trends", height = 800, width = "100%")))
+                                  )
+                                )
+                              )
+                          )
                  )
 )
 
 ##Server
 server <- function(input, output, session){
+  
+  # CHANGE 1: Render year selector UI for map/barplot filters (toggle-based)
+  output$year_selector_map <- renderUI({
+    if (input$year_mode_map == "single") {
+      fluidRow(
+        column(7,
+               selectInput("single_year_map_val", "Year",
+                           choices = available_years,
+                           selected = max(available_years))
+        ),
+        column(5,
+               selectInput("single_quarter_map_val", "Quarter",
+                           choices = c("Q1", "Q2", "Q3", "Q4"),
+                           selected = "Q1")
+        )
+      )
+    } else {
+      sliderTextInput(
+        inputId = "year_range",
+        label = "Year/Quarter Range",
+        choices = quarters_full,
+        selected = c(first(quarters_full), last(quarters_full)),
+        grid = FALSE,
+        dragRange = TRUE,
+        force_edges = TRUE
+      )
+    }
+  })
+  
+  # CHANGE 1: Render year selector UI for table filters (toggle-based)
+  output$year_selector_table <- renderUI({
+    if (input$year_mode_table == "single") {
+      fluidRow(
+        column(7,
+               selectInput("single_year_table_val", "Year",
+                           choices = available_years,
+                           selected = max(available_years))
+        ),
+        column(5,
+               selectInput("single_quarter_table_val", "Quarter",
+                           choices = c("Q1", "Q2", "Q3", "Q4"),
+                           selected = "Q1")
+        )
+      )
+    } else {
+      sliderTextInput(
+        inputId = "year_range_table",
+        label = "Year/Quarter Range",
+        choices = quarters_full,
+        selected = c(first(quarters_full), last(quarters_full)),
+        grid = FALSE,
+        dragRange = TRUE,
+        force_edges = TRUE
+      )
+    }
+  })
+  
+  # Helper: get selected quarters for map/barplot
+  map_selected_quarters <- reactive({
+    if (input$year_mode_map == "single") {
+      req(input$single_year_map_val, input$single_quarter_map_val)
+      target <- paste0(input$single_year_map_val, ", ", input$single_quarter_map_val)
+      quarters_full[quarters_full == target]
+    } else {
+      req(input$year_range)
+      start_idx <- which(quarters_full == input$year_range[1])
+      end_idx   <- which(quarters_full == input$year_range[2])
+      quarters_full[start_idx:end_idx]
+    }
+  })
+  
+  # Helper: get selected quarters for table
+  # table_selected_quarters <- reactive({
+  #   if (input$year_mode_table == "single") {
+  #     req(input$single_year_table_val, input$single_quarter_table_val)
+  #     target <- paste0(input$single_year_table_val, ", ", input$single_quarter_table_val)
+  #     quarters_full[quarters_full == target]
+  #   } else {
+  #     req(input$year_range_table)
+  #     start_idx <- which(quarters_full == input$year_range_table[1])
+  #     end_idx   <- which(quarters_full == input$year_range_table[2])
+  #     quarters_full[start_idx:end_idx]
+  #   }
+  # })
+  
+  table_selected_quarters <- reactive({
+    if (input$year_mode_table == "single") {
+      req(input$single_year_table_val, input$single_quarter_table_val)
+      target <- paste0(input$single_year_table_val, ", ", input$single_quarter_table_val)
+      quarters_full[quarters_full == target]
+    } else {
+      yr <- input$year_range_table
+      if (is.null(yr)) return(quarters_full)  # default to full range on load
+      start_idx <- which(quarters_full == yr[1])
+      end_idx   <- which(quarters_full == yr[2])
+      quarters_full[start_idx:end_idx]
+    }
+  })
   
   observeEvent(c(input$outcome_type, input$rate_or_count), {
     if(input$rate_or_count == "Per Capita"){
@@ -510,11 +676,7 @@ server <- function(input, output, session){
   }) 
   
   filtered_data <- reactive({
-    req(input$year_range)
-    
-    start_idx <- which(quarters_full == input$year_range[1])
-    end_idx <- which(quarters_full == input$year_range[2])
-    selected_quarters <- quarters_full[start_idx:end_idx]
+    selected_quarters <- map_selected_quarters()
     
     federal_courts_df_new %>%
       filter(
@@ -524,11 +686,7 @@ server <- function(input, output, session){
   })
   
   filtered_data_full <- reactive({
-    req(input$year_range_table)
-    
-    start_idx <- which(quarters_full == input$year_range_table[1])
-    end_idx <- which(quarters_full == input$year_range_table[2])
-    selected_quarters <- quarters_full[start_idx:end_idx]
+    selected_quarters <- table_selected_quarters()
     
     if(input$rate_or_count_table == "Per Capita"){
       federal_courts_df_new %>%
@@ -539,6 +697,7 @@ server <- function(input, output, session){
                                 ~.x %>% 
                                   sum(na.rm = TRUE))) %>% 
         ungroup() %>% 
+        filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
         mutate(values = 
                  10000 * (values/population),
                outcome_metric_type = 
@@ -562,7 +721,8 @@ server <- function(input, output, session){
                            TRUE ~ NA),
                outcome_metric_type = 
                  ifelse(is.na(outcome_metric_type) == TRUE, NA, paste0(outcome_metric_type, " per 10,000"))) %>% 
-        filter(is.na(outcome_metric_type) == FALSE & is.na(supervision_type) == FALSE) %>% 
+        filter(is.na(outcome_metric_type) == FALSE & is.na(supervision_type) == FALSE,
+               supervision_type %in% input$supervision_type_table) %>% 
         dplyr::select(quarter_name_full, .data[[input$geo_level_table]], supervision_type, outcome_metric_type, values) %>% 
         pivot_wider(names_from = "outcome_metric_type", 
                     values_from = "values") %>% 
@@ -578,6 +738,7 @@ server <- function(input, output, session){
                            values %>% 
                            sum(na.rm = TRUE)) %>% 
         ungroup() %>% 
+        filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
         mutate(outcome_metric_type = 
                  case_when(str_detect(variables, "^received_for_post_conviction_supervision") == TRUE & 
                              table_num == "E-1" ~ "Admissions", 
@@ -597,7 +758,8 @@ server <- function(input, output, session){
                            str_detect(variables, "total_received$") ~ "Total Supervision", 
                            variables == "persons_under_supervision" ~ "Total Supervision", 
                            TRUE ~ NA)) %>% 
-        filter(is.na(outcome_metric_type) == FALSE & is.na(supervision_type) == FALSE) %>% 
+        filter(is.na(outcome_metric_type) == FALSE & is.na(supervision_type) == FALSE,
+               supervision_type %in% input$supervision_type_table) %>% 
         dplyr::select(quarter_name_full, .data[[input$geo_level_table]], supervision_type, outcome_metric_type, values) %>% 
         pivot_wider(names_from = "outcome_metric_type", 
                     values_from = "values") %>% 
@@ -672,8 +834,8 @@ server <- function(input, output, session){
         ungroup() %>%
         group_by(.data[[input$geo_level]]) %>%
         dplyr::summarize(value =
-                             value_agg %>%
-                             agg_fun(na.rm = TRUE)) %>%
+                           value_agg %>%
+                           agg_fun(na.rm = TRUE)) %>%
         ungroup()
     }
   })
@@ -727,7 +889,8 @@ server <- function(input, output, session){
         pal <- colorNumeric(palette = "YlGn", domain = map_data$value, na.color = "transparent")
         
         map_data %>% 
-          filter(is.na(.data[[input$geo_level]]) == FALSE) %>% 
+          # filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
+          filter(is.na(.data[[input$geo_level]]) == FALSE & .data[[input$geo_level]] != "Total") %>% 
           mutate(value = 
                    value %>% 
                    replace_na(0) %>% 
@@ -760,7 +923,8 @@ server <- function(input, output, session){
         pal <- colorNumeric(palette = "YlGn", domain = map_data$value, na.color = "transparent")
         
         map_data %>% 
-          filter(is.na(.data[[input$geo_level]]) == FALSE) %>% 
+          # filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
+          filter(is.na(.data[[input$geo_level]]) == FALSE & .data[[input$geo_level]] != "Total") %>% 
           mutate(value = 
                    value %>% 
                    replace_na(0) %>% 
@@ -793,7 +957,8 @@ server <- function(input, output, session){
         pal <- colorNumeric(palette = "YlGn", domain = map_data$value, na.color = "transparent")
         
         map_data %>% 
-          filter(is.na(.data[[input$geo_level]]) == FALSE) %>% 
+          # filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
+          filter(is.na(.data[[input$geo_level]]) == FALSE & .data[[input$geo_level]] != "Total") %>% 
           mutate(value = 
                    value %>% 
                    replace_na(0) %>% 
@@ -835,7 +1000,8 @@ server <- function(input, output, session){
         pal <- colorNumeric(palette = "YlGn", domain = map_data$value, na.color = "transparent")
         
         map_data %>% 
-          filter(is.na(.data[[input$geo_level]]) == FALSE) %>% 
+          # filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
+          filter(is.na(.data[[input$geo_level]]) == FALSE & .data[[input$geo_level]] != "Total") %>% 
           mutate(value = 
                    value %>% 
                    replace_na(0) %>% 
@@ -868,7 +1034,8 @@ server <- function(input, output, session){
         pal <- colorNumeric(palette = "YlGn", domain = map_data$value, na.color = "transparent")
         
         map_data %>% 
-          filter(is.na(.data[[input$geo_level]]) == FALSE) %>% 
+          # filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
+          filter(is.na(.data[[input$geo_level]]) == FALSE & .data[[input$geo_level]] != "Total") %>% 
           mutate(value = 
                    value %>% 
                    replace_na(0) %>% 
@@ -901,7 +1068,8 @@ server <- function(input, output, session){
         pal <- colorNumeric(palette = "YlGn", domain = map_data$value, na.color = "transparent")
         
         map_data %>% 
-          filter(is.na(.data[[input$geo_level]]) == FALSE) %>% 
+          # filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
+          filter(is.na(.data[[input$geo_level]]) == FALSE & .data[[input$geo_level]] != "Total") %>% 
           mutate(value = 
                    value %>% 
                    replace_na(0) %>% 
@@ -942,7 +1110,8 @@ server <- function(input, output, session){
       
       df <- 
         agg_data() %>%
-        filter(is.na(.data[[input$geo_level]]) == FALSE) %>% 
+        # filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
+        filter(is.na(.data[[input$geo_level]]) == FALSE & .data[[input$geo_level]] != "Total") %>% 
         mutate(across(c(any_of(input$geo_level)), ~replace_na(.x, "Missing/Not Applicable")),
                value = 
                  value %>% 
@@ -962,8 +1131,7 @@ server <- function(input, output, session){
                              direction = 1, 
                              name = NULL) +
         labs(
-          x = 
-            x_lab,
+          x = x_lab,
           y = 
             input$geo_level %>%
             str_replace_all("state_name", "State") %>%
@@ -972,7 +1140,10 @@ server <- function(input, output, session){
         ) +
         theme_minimal() +
         theme(
-          axis.text.y = element_text(size = 8, margin = margin(r = 0)),  
+          axis.text.y = element_text(
+            size = ifelse(input$geo_level == "state_district", 5, 8), 
+            margin = margin(r = 0)
+          ),
           plot.margin = margin(t = 5, r = 5, b = 5, l = 5),
           axis.title.y = element_text(margin = margin(r = 10)),
           axis.title.x = element_text(margin = margin(t = 10))
@@ -986,7 +1157,8 @@ server <- function(input, output, session){
       
       df <- 
         agg_data() %>%
-        filter(is.na(.data[[input$geo_level]]) == FALSE) %>% 
+        # filter(is.na(.data[[input$geo_level_table]]) == FALSE & .data[[input$geo_level_table]] != "Total") %>% 
+        filter(is.na(.data[[input$geo_level]]) == FALSE & .data[[input$geo_level]] != "Total") %>% 
         mutate(across(c(any_of(input$geo_level)), ~replace_na(.x, "Missing/Not Applicable")),
                value = 
                  value %>% 
@@ -1010,8 +1182,7 @@ server <- function(input, output, session){
           labels = comma_format()  
         ) +
         labs(
-          x = 
-            x_lab,
+          x = x_lab,
           y = 
             input$geo_level %>%
             str_replace_all("state_name", "State") %>%
@@ -1020,7 +1191,10 @@ server <- function(input, output, session){
         ) +
         theme_minimal() +
         theme(
-          axis.text.y = element_text(size = 8, margin = margin(r = 0)),  
+          axis.text.y = element_text(
+            size = ifelse(input$geo_level == "state_district", 5, 8), 
+            margin = margin(r = 0)
+          ), 
           plot.margin = margin(t = 5, r = 5, b = 5, l = 5),
           axis.title.y = element_text(margin = margin(r = 10)),
           axis.title.x = element_text(margin = margin(t = 10))
@@ -1243,7 +1417,7 @@ server <- function(input, output, session){
              date =
                date + months(1) - days(1)) %>% 
       filter(state_name == input$state_selection &
-             quarter_name_full %in% selected_quarters) %>% 
+               quarter_name_full %in% selected_quarters) %>% 
       {
         base_data <- .
         base_data %>% 
@@ -1299,9 +1473,228 @@ server <- function(input, output, session){
       ),
       margin = list(l = 50, r = 180, t = 40, b = 55))
   })
-}
   
+  # ---- CHANGE 3: National Dashboard outputs ----
+  
+  # Shared helper: prepare national base data with labels
+  national_base_data <- reactive({
+    req(input$year_range_national)
+    
+    start_idx <- which(quarters_full == input$year_range_national[1])
+    end_idx   <- which(quarters_full == input$year_range_national[2])
+    selected_quarters <- quarters_full[start_idx:end_idx]
+    
+    federal_courts_df_new %>%
+      mutate(
+        outcome_metric_type =
+          case_when(
+            str_detect(variables, "^received_for_post_conviction_supervision") & table_num == "E-1" ~ "Admissions",
+            str_detect(variables, "^removed_from_post_conviction_supervision") & table_num == "E-1" ~ "Exits",
+            variables == "persons_under_supervision" & table_num == "E-2" ~ "Total Population",
+            str_detect(variables, "^from_") & table_num == "E-2" ~ "Total Population",
+            TRUE ~ NA_character_
+          ),
+        supervision_type =
+          case_when(
+            str_detect(variables, "bop_custody$")       ~ "BOP Custody",
+            str_detect(variables, "supervised_release$") ~ "Supervised Release",
+            str_detect(variables, "parole$")             ~ "Parole",
+            str_detect(variables, "probation$")          ~ "Probation",
+            str_detect(variables, "total_removed$")      ~ "Total Supervision",
+            str_detect(variables, "total_received$")     ~ "Total Supervision",
+            variables == "persons_under_supervision"     ~ "Total Supervision",
+            TRUE ~ NA_character_
+          )
+      ) %>%
+      filter(!is.na(outcome_metric_type), !is.na(supervision_type),
+             !is.na(state_name)) %>%
+      dplyr::select(state_name, quarter_name_full, values, population,
+                    outcome_metric_type, supervision_type) %>%
+      filter(quarter_name_full %in% selected_quarters) %>%
+      group_by(quarter_name_full, outcome_metric_type, supervision_type) %>%
+      dplyr::summarize(
+        across(c(values, population), ~sum(.x, na.rm = TRUE)),
+        .groups = "drop"
+      ) %>%
+      mutate(
+        values_per_capita = 10000 * (values / population)
+      ) %>%
+      separate_wider_delim(
+        cols = quarter_name_full,
+        delim = ", Q",
+        names = c("year_chr", "quarter_chr"),
+        cols_remove = FALSE
+      ) %>%
+      mutate(
+        quarter_num = as.numeric(quarter_chr),
+        month = case_when(
+          quarter_num == 1 ~ "03", quarter_num == 2 ~ "06",
+          quarter_num == 3 ~ "09", quarter_num == 4 ~ "12"
+        ),
+        date = as.Date(paste(year_chr, month, "01", sep = "-")),
+        date = date + months(1) - days(1),
+        supervision_type = factor(
+          supervision_type,
+          levels = rev(c("BOP Custody", "Supervised Release", "Parole", "Probation", "Total Supervision"))
+        )
+      )
+  })
+  
+  # National stacked barplot: mean counts over the selected period by supervision type
+  output$national_viz_stacked_barplot <- renderPlotly({
+    df <- national_base_data()
+    
+    df %>%
+      group_by(supervision_type, outcome_metric_type) %>%
+      dplyr::summarize(
+        mean_values = mean(values, na.rm = TRUE),
+        mean_per_capita = mean(values_per_capita, na.rm = TRUE),
+        .groups = "drop"
+      ) %>%
+      mutate(
+        hover_text = paste0(
+          "Supervision: ", supervision_type, "\n",
+          "Outcome: ", outcome_metric_type, "\n",
+          "National Mean Count: ", format(round(mean_values, 0), big.mark = ","), "\n",
+          "National Mean per 10k: ", round(mean_per_capita, 2)
+        )
+      ) %>%
+      {
+        ggplot(., aes(
+          x = supervision_type,
+          y = mean_values,
+          fill = supervision_type,
+          color = supervision_type,
+          text = hover_text
+        )) +
+          geom_col(position = "stack", width = 0.99) +
+          facet_wrap(~outcome_metric_type) +
+          scale_color_manual(values = c("#0072B2", "#E69F00", "#009E73", "#CC79A7", "#D55E00")) +
+          scale_fill_manual(values  = c("#0072B2", "#E69F00", "#009E73", "#CC79A7", "#D55E00")) +
+          scale_y_continuous(labels = scales::comma) +
+          labs(
+            x = NULL,
+            y = "National Mean Count Over Selected Period",
+            color = "Supervision Type",
+            fill  = "Supervision Type"
+          ) +
+          theme_minimal() +
+          theme(
+            axis.text.x  = element_blank(),
+            axis.ticks.x = element_blank(),
+            strip.text   = element_text(size = 12, face = "bold"),
+            legend.position = "bottom",
+            axis.title.x = element_text(margin = margin(t = 15))
+          )
+      } %>%
+      ggplotly(tooltip = "text") %>%
+      layout(
+        legend = list(orientation = "h", x = 0.5, xanchor = "center", y = -0.15, yanchor = "top"),
+        margin = list(l = 50, r = 180, t = 40, b = 55)
+      )
+  })
+  
+  # National time-series: national totals and per-capita over time, faceted by supervision x outcome
+#   output$national_viz_trends <- renderPlotly({
+#     df <- national_base_data()
+#     
+#     df %>%
+#       mutate(
+#         hover_text = paste0(
+#           "Supervision: ", supervision_type, "\n",
+#           "Outcome: ", outcome_metric_type, "\n",
+#           "National Total: ", format(values, big.mark = ","), "\n",
+#           "Per 10k: ", round(values_per_capita, 2), "\n",
+#           "Date: ", format(date, "%b %d, %Y")
+#         )
+#       ) %>%
+#       {
+#         ggplot(., aes(
+#           x = date,
+#           y = values_per_capita,
+#           color = supervision_type,
+#           group = supervision_type,
+#           text = hover_text
+#         )) +
+#           geom_line(linewidth = 1) +
+#           geom_point(size = 1) +
+#           facet_grid(supervision_type ~ outcome_metric_type, scales = "free_y") +
+#           scale_color_manual(values = c("#0072B2", "#E69F00", "#009E73", "#CC79A7", "#D55E00")) +
+#           scale_x_date(date_breaks = "4 years", date_labels = "%Y") +
+#           scale_y_continuous(labels = scales::comma) +
+#           labs(
+#             x = "Date",
+#             y = "National Count per 10,000",
+#             color = "Supervision Type",
+#             title = "National Supervision Trends Over Time"
+#           ) +
+#           theme_minimal() +
+#           theme(
+#             axis.text.x  = element_text(angle = 45, hjust = 1),
+#             strip.text   = element_text(size = 12, face = "bold"),
+#             strip.text.y = element_text(angle = 0),
+#             legend.position = "bottom",
+#             axis.title.x = element_text(margin = margin(t = 15)),
+#             plot.title   = element_text(size = 14, face = "bold", hjust = 0.5)
+#           )
+#       } %>%
+#       ggplotly(tooltip = "text") %>%
+#       layout(
+#         legend = list(orientation = "h", x = 0.5, xanchor = "center", y = -0.15, yanchor = "top"),
+#         margin = list(l = 50, r = 180, t = 40, b = 55)
+#       )
+#   })
+
+  output$national_viz_trends <- renderPlotly({
+    df <- national_base_data()
+    
+    df %>%
+      filter(as.character(supervision_type) != "Total Supervision") %>%
+      mutate(
+        hover_text = paste0(
+          "Supervision: ", supervision_type, "\n",
+          "Outcome: ", outcome_metric_type, "\n",
+          "National Total: ", format(values, big.mark = ","), "\n",
+          "Per 10k: ", round(values_per_capita, 2), "\n",
+          "Date: ", format(date, "%b %d, %Y")
+        )
+      ) %>%
+      {
+        ggplot(., aes(
+          x = date,
+          y = values_per_capita,
+          color = supervision_type,
+          group = supervision_type,
+          text = hover_text
+        )) +
+          geom_line(linewidth = 1) +
+          geom_point(size = 1) +
+          facet_wrap(~outcome_metric_type, scales = "free_y", ncol = 3) +
+          scale_color_manual(values = c("#0072B2", "#E69F00", "#009E73", "#CC79A7")) +
+          scale_x_date(date_breaks = "4 years", date_labels = "%Y") +
+          scale_y_continuous(labels = scales::comma) +
+          labs(
+            x = "Date",
+            y = "National Count per 10,000",
+            color = "Supervision Type",
+            title = "National Supervision Trends Over Time (Excluding Total)"
+          ) +
+          theme_minimal() +
+          theme(
+            axis.text.x  = element_text(angle = 45, hjust = 1),
+            strip.text   = element_text(size = 12, face = "bold"),
+            legend.position = "bottom",
+            axis.title.x = element_text(margin = margin(t = 15)),
+            plot.title   = element_text(size = 14, face = "bold", hjust = 0.5)
+          )
+      } %>%
+      ggplotly(tooltip = "text") %>%
+      layout(
+        legend = list(orientation = "h", x = 0.5, xanchor = "center", y = -0.15, yanchor = "top"),
+        margin = list(l = 50, r = 50, t = 40, b = 55)
+      )
+  })
+}
 
 ####Run App####
 shinyApp(ui, server)
-

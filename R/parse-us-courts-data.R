@@ -36,7 +36,7 @@ on.exit(dbDisconnect(con), add = TRUE)
 ##XLSX
 xlsx_data <- 
   "data-raw" %>% 
-  here() %>% 
+  here("usaoc-data-tables") %>% 
   list.files(full.names = TRUE) %>% 
   str_subset("xlsx$") %>% 
   str_subset("e-7", negate = TRUE) %>% 
@@ -286,7 +286,7 @@ max_y <- 612
 
 pdf_data <- 
   "data-raw" %>% 
-  here() %>% 
+  here("usaoc-data-tables") %>% 
   list.files(full.names = TRUE) %>% 
   str_subset("pdf$") %>% 
   str_subset("e-7", negate = TRUE) %>% 
@@ -972,8 +972,15 @@ dbWriteTable(con, DBI::Id("us_courts", "us_federal_courts_data"), full_data, ove
 # ##Write CSV
 # fwrite(full_data, here("data", "us_federal_courts_data.csv"), row.names = FALSE)
 
+##Delete CSV
+"data" %>% 
+  here() %>%
+  list.files(full.names = TRUE) %>% 
+  str_subset("us_federal_courts_data.csv.gz$") %>% 
+  unlink()
+
 ##Write Compressed CSV
-fwrite(full_data, here("data", "us_federal_courts_data.csv.gz", compress = "gzip"))
+fwrite(full_data, here("data", "us_federal_courts_data.csv.gz"), compress = "gzip")
 
 
 ####Fix Shapefile Data####

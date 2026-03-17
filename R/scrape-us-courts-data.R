@@ -272,7 +272,8 @@ full_df <-
                    str_extract_all("pdf$|xlsx$"), 
                  sep = "."), 
          file_name_full = 
-           "data-raw" %>% 
+           "data-raw" %>%
+           here("usaoc-data-tables") %>% 
            here(file_name)) %>% 
   dplyr::select(-starts_with("var")) %>% 
   distinct()
@@ -282,6 +283,7 @@ kill_selenium(port_to_kill = free_port)
 ##Download all of the PDFs and XLSXs
 files_read <- 
   here("data-raw") %>% 
+  here("usaoc-data-tables") %>% 
   list.files(full.names = TRUE)
 files_to_read <- setdiff(files_read, full_df$file_name_full)
 
@@ -292,7 +294,7 @@ while(length(files_to_read) > 0){
     pwalk(~curl::curl_download(.x, .y))
   
   files_read <- 
-    here("data-raw") %>% 
+    here("data-raw", "usaoc-data-tables") %>% 
     list.files(full.names = TRUE)
   
   files_to_read <- setdiff(files_read, full_df$file_name_full)

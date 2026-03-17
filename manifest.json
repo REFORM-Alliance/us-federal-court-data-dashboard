@@ -457,6 +457,44 @@
         "RemoteSha": "0.2.0"
       }
     },
+    "V8": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "V8",
+        "Type": "Package",
+        "Title": "Embedded JavaScript and WebAssembly Engine for R",
+        "Version": "8.0.1",
+        "Authors@R": "c(\n    person(\"Jeroen\", \"Ooms\", role = c(\"aut\", \"cre\"), email = \"jeroenooms@gmail.com\",\n      comment = c(ORCID = \"0000-0002-4035-0289\")),\n    person(\"George\", \"Stagg\", role = \"ctb\", comment = c(ORCID = \"0009-0006-3173-9846\")),\n    person(\"Jan Marvin\", \"Garbuszus\", role = \"ctb\"))",
+        "Description": "An R interface to V8 <https://v8.dev>: Google's open source JavaScript\n    and WebAssembly engine. This package can be compiled either with V8 or NodeJS \n    when built as a shared library.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://jeroen.r-universe.dev/V8",
+        "BugReports": "https://github.com/jeroen/v8/issues",
+        "SystemRequirements": "On Linux you can build against libv8-dev (Debian)\nor v8-devel (Fedora). We also provide static libv8 binaries for\nmost platforms, see the README for details.",
+        "NeedsCompilation": "yes",
+        "VignetteBuilder": "knitr",
+        "Imports": "Rcpp (>= 0.12.12), jsonlite (>= 1.0), curl (>= 1.0), utils",
+        "LinkingTo": "Rcpp",
+        "Suggests": "testthat, knitr, rmarkdown",
+        "RoxygenNote": "7.3.1",
+        "Language": "en-US",
+        "Encoding": "UTF-8",
+        "Biarch": "true",
+        "Packaged": "2025-10-10 09:30:48 UTC; jeroen",
+        "Author": "Jeroen Ooms [aut, cre] (ORCID: <https://orcid.org/0000-0002-4035-0289>),\n  George Stagg [ctb] (ORCID: <https://orcid.org/0009-0006-3173-9846>),\n  Jan Marvin Garbuszus [ctb]",
+        "Maintainer": "Jeroen Ooms <jeroenooms@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2025-10-10 10:30:20 UTC",
+        "Built": "R 4.5.0; x86_64-pc-linux-gnu; 2026-01-11 07:40:08 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "V8",
+        "RemotePkgRef": "V8",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "8.0.1"
+      }
+    },
     "askpass": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -1874,6 +1912,80 @@
         "RemoteSha": "0.1.4"
       }
     },
+    "geojsonsf": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "geojsonsf",
+        "Type": "Package",
+        "Title": "GeoJSON to Simple Feature Converter",
+        "Version": "2.0.5",
+        "Date": "2025-11-25",
+        "Authors@R": "c(\n    person(\"David\", \"Cooley\", ,\"dcooley@symbolix.com.au\", role = c(\"aut\", \"cre\")),\n    person(\"Andy\", \"Teucher\", ,\"andy.teucher@gmail.com\", role = \"ctb\")\n    )",
+        "Description": "Converts Between GeoJSON and simple feature objects. ",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/SymbolixAU/geojsonsf",
+        "BugReports": "https://github.com/SymbolixAU/geojsonsf/issues",
+        "Encoding": "UTF-8",
+        "LazyData": "true",
+        "Depends": "R (>= 4.0.0)",
+        "Imports": "Rcpp (>= 1.1.0)",
+        "LinkingTo": "geometries (>= 0.2.5), jsonify (>= 1.2.3), rapidjsonr (>=\n1.2.1), Rcpp, sfheaders (>= 0.4.5)",
+        "RoxygenNote": "7.3.3",
+        "Suggests": "covr, jsonify, knitr, rmarkdown, tinytest",
+        "VignetteBuilder": "knitr",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-11-26 08:50:31 UTC; david",
+        "Author": "David Cooley [aut, cre],\n  Andy Teucher [ctb]",
+        "Maintainer": "David Cooley <dcooley@symbolix.com.au>",
+        "Repository": "RSPM",
+        "Date/Publication": "2025-11-26 10:00:02 UTC",
+        "Built": "R 4.5.0; x86_64-pc-linux-gnu; 2026-01-11 07:58:08 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "geojsonsf",
+        "RemotePkgRef": "geojsonsf",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "2.0.5"
+      }
+    },
+    "geometries": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "geometries",
+        "Type": "Package",
+        "Title": "Convert Between R Objects and Geometric Structures",
+        "Date": "2025-11-23",
+        "Version": "0.2.5",
+        "Authors@R": "c(\n    person(\"David\", \"Cooley\", ,\"david.cooley.au@gmail.com\", role = c(\"aut\", \"cre\"))\n    )",
+        "Description": "Geometry shapes in 'R' are typically represented by matrices (points, lines), with more complex \n  shapes being lists of matrices (polygons). 'Geometries' will convert various 'R' objects into these shapes. \n  Conversion functions are available at both the 'R' level, and through 'Rcpp'.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://dcooley.github.io/geometries/",
+        "BugReports": "https://github.com/dcooley/geometries/issues",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.2.3",
+        "LinkingTo": "Rcpp",
+        "Imports": "Rcpp (>= 1.1.0)",
+        "Suggests": "covr, knitr, rmarkdown, tinytest",
+        "VignetteBuilder": "knitr",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-11-23 16:09:52 UTC; david",
+        "Author": "David Cooley [aut, cre]",
+        "Maintainer": "David Cooley <david.cooley.au@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2025-11-23 16:30:02 UTC",
+        "Built": "R 4.5.0; x86_64-pc-linux-gnu; 2026-01-11 07:48:01 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "geometries",
+        "RemotePkgRef": "geometries",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "0.2.5"
+      }
+    },
     "ggplot2": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -2520,6 +2632,42 @@
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "0.1.4"
+      }
+    },
+    "jsonify": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "jsonify",
+        "Type": "Package",
+        "Title": "Convert Between 'R' Objects and Javascript Object Notation\n(JSON)",
+        "Version": "1.2.3",
+        "Date": "2025-11-24",
+        "Authors@R": "c(\n    person(\"David\", \"Cooley\", ,\"dcooley@symbolix.com.au\", role = c(\"aut\", \"cre\")),\n    person(\"Chris\", \"Muir\", role = \"ctb\"),\n    person(\"Brendan\", \"Knapp\", role = \"ctb\", comment = c(ORCID = \"0000-0003-3284-4972\"))\n    )",
+        "Description": "Conversions between 'R' objects and Javascript Object Notation (JSON) using \n    the 'rapidjsonr' library <https://CRAN.R-project.org/package=rapidjsonr>. ",
+        "License": "MIT + file LICENSE",
+        "Depends": "R (>= 4.0.0)",
+        "Imports": "Rcpp (>= 1.1.0)",
+        "LinkingTo": "rapidjsonr (>= 1.2.1), Rcpp",
+        "RoxygenNote": "7.3.2",
+        "Suggests": "covr, testthat, knitr, rmarkdown",
+        "Encoding": "UTF-8",
+        "URL": "https://symbolixau.github.io/jsonify/,\nhttps://github.com/SymbolixAU/jsonify",
+        "BugReports": "https://github.com/SymbolixAU/jsonify/issues",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-11-24 13:03:46 UTC; david",
+        "Author": "David Cooley [aut, cre],\n  Chris Muir [ctb],\n  Brendan Knapp [ctb] (ORCID: <https://orcid.org/0000-0003-3284-4972>)",
+        "Maintainer": "David Cooley <dcooley@symbolix.com.au>",
+        "Repository": "RSPM",
+        "Date/Publication": "2025-11-25 19:22:12 UTC",
+        "Built": "R 4.5.0; x86_64-pc-linux-gnu; 2026-01-11 07:53:13 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "jsonify",
+        "RemotePkgRef": "jsonify",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "1.2.3"
       }
     },
     "jsonlite": {
@@ -3187,7 +3335,7 @@
     },
     "plogr": {
       "Source": "CRAN",
-      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "Repository": null,
       "description": {
         "Package": "plogr",
         "Title": "The 'plog' C++ Logging Library",
@@ -3605,6 +3753,37 @@
         "RemoteSha": "1.5.0"
       }
     },
+    "rapidjsonr": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "rapidjsonr",
+        "Type": "Package",
+        "Title": "'Rapidjson' C++ Header Files",
+        "Version": "1.2.1",
+        "Date": "2025-11-23",
+        "Authors@R": "c(\n    person(\"David\", \"Cooley\", ,\"dcooley@symbolix.com.au\", role = c(\"aut\", \"cre\")),\n    person(\"Milo\", \"Yip\", , role = \"ctb\", comment = \"Author of c++ rapidjson library, provided through THL A29 Limited, a Tencent company\"),\n    person(\"Alexander\", \"Chemeris\", role = \"ctb\", comment = \"Author of c++ msinttypes library\")\n    )",
+        "Description": "Provides JSON parsing capability through the 'Rapidjson' 'C++' header-only library. ",
+        "License": "MIT + file LICENSE",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.1",
+        "SystemRequirements": "GNU make",
+        "NeedsCompilation": "no",
+        "Packaged": "2025-11-23 16:12:43 UTC; david",
+        "Author": "David Cooley [aut, cre],\n  Milo Yip [ctb] (Author of c++ rapidjson library, provided through THL\n    A29 Limited, a Tencent company),\n  Alexander Chemeris [ctb] (Author of c++ msinttypes library)",
+        "Maintainer": "David Cooley <dcooley@symbolix.com.au>",
+        "Repository": "RSPM",
+        "Date/Publication": "2025-11-24 08:50:07 UTC",
+        "Built": "R 4.5.0; ; 2025-11-25 14:33:13 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "rapidjsonr",
+        "RemotePkgRef": "rapidjsonr",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "1.2.1"
+      }
+    },
     "rappdirs": {
       "Source": "CRAN",
       "Repository": "https://packagemanager.posit.co/cran/latest",
@@ -3930,6 +4109,42 @@
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.1.6"
+      }
+    },
+    "rmapshaper": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Type": "Package",
+        "Package": "rmapshaper",
+        "Title": "Client for 'mapshaper' for 'Geospatial' Operations",
+        "Version": "0.6.0",
+        "Authors@R": "\n    c(person(given = \"Andy\",\n             family = \"Teucher\",\n             role = c(\"aut\", \"cre\"),\n             comment = c(ORCID = \"0000-0002-7840-692X\"),\n             email = \"andy.teucher@gmail.com\"),\n      person(given = \"Kenton\",\n             family = \"Russell\",\n             role = \"aut\",\n             email = \"kent.russell@timelyportfolio.com\",\n             comment = \"JavaScript support\"),\n      person(given = \"Matthew\",\n             family = \"Bloch\",\n             role = \"cph\",\n             comment = \"mapshaper Javascript library\"))",
+        "Description": "Edit and simplify 'geojson', 'Spatial', and 'sf'\n    objects.  This is wrapper around the 'mapshaper' 'JavaScript' library\n    by Matthew Bloch <https://github.com/mbloch/mapshaper/> to perform\n    topologically-aware polygon simplification, as well as other\n    operations such as clipping, erasing, dissolving, and converting\n    'multi-part' to 'single-part' geometries.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://github.com/ateucher/rmapshaper,\nhttp://andyteucher.ca/rmapshaper/",
+        "BugReports": "https://github.com/ateucher/rmapshaper/issues",
+        "Imports": "methods, geojsonsf (>= 2.0.5), jsonify (>= 1.2.3), readr (>=\n2.1.0), sf (>= 1.0.0), sp (>= 1.4-0), V8 (>= 6.0.0)",
+        "Suggests": "knitr, magrittr, rmarkdown, testthat (>= 3.0.0), jsonlite,\ncovr, units, withr",
+        "VignetteBuilder": "knitr",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.3",
+        "Config/testthat/edition": "3",
+        "Config/testthat/parallel": "TRUE",
+        "NeedsCompilation": "no",
+        "Packaged": "2025-12-04 00:45:55 UTC; andy",
+        "Author": "Andy Teucher [aut, cre] (ORCID:\n    <https://orcid.org/0000-0002-7840-692X>),\n  Kenton Russell [aut] (JavaScript support),\n  Matthew Bloch [cph] (mapshaper Javascript library)",
+        "Maintainer": "Andy Teucher <andy.teucher@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2025-12-04 12:50:08 UTC",
+        "Built": "R 4.5.0; ; 2025-12-04 16:35:01 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "rmapshaper",
+        "RemotePkgRef": "rmapshaper",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "0.6.0"
       }
     },
     "rmarkdown": {
@@ -4331,6 +4546,42 @@
         "RemoteReposName": "CRAN",
         "RemotePkgPlatform": "source",
         "RemoteSha": "1.0-21"
+      }
+    },
+    "sfheaders": {
+      "Source": "CRAN",
+      "Repository": "https://packagemanager.posit.co/cran/latest",
+      "description": {
+        "Package": "sfheaders",
+        "Type": "Package",
+        "Title": "Converts Between R Objects and Simple Feature Objects",
+        "Date": "2025-11-24",
+        "Version": "0.4.5",
+        "Authors@R": "c(\n    person(\"David\", \"Cooley\", ,\"david.cooley.au@gmail.com\", role = c(\"aut\", \"cre\")),\n    person(given = \"Michael\", family = \"Sumner\", role = \"ctb\")\n    )",
+        "Description": "Converts between R and Simple Feature 'sf' objects, without depending\n  on the Simple Feature library. Conversion functions are available at both the R level, \n  and through 'Rcpp'.",
+        "License": "MIT + file LICENSE",
+        "URL": "https://dcooley.github.io/sfheaders/",
+        "BugReports": "https://github.com/dcooley/sfheaders/issues",
+        "Encoding": "UTF-8",
+        "RoxygenNote": "7.3.2",
+        "Depends": "R (>= 3.0.2)",
+        "LinkingTo": "geometries (>= 0.2.5), Rcpp",
+        "Imports": "Rcpp (>= 1.1.0)",
+        "Suggests": "covr, knitr, testthat",
+        "NeedsCompilation": "yes",
+        "Packaged": "2025-11-24 13:15:04 UTC; david",
+        "Author": "David Cooley [aut, cre],\n  Michael Sumner [ctb]",
+        "Maintainer": "David Cooley <david.cooley.au@gmail.com>",
+        "Repository": "RSPM",
+        "Date/Publication": "2025-11-25 19:20:02 UTC",
+        "Built": "R 4.5.0; x86_64-pc-linux-gnu; 2026-01-11 07:52:53 UTC; unix",
+        "RemoteType": "standard",
+        "RemoteRef": "sfheaders",
+        "RemotePkgRef": "sfheaders",
+        "RemoteRepos": "https://packagemanager.posit.co/cran/__linux__/noble/latest",
+        "RemoteReposName": "CRAN",
+        "RemotePkgPlatform": "source",
+        "RemoteSha": "0.4.5"
       }
     },
     "shiny": {
@@ -5647,988 +5898,22 @@
   },
   "files": {
     ".gitattributes": {
-      "checksum": "ded15960dafb693a0bba0e5c52f3e360"
+      "checksum": "68b329da9893e34099c7d8ad5cb9c940"
     },
     ".RData": {
-      "checksum": "38dddb683c2e64e14e1f2b2ea656598e"
+      "checksum": "e2dafe420fd1b494f39cb8e63fb6cad2"
     },
     ".Renviron": {
       "checksum": "4c25341033bf4b0d7e0285d2be6db9ba"
     },
     ".Rprofile": {
-      "checksum": "256ed0581b44f2bbf92156f931af49c1"
+      "checksum": "acbaedb22971b74ebc1bf4f6427704d1"
     },
     "app.R": {
-      "checksum": "ea7f09c1c722051cc282e242e846d100"
+      "checksum": "c227ca86caf78c3befe0a0c9831b99a5"
     },
     "data-raw/99c8_00.txt": {
       "checksum": "9bc68c37e2293a8672495fc9c7ffbb17"
-    },
-    "data-raw/e-1_1997-09-30.pdf": {
-      "checksum": "61b1f8c985b0d4d47126146b93cfbb34"
-    },
-    "data-raw/e-1_1998-09-30.pdf": {
-      "checksum": "4daaab7379fa862a28cfd0afda8ce39d"
-    },
-    "data-raw/e-1_1999-09-30.pdf": {
-      "checksum": "9da3bbfee9eacb667556488ff3fa8da4"
-    },
-    "data-raw/e-1_2000-09-30.pdf": {
-      "checksum": "475eb6f195ab0911af719d60870079b4"
-    },
-    "data-raw/e-1_2001-03-31.pdf": {
-      "checksum": "9290b369fec67a005a583a431f795a60"
-    },
-    "data-raw/e-1_2001-06-30.pdf": {
-      "checksum": "0d416f92ed0afd78cb48e038a26bace0"
-    },
-    "data-raw/e-1_2001-09-30.pdf": {
-      "checksum": "aec9d1337baa7407557c63d5a6aed651"
-    },
-    "data-raw/e-1_2001-12-31.pdf": {
-      "checksum": "90ce609c7becb2c704cfdac5ea960cf4"
-    },
-    "data-raw/e-1_2002-03-31.pdf": {
-      "checksum": "d0e88c0a3ca87b46b4c391b28dfaebe3"
-    },
-    "data-raw/e-1_2002-06-30.pdf": {
-      "checksum": "0c86558df5001cbfecd5206f6c3e70ad"
-    },
-    "data-raw/e-1_2002-09-30.pdf": {
-      "checksum": "a322a42683b604d07a45345f8bcb5d50"
-    },
-    "data-raw/e-1_2002-12-31.pdf": {
-      "checksum": "aa40fcd0b19072bb7ae134d82080a804"
-    },
-    "data-raw/e-1_2003-03-31.pdf": {
-      "checksum": "d26924cc465eaca11c156ac09bafbd41"
-    },
-    "data-raw/e-1_2003-06-30.pdf": {
-      "checksum": "e62d6a68250c1d775f15b29cdee15c0c"
-    },
-    "data-raw/e-1_2003-09-30.pdf": {
-      "checksum": "943000507bdda9f57a4721b12f015bde"
-    },
-    "data-raw/e-1_2003-12-31.pdf": {
-      "checksum": "1d167f202cc5fd69584dc05ef0260079"
-    },
-    "data-raw/e-1_2004-03-31.pdf": {
-      "checksum": "7ad530a1df38f3121f18e490f4ea49e1"
-    },
-    "data-raw/e-1_2004-06-30.pdf": {
-      "checksum": "2942c46c77c80489b19c8172839e462c"
-    },
-    "data-raw/e-1_2004-09-30.pdf": {
-      "checksum": "d7ff44fa383ac08fb911c30e4fb5999e"
-    },
-    "data-raw/e-1_2004-12-31.pdf": {
-      "checksum": "4d268665292d86dfc7b337cecd89020a"
-    },
-    "data-raw/e-1_2005-03-31.pdf": {
-      "checksum": "84edda3af61b4b22b1ab2e51a6feefa5"
-    },
-    "data-raw/e-1_2005-06-30.pdf": {
-      "checksum": "ebf0fcdbd22ee54f3ba685d9acf56f28"
-    },
-    "data-raw/e-1_2005-09-30.pdf": {
-      "checksum": "565727884ab3d0b5d57b18a859f7739d"
-    },
-    "data-raw/e-1_2005-12-31.pdf": {
-      "checksum": "b54122c7c7cc513df5f62f61a129956f"
-    },
-    "data-raw/e-1_2006-03-31.pdf": {
-      "checksum": "28cd9f9ed8b31558cb21421759ca542e"
-    },
-    "data-raw/e-1_2006-06-30.pdf": {
-      "checksum": "a97f3f24d6af418329205fc0d793aa25"
-    },
-    "data-raw/e-1_2006-09-30.pdf": {
-      "checksum": "8a13e235f3364f35897ccda91b5b1db6"
-    },
-    "data-raw/e-1_2006-12-31.pdf": {
-      "checksum": "51b4573bb9a4f209f5406c274794c6a9"
-    },
-    "data-raw/e-1_2007-03-31.pdf": {
-      "checksum": "5a42f6327f2bcccd50dd783b47798d81"
-    },
-    "data-raw/e-1_2007-06-30.pdf": {
-      "checksum": "3b79cf1c2c977a0f2ece28d519b8cb54"
-    },
-    "data-raw/e-1_2007-09-30.pdf": {
-      "checksum": "f05c05d44f53f145d37c63189a8ae200"
-    },
-    "data-raw/e-1_2007-12-31.pdf": {
-      "checksum": "7bcf89d98158520f096d4f8194a6bdc0"
-    },
-    "data-raw/e-1_2008-03-31.pdf": {
-      "checksum": "afd3c28d73db13a2fbae0c7587ae4729"
-    },
-    "data-raw/e-1_2008-06-30.pdf": {
-      "checksum": "b88f148715092960f67086fbffb2c0ec"
-    },
-    "data-raw/e-1_2008-09-30.pdf": {
-      "checksum": "4f083b0f9b005c5bf39969b0919dbea7"
-    },
-    "data-raw/e-1_2008-12-31.pdf": {
-      "checksum": "e884775737ca6e39e2f9bf23aa9159b5"
-    },
-    "data-raw/e-1_2009-03-31.pdf": {
-      "checksum": "7a9e0a24d60f0373c3f98c92fdf40a76"
-    },
-    "data-raw/e-1_2009-06-30.pdf": {
-      "checksum": "c37a8f3c568e217c805d48dd31a5f81c"
-    },
-    "data-raw/e-1_2009-09-30.pdf": {
-      "checksum": "ffce5740a4419fbb3714aee0c60dc106"
-    },
-    "data-raw/e-1_2009-12-31.pdf": {
-      "checksum": "5686f481a5a3fd2f2260f3d418c6d3c4"
-    },
-    "data-raw/e-1_2010-03-31.pdf": {
-      "checksum": "9d1821918c4da805846b610aeb8b6a7b"
-    },
-    "data-raw/e-1_2010-06-30.pdf": {
-      "checksum": "50708a0f8a1a3d6b673b1da2d2908c2f"
-    },
-    "data-raw/e-1_2010-09-30.pdf": {
-      "checksum": "69f7bdb077380305c234dfca2120bc3d"
-    },
-    "data-raw/e-1_2010-12-31.pdf": {
-      "checksum": "d9b5d2e699bc7476634cfa69990a08f0"
-    },
-    "data-raw/e-1_2011-03-31.pdf": {
-      "checksum": "bcb1d9c757b8c86b3b01dba4b50c5381"
-    },
-    "data-raw/e-1_2011-06-30.pdf": {
-      "checksum": "ebd1130373c55149cec8ebbd7b67ae86"
-    },
-    "data-raw/e-1_2011-09-30.pdf": {
-      "checksum": "5902e12b8be9f139b127f0189c27c90c"
-    },
-    "data-raw/e-1_2011-12-31.pdf": {
-      "checksum": "34c3b17d6245527e9c7c74dd60cd3019"
-    },
-    "data-raw/e-1_2012-03-31.pdf": {
-      "checksum": "5d74f9777082ea21bfb0f6b6b97ec67c"
-    },
-    "data-raw/e-1_2012-06-30.pdf": {
-      "checksum": "ec6ff3dfccc6e468db2e844738588c26"
-    },
-    "data-raw/e-1_2012-09-30.pdf": {
-      "checksum": "0980c7d34d024085bf7544bdd67691c8"
-    },
-    "data-raw/e-1_2012-12-31.pdf": {
-      "checksum": "e8047431be2de8c970e2eb92eb3aef13"
-    },
-    "data-raw/e-1_2013-03-31.pdf": {
-      "checksum": "63058a90b58e127194e652e0856037d8"
-    },
-    "data-raw/e-1_2013-06-30.pdf": {
-      "checksum": "e9e7b62b6fb1bdff37717c6454ab38df"
-    },
-    "data-raw/e-1_2013-09-30.pdf": {
-      "checksum": "4e95dc06624ca77dd9ecd47aa6ed19cf"
-    },
-    "data-raw/e-1_2013-12-31.pdf": {
-      "checksum": "d8007f2ee30ecda0048108c1db7658ab"
-    },
-    "data-raw/e-1_2014-03-31.pdf": {
-      "checksum": "90e085746c61dc4fe01890c903e703f5"
-    },
-    "data-raw/e-1_2014-06-30.pdf": {
-      "checksum": "f366a7628a540df21a7f03a6eec45de4"
-    },
-    "data-raw/e-1_2014-09-30.pdf": {
-      "checksum": "dad7fac18bf292f7770394e402e86891"
-    },
-    "data-raw/e-1_2014-12-31.pdf": {
-      "checksum": "796f0bfa8cd4cff1774b524791741f5b"
-    },
-    "data-raw/e-1_2015-03-31.pdf": {
-      "checksum": "cadf05ec19eb791441b3a87fe89cf510"
-    },
-    "data-raw/e-1_2015-06-30.pdf": {
-      "checksum": "0426b4000f76d3533fa177c0f887abaf"
-    },
-    "data-raw/e-1_2015-09-30.pdf": {
-      "checksum": "88f51fafbb531e627084ef1225cef1f7"
-    },
-    "data-raw/e-1_2015-12-31.pdf": {
-      "checksum": "f9c9aef759cf1f40c49f7e36d67f99bf"
-    },
-    "data-raw/e-1_2016-03-31.pdf": {
-      "checksum": "647ff6200898fa8e67b4dde3b02c1667"
-    },
-    "data-raw/e-1_2016-06-30.pdf": {
-      "checksum": "8369aaccd5000a0cbf12cbd7b1629b67"
-    },
-    "data-raw/e-1_2016-09-30.pdf": {
-      "checksum": "3c1e49d94999adb96cf1af5efaa1495d"
-    },
-    "data-raw/e-1_2016-12-31.pdf": {
-      "checksum": "bfbca6d44589418720f428bb75755c16"
-    },
-    "data-raw/e-1_2017-03-31.pdf": {
-      "checksum": "044eaf9b5ee1dfc61b824b0b680e5a5f"
-    },
-    "data-raw/e-1_2017-06-30.pdf": {
-      "checksum": "ad5876b40e98da31819d0e8a64d1ce27"
-    },
-    "data-raw/e-1_2017-09-30.xlsx": {
-      "checksum": "3ba07e27324946670226c9c430bdebd9"
-    },
-    "data-raw/e-1_2017-12-31.xlsx": {
-      "checksum": "46c15e86b55647662355c5a29ca418da"
-    },
-    "data-raw/e-1_2018-03-31.xlsx": {
-      "checksum": "6eeaf4e46cfc71ccdbfcb4098f3302f4"
-    },
-    "data-raw/e-1_2018-06-30.xlsx": {
-      "checksum": "d9496376dc2eeaa22f15acf963f395d6"
-    },
-    "data-raw/e-1_2018-09-30.xlsx": {
-      "checksum": "b9e80df21417ae6b5c1dd84c0e76bf92"
-    },
-    "data-raw/e-1_2018-12-31.xlsx": {
-      "checksum": "d4658882e00a28de49ec9f480fb2e2ac"
-    },
-    "data-raw/e-1_2019-03-31.xlsx": {
-      "checksum": "5458e7d31b2599595982491f523e6801"
-    },
-    "data-raw/e-1_2019-06-30.xlsx": {
-      "checksum": "1dc4db7cd91d4297951e13ed15eb6944"
-    },
-    "data-raw/e-1_2019-09-30.xlsx": {
-      "checksum": "54d192c6ed0cf4072711875fad65265e"
-    },
-    "data-raw/e-1_2019-12-31.xlsx": {
-      "checksum": "aed10c7f7347d75e29f953247c16a57a"
-    },
-    "data-raw/e-1_2020-03-31.xlsx": {
-      "checksum": "7a0ebf57598f243cd2cc85c4713548ad"
-    },
-    "data-raw/e-1_2020-06-30.xlsx": {
-      "checksum": "c9b500a9b66188b642a8b3568516871e"
-    },
-    "data-raw/e-1_2020-09-30.xlsx": {
-      "checksum": "522d415d91d796fa0c0b016029fec2eb"
-    },
-    "data-raw/e-1_2020-12-31.xlsx": {
-      "checksum": "7c44a71c5f026db0ac5c7cd9d19fb140"
-    },
-    "data-raw/e-1_2021-03-31.xlsx": {
-      "checksum": "bd8f7a9023832a0ad48b236c93a12410"
-    },
-    "data-raw/e-1_2021-06-30.xlsx": {
-      "checksum": "7f31240ae0dc9ed86f6f2c4667f7abad"
-    },
-    "data-raw/e-1_2021-09-30.xlsx": {
-      "checksum": "656b181cbacb9c94d36ff16dd574d5f4"
-    },
-    "data-raw/e-1_2021-12-31.xlsx": {
-      "checksum": "edc6b949a5cea9e726f985fe75022a09"
-    },
-    "data-raw/e-1_2022-03-31.xlsx": {
-      "checksum": "aa187b4f5007f1d3002e62ea9f1bd975"
-    },
-    "data-raw/e-1_2022-06-30.xlsx": {
-      "checksum": "6c31697b6adc2b27ab4a56eb5f37ba44"
-    },
-    "data-raw/e-1_2022-09-30.xlsx": {
-      "checksum": "508285bc5e4052f942944d45b087c4c1"
-    },
-    "data-raw/e-1_2022-12-31.xlsx": {
-      "checksum": "9862507bc25b300cd7a8611d3addeafa"
-    },
-    "data-raw/e-1_2023-03-31.xlsx": {
-      "checksum": "13dd61d544ac70fe54b1ebb2075a4dea"
-    },
-    "data-raw/e-1_2023-06-30.xlsx": {
-      "checksum": "98b4cee5ece41e7d3cd69f33ca4f4d23"
-    },
-    "data-raw/e-1_2023-09-30.xlsx": {
-      "checksum": "e31854fe8605abe3aa6decdb4bd5f433"
-    },
-    "data-raw/e-1_2023-12-31.xlsx": {
-      "checksum": "485cea24725504c8967073fb20e189b2"
-    },
-    "data-raw/e-1_2024-03-31.xlsx": {
-      "checksum": "01d435abe49262dd5db51cff9edff8c6"
-    },
-    "data-raw/e-1_2024-06-30.xlsx": {
-      "checksum": "428b2160f1da5bc3da1b06eb2c62a9a5"
-    },
-    "data-raw/e-1_2024-09-30.xlsx": {
-      "checksum": "7f8e21ada8c3688da06cadb7a8f78eba"
-    },
-    "data-raw/e-1_2024-12-31.xlsx": {
-      "checksum": "71c48a6c752689afd7556893a112cd22"
-    },
-    "data-raw/e-1_2025-03-31.xlsx": {
-      "checksum": "43f1d567f82c071b169dba8cd9f8e219"
-    },
-    "data-raw/e-10_2022-09-30.xlsx": {
-      "checksum": "848b823894f7f007c9587ce38ca239cb"
-    },
-    "data-raw/e-10_2023-09-30.xlsx": {
-      "checksum": "a00985b713a5d935730156da56f659ab"
-    },
-    "data-raw/e-10_2024-09-30.xlsx": {
-      "checksum": "921ec1afc7e9e75069b18fd189bd75db"
-    },
-    "data-raw/e-2_1997-09-30.pdf": {
-      "checksum": "659725777f196e2cce687ff8299c518a"
-    },
-    "data-raw/e-2_1998-09-30.pdf": {
-      "checksum": "fd55807f650ad7b412039a9d5cde4fe5"
-    },
-    "data-raw/e-2_1999-09-30.pdf": {
-      "checksum": "d3b534b6d98cb6977bb73f7eca043e67"
-    },
-    "data-raw/e-2_2000-09-30.pdf": {
-      "checksum": "5345a662dc81757f037ef89da4ca33ea"
-    },
-    "data-raw/e-2_2001-03-31.pdf": {
-      "checksum": "9aa57ec9dcc6a0543407be736b139717"
-    },
-    "data-raw/e-2_2001-06-30.pdf": {
-      "checksum": "d7540079694ef245c6997107918da1d9"
-    },
-    "data-raw/e-2_2001-12-31.pdf": {
-      "checksum": "1259761394e3be732fe2942b04473511"
-    },
-    "data-raw/e-2_2002-03-31.pdf": {
-      "checksum": "3827ae1471bee52c8c6531a564466032"
-    },
-    "data-raw/e-2_2002-06-30.pdf": {
-      "checksum": "116a5f46b633a6a3a6622e4ab1b7057c"
-    },
-    "data-raw/e-2_2002-09-30.pdf": {
-      "checksum": "775808d7831f3242af323049a74f026c"
-    },
-    "data-raw/e-2_2002-12-31.pdf": {
-      "checksum": "5c92c5abc5f349a1718989c6b276a941"
-    },
-    "data-raw/e-2_2003-03-31.pdf": {
-      "checksum": "d32c95cdd63406217607c3a98c14cda5"
-    },
-    "data-raw/e-2_2003-06-30.pdf": {
-      "checksum": "510be74a13e74a9defe3732bd5ea0679"
-    },
-    "data-raw/e-2_2003-09-30.pdf": {
-      "checksum": "7f50e849ff7d032bbd703e578ebb361c"
-    },
-    "data-raw/e-2_2003-12-31.pdf": {
-      "checksum": "bb73945f24ff72c5247cbcb9ffb7f9f3"
-    },
-    "data-raw/e-2_2004-03-31.pdf": {
-      "checksum": "1606f4fb198f93ef66b18cd70d87cf56"
-    },
-    "data-raw/e-2_2004-06-30.pdf": {
-      "checksum": "cd130c91a27d34cfc62c553a1db65e08"
-    },
-    "data-raw/e-2_2004-09-30.pdf": {
-      "checksum": "2cb3d42783d0d820f2e14313ed2e2191"
-    },
-    "data-raw/e-2_2004-12-31.pdf": {
-      "checksum": "1a8192cd383209577cd98a41ed4b0897"
-    },
-    "data-raw/e-2_2005-03-31.pdf": {
-      "checksum": "5db21a49fe9433fb4c107df15bead9dc"
-    },
-    "data-raw/e-2_2005-06-30.pdf": {
-      "checksum": "d90208ce34a332e0211c24605f3acf90"
-    },
-    "data-raw/e-2_2005-09-30.pdf": {
-      "checksum": "3989acbac1aed963fa89310f6e3a19ba"
-    },
-    "data-raw/e-2_2005-12-31.pdf": {
-      "checksum": "09d36e30b953b7040fa230e847c32345"
-    },
-    "data-raw/e-2_2006-03-31.pdf": {
-      "checksum": "04929debe3265247bbea0745850f6eac"
-    },
-    "data-raw/e-2_2006-06-30.pdf": {
-      "checksum": "571c4288552a63104cffa3af4dfdf105"
-    },
-    "data-raw/e-2_2006-09-30.pdf": {
-      "checksum": "4213f2ead6333356b886b4bd0b2e79e7"
-    },
-    "data-raw/e-2_2006-12-31.pdf": {
-      "checksum": "8a22b356a415e6582cccd5487a8316ab"
-    },
-    "data-raw/e-2_2007-03-31.pdf": {
-      "checksum": "b6be0bc9844da7e736320787517599e2"
-    },
-    "data-raw/e-2_2007-06-30.pdf": {
-      "checksum": "50f5bdfb5569ba3cd77bb6f1af955311"
-    },
-    "data-raw/e-2_2007-09-30.pdf": {
-      "checksum": "1426d8e990dc7aeccf22d25b52f7f476"
-    },
-    "data-raw/e-2_2007-12-31.pdf": {
-      "checksum": "03e90f470f4017b1757b1aae3fd7f802"
-    },
-    "data-raw/e-2_2008-03-31.pdf": {
-      "checksum": "d9a6bad7ec7fb567cccd1b22c9058549"
-    },
-    "data-raw/e-2_2008-06-30.pdf": {
-      "checksum": "1e1016f26841533a92123c3d003dd493"
-    },
-    "data-raw/e-2_2008-09-30.pdf": {
-      "checksum": "4518831c0f0ff972f93d2b34742fd65a"
-    },
-    "data-raw/e-2_2008-12-31.pdf": {
-      "checksum": "613fc0606c7ff1d2af42567103c97ce3"
-    },
-    "data-raw/e-2_2009-03-31.pdf": {
-      "checksum": "9e956031514c45bd87f035832b896d2c"
-    },
-    "data-raw/e-2_2009-06-30.pdf": {
-      "checksum": "6bccf1b88f3c1b0188a28c9b4b425512"
-    },
-    "data-raw/e-2_2009-09-30.pdf": {
-      "checksum": "88fb7b998184920fecda5d3d37c3b948"
-    },
-    "data-raw/e-2_2009-12-31.pdf": {
-      "checksum": "ae6d6610aac741269a51e50abcc81ec6"
-    },
-    "data-raw/e-2_2010-03-31.pdf": {
-      "checksum": "4f7163bc5fee26e1ce86c18ec8098a55"
-    },
-    "data-raw/e-2_2010-06-30.pdf": {
-      "checksum": "eca802aa1d9074cc74aaf97beb618483"
-    },
-    "data-raw/e-2_2010-09-30.pdf": {
-      "checksum": "28d93c8fdc61a3f57a38bfca9fc028b1"
-    },
-    "data-raw/e-2_2010-12-31.pdf": {
-      "checksum": "ecd67919fde9ce2ed2b1eb9adceb260a"
-    },
-    "data-raw/e-2_2011-03-31.pdf": {
-      "checksum": "1c47045690fc021156b7dba57a145358"
-    },
-    "data-raw/e-2_2011-06-30.pdf": {
-      "checksum": "2bb05750d109ca72ce450c818626debe"
-    },
-    "data-raw/e-2_2011-09-30.pdf": {
-      "checksum": "8e9e981f97b62e4f9d71c2791ed3b2c2"
-    },
-    "data-raw/e-2_2011-12-31.pdf": {
-      "checksum": "55f97aebf7519bb6f6e8c514806b1316"
-    },
-    "data-raw/e-2_2012-03-31.pdf": {
-      "checksum": "38b8de2d4661ead80610efe1a644439a"
-    },
-    "data-raw/e-2_2012-06-30.pdf": {
-      "checksum": "7d5da6e755ba23d9311e348d8ab970ab"
-    },
-    "data-raw/e-2_2012-09-30.pdf": {
-      "checksum": "f532c7f0e39661e370ff9e4aa63ae412"
-    },
-    "data-raw/e-2_2012-12-31.pdf": {
-      "checksum": "f560695784982e7d1ff822f0ed605761"
-    },
-    "data-raw/e-2_2013-03-31.pdf": {
-      "checksum": "c641927c346a891f6b94a350a708c963"
-    },
-    "data-raw/e-2_2013-06-30.pdf": {
-      "checksum": "c65a4be5e6fa2fde1415b59089f79a80"
-    },
-    "data-raw/e-2_2013-09-30.pdf": {
-      "checksum": "652923c94e207898b39bfccf7486cdac"
-    },
-    "data-raw/e-2_2013-12-31.pdf": {
-      "checksum": "3a4d467fe6cd6ad20c32870057c8cfe0"
-    },
-    "data-raw/e-2_2014-03-31.pdf": {
-      "checksum": "0ed400f7cd52a13986793733166a56fe"
-    },
-    "data-raw/e-2_2014-06-30.pdf": {
-      "checksum": "2291ce1113293d89a988588e7cdcaf02"
-    },
-    "data-raw/e-2_2014-09-30.pdf": {
-      "checksum": "5a9cb1135c0b55df29307c8cf1dd3caf"
-    },
-    "data-raw/e-2_2014-12-31.pdf": {
-      "checksum": "0f91e32ceb7f356c7e67ffc01b3b8473"
-    },
-    "data-raw/e-2_2015-03-31.pdf": {
-      "checksum": "f8323706cca6f5c1766c5aab1040e3b2"
-    },
-    "data-raw/e-2_2015-06-30.pdf": {
-      "checksum": "e5eb283d9e4c7c5faf2d3d0bcd40579b"
-    },
-    "data-raw/e-2_2015-09-30.pdf": {
-      "checksum": "4f7ccdd3939eb436dee0e3eefe6f7cee"
-    },
-    "data-raw/e-2_2015-12-31.pdf": {
-      "checksum": "a33551aa89376cf880a27530e6a4ea83"
-    },
-    "data-raw/e-2_2016-03-31.pdf": {
-      "checksum": "3ccf06fb8f3cb6e6f8ba646d52a0ae4b"
-    },
-    "data-raw/e-2_2016-06-30.pdf": {
-      "checksum": "69845aa941294287a4e0ffa71356426e"
-    },
-    "data-raw/e-2_2016-09-30.pdf": {
-      "checksum": "610f44f42b1bcb78192a88bea98119ac"
-    },
-    "data-raw/e-2_2016-12-31.pdf": {
-      "checksum": "a17d151227c1c326c46a906bad4417c3"
-    },
-    "data-raw/e-2_2017-03-31.pdf": {
-      "checksum": "91a286ae655d99d9454924e50e8d7976"
-    },
-    "data-raw/e-2_2017-06-30.pdf": {
-      "checksum": "d3a687046e71c553a0c20086a95d808c"
-    },
-    "data-raw/e-2_2017-09-30.xlsx": {
-      "checksum": "168a940b11dc3e6d30fc9e0735426ce0"
-    },
-    "data-raw/e-2_2017-12-31.xlsx": {
-      "checksum": "1640cca09fc412a28bdc6a9089bc2dde"
-    },
-    "data-raw/e-2_2018-03-31.xlsx": {
-      "checksum": "af99e3ade62a43ffdbd54f2a371c2167"
-    },
-    "data-raw/e-2_2018-06-30.xlsx": {
-      "checksum": "02b8b6c8688465e871cf9a34956d47d5"
-    },
-    "data-raw/e-2_2018-09-30.xlsx": {
-      "checksum": "40ee3a5e325e71020227e33057e26db1"
-    },
-    "data-raw/e-2_2018-12-31.xlsx": {
-      "checksum": "cbeba546b08a9fc453c78037458cb085"
-    },
-    "data-raw/e-2_2019-03-31.xlsx": {
-      "checksum": "2eb755b6d595cd5d551b35d1b218b5ef"
-    },
-    "data-raw/e-2_2019-06-30.xlsx": {
-      "checksum": "e583fef6b2f553b6aa3e43dc17884233"
-    },
-    "data-raw/e-2_2019-09-30.xlsx": {
-      "checksum": "e99b568152e182b31deb85222d3bc4eb"
-    },
-    "data-raw/e-2_2019-12-31.xlsx": {
-      "checksum": "538d90db7b6b3ea002d9a22874dd57b9"
-    },
-    "data-raw/e-2_2020-03-31.xlsx": {
-      "checksum": "6444536fa86d2cbe7deea0a68900e0ae"
-    },
-    "data-raw/e-2_2020-06-30.xlsx": {
-      "checksum": "f2e15f66171b5bf5fd32408a274347d2"
-    },
-    "data-raw/e-2_2020-09-30.xlsx": {
-      "checksum": "7253523a469d4a9ef6371bc518178aae"
-    },
-    "data-raw/e-2_2020-12-31.xlsx": {
-      "checksum": "2c5221fd55364e4ad7a1ca53a1e8ee5a"
-    },
-    "data-raw/e-2_2021-03-31.xlsx": {
-      "checksum": "aab66b4899c04dc1861895349ca5f99d"
-    },
-    "data-raw/e-2_2021-06-30.xlsx": {
-      "checksum": "1764d4f8a418635e28786220843dc319"
-    },
-    "data-raw/e-2_2021-09-30.xlsx": {
-      "checksum": "3c7dcd4b290230478d38990026d7b5ce"
-    },
-    "data-raw/e-2_2021-12-31.xlsx": {
-      "checksum": "3aa34cea956b7f1482c2444429ae1cba"
-    },
-    "data-raw/e-2_2022-03-31.xlsx": {
-      "checksum": "d00e1c17ec5cc889106fd80d9a54dc6a"
-    },
-    "data-raw/e-2_2022-06-30.xlsx": {
-      "checksum": "0f2eb8878fc50f331538a7fd783607ed"
-    },
-    "data-raw/e-2_2022-09-30.xlsx": {
-      "checksum": "c6af4cabe039ee8cbf19b88aa6207038"
-    },
-    "data-raw/e-2_2022-12-31.xlsx": {
-      "checksum": "bc516e0a54d6e4d7386fbbd0b794bde9"
-    },
-    "data-raw/e-2_2023-03-31.xlsx": {
-      "checksum": "ae269375320f5ec2611d24fbd628511b"
-    },
-    "data-raw/e-2_2023-06-30.xlsx": {
-      "checksum": "87fc4f9458418066a901e0b334c7eb3e"
-    },
-    "data-raw/e-2_2023-09-30.xlsx": {
-      "checksum": "74dd8c1bf9d508f9cf8a5b36d9a04c43"
-    },
-    "data-raw/e-2_2023-12-31.xlsx": {
-      "checksum": "646e5a90d986f5c73f4ab2aca512911e"
-    },
-    "data-raw/e-2_2024-03-31.xlsx": {
-      "checksum": "b67db0cdae7d8b6055b1764b32bc8110"
-    },
-    "data-raw/e-2_2024-06-30.xlsx": {
-      "checksum": "bada989f4d91c1d1ea6a991358e319c1"
-    },
-    "data-raw/e-2_2024-09-30.xlsx": {
-      "checksum": "2ea1786135ac824a7b7a01637e833f1c"
-    },
-    "data-raw/e-2_2024-12-31.xlsx": {
-      "checksum": "df11e17f1d68212b07c86abb9ac2b11b"
-    },
-    "data-raw/e-2_2025-03-31.xlsx": {
-      "checksum": "fc17b3d6504ef6071222236c558200fa"
-    },
-    "data-raw/e-3_1997-09-30.pdf": {
-      "checksum": "b04cb1d4ffb7443977977418b82b1573"
-    },
-    "data-raw/e-3_1998-09-30.pdf": {
-      "checksum": "2b7edfe484c0219004cd7930378e6c74"
-    },
-    "data-raw/e-3_1999-09-30.pdf": {
-      "checksum": "7e0625e4c0f717ad447d7f4c784431ca"
-    },
-    "data-raw/e-3_2000-09-30.pdf": {
-      "checksum": "95be47e784ba41366cab48131abb61b8"
-    },
-    "data-raw/e-3_2001-09-30.pdf": {
-      "checksum": "f3f3d22d5f94ce74fce07bce83f52c34"
-    },
-    "data-raw/e-3_2002-09-30.pdf": {
-      "checksum": "d74febc4f24251ae1ff3bd68a42517f3"
-    },
-    "data-raw/e-3_2003-09-30.pdf": {
-      "checksum": "787170041fb3d180e4fcaf9f165e298a"
-    },
-    "data-raw/e-3_2004-09-30.pdf": {
-      "checksum": "ad2b295abcdb262d1a5ed279dc0ff2ce"
-    },
-    "data-raw/e-3_2005-09-30.pdf": {
-      "checksum": "f610080c756a65a898d9124d188b7aa2"
-    },
-    "data-raw/e-3_2006-09-30.pdf": {
-      "checksum": "2c30eb11dc3af6163ec4cbb67ffad66d"
-    },
-    "data-raw/e-3_2007-09-30.pdf": {
-      "checksum": "79bd5c10f12281c59b4620611880a91e"
-    },
-    "data-raw/e-3_2008-09-30.pdf": {
-      "checksum": "fcecdb019997acbe9406e51cec25cd57"
-    },
-    "data-raw/e-3_2009-09-30.pdf": {
-      "checksum": "ea2854058c4d4b413c165ca6888dfde7"
-    },
-    "data-raw/e-3_2011-09-30.pdf": {
-      "checksum": "a1ed3424d4b3fbbf037dd4cb80a0c27a"
-    },
-    "data-raw/e-3_2012-09-30.pdf": {
-      "checksum": "4da591c6b5d7f1388e724e9093d69c72"
-    },
-    "data-raw/e-3_2013-09-30.pdf": {
-      "checksum": "7b7475e1f299f053dd81945085ae3376"
-    },
-    "data-raw/e-3_2014-09-30.pdf": {
-      "checksum": "fd100965d899b575946a0e736e491e4d"
-    },
-    "data-raw/e-3_2015-09-30.pdf": {
-      "checksum": "9e5ffa9b043d10d910265554c087ba71"
-    },
-    "data-raw/e-3_2016-09-30.pdf": {
-      "checksum": "87ea52ad996e47514397abf801e35117"
-    },
-    "data-raw/e-3_2017-09-30.xlsx": {
-      "checksum": "06e11a7f3cb2ce70de59bd9e82befbf2"
-    },
-    "data-raw/e-3_2018-09-30.xlsx": {
-      "checksum": "e42479ce9b6d1a496660375c78f7e71a"
-    },
-    "data-raw/e-3_2019-09-30.xlsx": {
-      "checksum": "838171ad607411c98ddae288a798acb8"
-    },
-    "data-raw/e-3_2020-09-30.xlsx": {
-      "checksum": "cccdf5819a5b652a321dec545c779afb"
-    },
-    "data-raw/e-3_2021-09-30.xlsx": {
-      "checksum": "99c3c7dae6470d881c74fa3df7f60118"
-    },
-    "data-raw/e-3_2022-09-30.xlsx": {
-      "checksum": "7325fbc2481ec9b92970f1ed049f048f"
-    },
-    "data-raw/e-3_2023-09-30.xlsx": {
-      "checksum": "597a19a7fdf7ca4a86d1c80675322abb"
-    },
-    "data-raw/e-3_2024-09-30.xlsx": {
-      "checksum": "8df44b61324c34486eaa0dd7ffd4f4df"
-    },
-    "data-raw/e-4_1997-09-30.pdf": {
-      "checksum": "240c327277b91fe9aedaac7bd5020e45"
-    },
-    "data-raw/e-4_1998-09-30.pdf": {
-      "checksum": "cb8915c47687bcb189ea33bb70fbd003"
-    },
-    "data-raw/e-7_1997-09-30.pdf": {
-      "checksum": "00ac452bbcd849e10e84682494144d9e"
-    },
-    "data-raw/e-7_1998-09-30.pdf": {
-      "checksum": "b99323a9a45096ba9013e7f4a8430231"
-    },
-    "data-raw/e-7_1999-09-30.pdf": {
-      "checksum": "5c3bb50494e10a9fe491414b645af24a"
-    },
-    "data-raw/e-7_2000-09-30.pdf": {
-      "checksum": "73245a8d7923598430256eb7a380dd91"
-    },
-    "data-raw/e-7_2001-09-30.pdf": {
-      "checksum": "66ec2a96e7c664f3d792608cffa53fbd"
-    },
-    "data-raw/e-7_2002-09-30.pdf": {
-      "checksum": "1e2cf51a662ef4d6637e1044d02804c1"
-    },
-    "data-raw/e-7_2003-09-30.pdf": {
-      "checksum": "a3f8a0f8a59a88cc2cd0fc1ab2421217"
-    },
-    "data-raw/e-7_2004-09-30.pdf": {
-      "checksum": "e9d837a8e162b96f03c534d7f835c3fa"
-    },
-    "data-raw/e-7_2005-09-30.pdf": {
-      "checksum": "4ebe25013180a67f70c6f747670d168e"
-    },
-    "data-raw/e-7a_2006-09-30.pdf": {
-      "checksum": "d81ea62c288073d4c46794059b5cc324"
-    },
-    "data-raw/e-7a_2006-12-31.pdf": {
-      "checksum": "02c48c7340f24d14e060d3dde72ffddb"
-    },
-    "data-raw/e-7a_2007-03-31.pdf": {
-      "checksum": "81e0348aa162cd8dcf4be1836821e870"
-    },
-    "data-raw/e-7a_2007-06-30.pdf": {
-      "checksum": "130ee839579efd0b3f00e8a0f9ca2017"
-    },
-    "data-raw/e-7a_2007-09-30.pdf": {
-      "checksum": "c083ddc9e4130128250552d8e4530e31"
-    },
-    "data-raw/e-7a_2007-12-31.pdf": {
-      "checksum": "f127fd5f8315ee7b646cf239780b0a9b"
-    },
-    "data-raw/e-7a_2008-03-31.pdf": {
-      "checksum": "3d94adffb76111e706be10a2799416e8"
-    },
-    "data-raw/e-7a_2008-06-30.pdf": {
-      "checksum": "3cf0b4ab36f933089f8350b722242967"
-    },
-    "data-raw/e-7a_2008-09-30.pdf": {
-      "checksum": "139a24d9b5223b3d51f7e867e4c4f234"
-    },
-    "data-raw/e-7a_2008-12-31.pdf": {
-      "checksum": "fd84663612b5a90689f10ab609561542"
-    },
-    "data-raw/e-7a_2009-03-31.pdf": {
-      "checksum": "35041286f4cf0496f65b5ee78b843684"
-    },
-    "data-raw/e-7a_2009-06-30.pdf": {
-      "checksum": "286108ee1f622ae1e47996cc7d58f687"
-    },
-    "data-raw/e-7a_2009-09-30.pdf": {
-      "checksum": "15697aa0aa9167c954088a1c12bc8f51"
-    },
-    "data-raw/e-7a_2010-03-31.pdf": {
-      "checksum": "91346ff877ffbad6c817e299327085b2"
-    },
-    "data-raw/e-7a_2010-06-30.pdf": {
-      "checksum": "382c895dc89a100999c81e7bce5583af"
-    },
-    "data-raw/e-7a_2010-09-30.pdf": {
-      "checksum": "103350ba2d94adfce6c9227316703e32"
-    },
-    "data-raw/e-7a_2010-12-31.pdf": {
-      "checksum": "dee26c54108f6bfe5480a925f9c51f73"
-    },
-    "data-raw/e-7a_2011-03-31.pdf": {
-      "checksum": "fa3f568030486031dc2e3bafe1ffc9b2"
-    },
-    "data-raw/e-7a_2011-06-30.pdf": {
-      "checksum": "61f42a6e224e94521b74f4c69684b382"
-    },
-    "data-raw/e-7a_2011-09-30.pdf": {
-      "checksum": "65d7efa538e7721f9ecbe30343050e40"
-    },
-    "data-raw/e-7a_2011-12-31.pdf": {
-      "checksum": "6d1e3aea913c8f5f9f886f7147423974"
-    },
-    "data-raw/e-7a_2012-03-31.pdf": {
-      "checksum": "67c6d4ef430618ac737f4dd0080b0a68"
-    },
-    "data-raw/e-7a_2012-06-30.pdf": {
-      "checksum": "47bad0601c9b09a8d5d4e5ee3d3da119"
-    },
-    "data-raw/e-7a_2012-09-30.pdf": {
-      "checksum": "782937939e14aa4922174b96585c8be0"
-    },
-    "data-raw/e-7a_2012-12-31.pdf": {
-      "checksum": "6862f835d29e9fc5507212bdd8756790"
-    },
-    "data-raw/e-7a_2013-03-31.pdf": {
-      "checksum": "91c16f9537bd6817fd00d0f4e231d423"
-    },
-    "data-raw/e-7a_2013-06-30.pdf": {
-      "checksum": "37cd473f9341db16e1757dc64b10ebb2"
-    },
-    "data-raw/e-7a_2013-09-30.pdf": {
-      "checksum": "3d05304be6663d2c388bedcb1b02a366"
-    },
-    "data-raw/e-7a_2013-12-31.pdf": {
-      "checksum": "3913a4d22cfbe3a586ba723e70ec35ca"
-    },
-    "data-raw/e-7a_2014-03-31.pdf": {
-      "checksum": "4ac3267333a473790a4ee19918ae7efb"
-    },
-    "data-raw/e-7a_2014-06-30.pdf": {
-      "checksum": "76735dce4a746c6f7219a828005c7354"
-    },
-    "data-raw/e-7a_2014-09-30.pdf": {
-      "checksum": "b2b8a361037d18e23da56beada0eb2ea"
-    },
-    "data-raw/e-7a_2014-12-31.pdf": {
-      "checksum": "bebbd0e72b792369929dbc49a78c70b1"
-    },
-    "data-raw/e-7a_2015-03-31.pdf": {
-      "checksum": "c4c990e3db6e9b1f6a0e19cb5afce393"
-    },
-    "data-raw/e-7a_2015-06-30.pdf": {
-      "checksum": "6eda0c1993a37bfde8c1e11d4e728d6b"
-    },
-    "data-raw/e-7a_2015-09-30.pdf": {
-      "checksum": "85140686d1305a9b0db4422738c287b3"
-    },
-    "data-raw/e-7a_2015-12-31.pdf": {
-      "checksum": "2013e4dfd994463320128b9cddbc6cf0"
-    },
-    "data-raw/e-7a_2016-03-31.pdf": {
-      "checksum": "a8c989f447de6e0af7d4689beab6ea99"
-    },
-    "data-raw/e-7a_2016-06-30.pdf": {
-      "checksum": "b0541b0c9edd60fc94dc26206e08c8bb"
-    },
-    "data-raw/e-7a_2016-09-30.pdf": {
-      "checksum": "5086ae5496b0b2642744d0e309ebe699"
-    },
-    "data-raw/e-7a_2016-12-31.pdf": {
-      "checksum": "6be7944e3202991596cd661574953e26"
-    },
-    "data-raw/e-7a_2017-03-31.pdf": {
-      "checksum": "4392b6b21b5f888a03ad3add58e30ead"
-    },
-    "data-raw/e-7a_2017-06-30.pdf": {
-      "checksum": "cdb5cf1073bf817aef7a266a6de610db"
-    },
-    "data-raw/e-7a_2017-09-30.xlsx": {
-      "checksum": "6c35e48d886f7075d556a40698f4d49a"
-    },
-    "data-raw/e-7a_2017-12-31.xlsx": {
-      "checksum": "e6d9fb2a9980a75031ece13f600cb3ef"
-    },
-    "data-raw/e-7a_2018-03-31.xlsx": {
-      "checksum": "74da5b72e27facf5103faa98d4953cf0"
-    },
-    "data-raw/e-7a_2018-06-30.xlsx": {
-      "checksum": "8a274f4bb11790740c58eeafd1b10e82"
-    },
-    "data-raw/e-7a_2018-09-30.xlsx": {
-      "checksum": "2e3b16690a57cf6cb751957a86f55bf9"
-    },
-    "data-raw/e-7a_2018-12-31.xlsx": {
-      "checksum": "a6d1dbbbe62e87e199a14674aa17a6f4"
-    },
-    "data-raw/e-7a_2019-03-31.xlsx": {
-      "checksum": "ad528104a3a8e58bad83979b1b32aa3f"
-    },
-    "data-raw/e-7a_2019-06-30.xlsx": {
-      "checksum": "6b1c3f312a5f2336dda1d391efaf0ae2"
-    },
-    "data-raw/e-7a_2019-09-30.xlsx": {
-      "checksum": "f660bc2093e10a6f11a9bfacbdaecba0"
-    },
-    "data-raw/e-7a_2019-12-31.xlsx": {
-      "checksum": "33d42dc78b23cc42536dce304581bd32"
-    },
-    "data-raw/e-7a_2020-03-31.xlsx": {
-      "checksum": "66aad2f08d0b2d8c73da7d546f0f9339"
-    },
-    "data-raw/e-7a_2020-06-30.xlsx": {
-      "checksum": "8f162a6b265a03e4fa738317c6eeacf7"
-    },
-    "data-raw/e-7a_2020-09-30.xlsx": {
-      "checksum": "40d5177156fbcb3b9c399b6eeed21822"
-    },
-    "data-raw/e-7a_2020-12-31.xlsx": {
-      "checksum": "5a88c9f836dbd92aa2747c10aef66e15"
-    },
-    "data-raw/e-7a_2021-03-31.xlsx": {
-      "checksum": "5c97a8dafddc14eb7539ffea5fc35d47"
-    },
-    "data-raw/e-7a_2021-06-30.xlsx": {
-      "checksum": "4d3e39fe50a8ffe0fee69389743aa2b6"
-    },
-    "data-raw/e-7a_2021-09-30.xlsx": {
-      "checksum": "62e7e17c6f9d67d990a7d8e4d9f539e1"
-    },
-    "data-raw/e-7a_2021-12-31.xlsx": {
-      "checksum": "1e8cf1df7ebb46ef3a0fe59c929e23d3"
-    },
-    "data-raw/e-7a_2022-03-31.xlsx": {
-      "checksum": "7b3721d3c915c235706384ae596245d7"
-    },
-    "data-raw/e-7a_2022-06-30.xlsx": {
-      "checksum": "eca5eaf9310eb7a6004bd42f95ccd4d8"
-    },
-    "data-raw/e-7a_2022-09-30.xlsx": {
-      "checksum": "5cd2ad3cd5a7a5385c5b7ea13651fd72"
-    },
-    "data-raw/e-7a_2022-12-31.xlsx": {
-      "checksum": "c7e36c305edadc6bd154c7cd7da8847a"
-    },
-    "data-raw/e-7a_2023-03-31.xlsx": {
-      "checksum": "e6c4aeb5979a0cb4c5894dc739795258"
-    },
-    "data-raw/e-7a_2023-06-30.xlsx": {
-      "checksum": "f093c7ea9792e2384601bf007b744e8b"
-    },
-    "data-raw/e-7a_2023-09-30.xlsx": {
-      "checksum": "9c512717ff1d0930ba2d904356a6ed3b"
-    },
-    "data-raw/e-7a_2023-12-31.xlsx": {
-      "checksum": "7cc2e065b3e7fa50622db1e004616e8f"
-    },
-    "data-raw/e-7a_2024-03-31.xlsx": {
-      "checksum": "dee31d98046753de32d639794c3eb836"
-    },
-    "data-raw/e-7a_2024-06-30.xlsx": {
-      "checksum": "bf72b6cd8b714c3baed60df1473a3140"
-    },
-    "data-raw/e-7a_2024-09-30.xlsx": {
-      "checksum": "60f723fd22f8a04f9c1c97fd24749b51"
-    },
-    "data-raw/e-7a_2024-12-31.xlsx": {
-      "checksum": "65a042af238c209d817ed3c978572c6b"
-    },
-    "data-raw/e-7a_2025-03-31.xlsx": {
-      "checksum": "39e6d86b318bf05828559202b4d2dc5e"
-    },
-    "data-raw/e-8_2022-09-30.xlsx": {
-      "checksum": "3b2c641484bb6d154d97f84e50363117"
-    },
-    "data-raw/e-8_2023-09-30.xlsx": {
-      "checksum": "9cdc245d22586497a416e8011b63a2c2"
-    },
-    "data-raw/e-8_2024-09-30.xlsx": {
-      "checksum": "5edd597bd39bbd9143356ae40601e633"
-    },
-    "data-raw/e-8a_2022-09-30.xlsx": {
-      "checksum": "c462ce4a71226b2e28ab733ef1f71e6a"
-    },
-    "data-raw/e-8a_2023-09-30.xlsx": {
-      "checksum": "c9a67262810a3a0b7295962434b29708"
-    },
-    "data-raw/e-8a_2024-09-30.xlsx": {
-      "checksum": "dbccd6811039778fb95c0d44573e18d3"
     },
     "data-raw/IDB_11-20-2025.csv": {
       "checksum": "2b3aad509cd7a6cfe8d6d14a8cc78dc4"
@@ -6642,6 +5927,993 @@
     "data-raw/other/e8089co.xls": {
       "checksum": "9b52b4ce113bd8851e123aba6a00648e"
     },
+    "data-raw/usaoc-data-tables/e-1_1997-09-30.pdf": {
+      "checksum": "61b1f8c985b0d4d47126146b93cfbb34"
+    },
+    "data-raw/usaoc-data-tables/e-1_1998-09-30.pdf": {
+      "checksum": "4daaab7379fa862a28cfd0afda8ce39d"
+    },
+    "data-raw/usaoc-data-tables/e-1_1999-09-30.pdf": {
+      "checksum": "9da3bbfee9eacb667556488ff3fa8da4"
+    },
+    "data-raw/usaoc-data-tables/e-1_2000-09-30.pdf": {
+      "checksum": "475eb6f195ab0911af719d60870079b4"
+    },
+    "data-raw/usaoc-data-tables/e-1_2001-03-31.pdf": {
+      "checksum": "9290b369fec67a005a583a431f795a60"
+    },
+    "data-raw/usaoc-data-tables/e-1_2001-06-30.pdf": {
+      "checksum": "0d416f92ed0afd78cb48e038a26bace0"
+    },
+    "data-raw/usaoc-data-tables/e-1_2001-09-30.pdf": {
+      "checksum": "aec9d1337baa7407557c63d5a6aed651"
+    },
+    "data-raw/usaoc-data-tables/e-1_2001-12-31.pdf": {
+      "checksum": "90ce609c7becb2c704cfdac5ea960cf4"
+    },
+    "data-raw/usaoc-data-tables/e-1_2002-03-31.pdf": {
+      "checksum": "d0e88c0a3ca87b46b4c391b28dfaebe3"
+    },
+    "data-raw/usaoc-data-tables/e-1_2002-06-30.pdf": {
+      "checksum": "0c86558df5001cbfecd5206f6c3e70ad"
+    },
+    "data-raw/usaoc-data-tables/e-1_2002-09-30.pdf": {
+      "checksum": "a322a42683b604d07a45345f8bcb5d50"
+    },
+    "data-raw/usaoc-data-tables/e-1_2002-12-31.pdf": {
+      "checksum": "aa40fcd0b19072bb7ae134d82080a804"
+    },
+    "data-raw/usaoc-data-tables/e-1_2003-03-31.pdf": {
+      "checksum": "d26924cc465eaca11c156ac09bafbd41"
+    },
+    "data-raw/usaoc-data-tables/e-1_2003-06-30.pdf": {
+      "checksum": "e62d6a68250c1d775f15b29cdee15c0c"
+    },
+    "data-raw/usaoc-data-tables/e-1_2003-09-30.pdf": {
+      "checksum": "943000507bdda9f57a4721b12f015bde"
+    },
+    "data-raw/usaoc-data-tables/e-1_2003-12-31.pdf": {
+      "checksum": "1d167f202cc5fd69584dc05ef0260079"
+    },
+    "data-raw/usaoc-data-tables/e-1_2004-03-31.pdf": {
+      "checksum": "7ad530a1df38f3121f18e490f4ea49e1"
+    },
+    "data-raw/usaoc-data-tables/e-1_2004-06-30.pdf": {
+      "checksum": "2942c46c77c80489b19c8172839e462c"
+    },
+    "data-raw/usaoc-data-tables/e-1_2004-09-30.pdf": {
+      "checksum": "d7ff44fa383ac08fb911c30e4fb5999e"
+    },
+    "data-raw/usaoc-data-tables/e-1_2004-12-31.pdf": {
+      "checksum": "4d268665292d86dfc7b337cecd89020a"
+    },
+    "data-raw/usaoc-data-tables/e-1_2005-03-31.pdf": {
+      "checksum": "84edda3af61b4b22b1ab2e51a6feefa5"
+    },
+    "data-raw/usaoc-data-tables/e-1_2005-06-30.pdf": {
+      "checksum": "ebf0fcdbd22ee54f3ba685d9acf56f28"
+    },
+    "data-raw/usaoc-data-tables/e-1_2005-09-30.pdf": {
+      "checksum": "565727884ab3d0b5d57b18a859f7739d"
+    },
+    "data-raw/usaoc-data-tables/e-1_2005-12-31.pdf": {
+      "checksum": "b54122c7c7cc513df5f62f61a129956f"
+    },
+    "data-raw/usaoc-data-tables/e-1_2006-03-31.pdf": {
+      "checksum": "28cd9f9ed8b31558cb21421759ca542e"
+    },
+    "data-raw/usaoc-data-tables/e-1_2006-06-30.pdf": {
+      "checksum": "a97f3f24d6af418329205fc0d793aa25"
+    },
+    "data-raw/usaoc-data-tables/e-1_2006-09-30.pdf": {
+      "checksum": "8a13e235f3364f35897ccda91b5b1db6"
+    },
+    "data-raw/usaoc-data-tables/e-1_2006-12-31.pdf": {
+      "checksum": "51b4573bb9a4f209f5406c274794c6a9"
+    },
+    "data-raw/usaoc-data-tables/e-1_2007-03-31.pdf": {
+      "checksum": "5a42f6327f2bcccd50dd783b47798d81"
+    },
+    "data-raw/usaoc-data-tables/e-1_2007-06-30.pdf": {
+      "checksum": "3b79cf1c2c977a0f2ece28d519b8cb54"
+    },
+    "data-raw/usaoc-data-tables/e-1_2007-09-30.pdf": {
+      "checksum": "f05c05d44f53f145d37c63189a8ae200"
+    },
+    "data-raw/usaoc-data-tables/e-1_2007-12-31.pdf": {
+      "checksum": "7bcf89d98158520f096d4f8194a6bdc0"
+    },
+    "data-raw/usaoc-data-tables/e-1_2008-03-31.pdf": {
+      "checksum": "afd3c28d73db13a2fbae0c7587ae4729"
+    },
+    "data-raw/usaoc-data-tables/e-1_2008-06-30.pdf": {
+      "checksum": "b88f148715092960f67086fbffb2c0ec"
+    },
+    "data-raw/usaoc-data-tables/e-1_2008-09-30.pdf": {
+      "checksum": "4f083b0f9b005c5bf39969b0919dbea7"
+    },
+    "data-raw/usaoc-data-tables/e-1_2008-12-31.pdf": {
+      "checksum": "e884775737ca6e39e2f9bf23aa9159b5"
+    },
+    "data-raw/usaoc-data-tables/e-1_2009-03-31.pdf": {
+      "checksum": "7a9e0a24d60f0373c3f98c92fdf40a76"
+    },
+    "data-raw/usaoc-data-tables/e-1_2009-06-30.pdf": {
+      "checksum": "c37a8f3c568e217c805d48dd31a5f81c"
+    },
+    "data-raw/usaoc-data-tables/e-1_2009-09-30.pdf": {
+      "checksum": "ffce5740a4419fbb3714aee0c60dc106"
+    },
+    "data-raw/usaoc-data-tables/e-1_2009-12-31.pdf": {
+      "checksum": "5686f481a5a3fd2f2260f3d418c6d3c4"
+    },
+    "data-raw/usaoc-data-tables/e-1_2010-03-31.pdf": {
+      "checksum": "9d1821918c4da805846b610aeb8b6a7b"
+    },
+    "data-raw/usaoc-data-tables/e-1_2010-06-30.pdf": {
+      "checksum": "50708a0f8a1a3d6b673b1da2d2908c2f"
+    },
+    "data-raw/usaoc-data-tables/e-1_2010-09-30.pdf": {
+      "checksum": "69f7bdb077380305c234dfca2120bc3d"
+    },
+    "data-raw/usaoc-data-tables/e-1_2010-12-31.pdf": {
+      "checksum": "d9b5d2e699bc7476634cfa69990a08f0"
+    },
+    "data-raw/usaoc-data-tables/e-1_2011-03-31.pdf": {
+      "checksum": "bcb1d9c757b8c86b3b01dba4b50c5381"
+    },
+    "data-raw/usaoc-data-tables/e-1_2011-06-30.pdf": {
+      "checksum": "ebd1130373c55149cec8ebbd7b67ae86"
+    },
+    "data-raw/usaoc-data-tables/e-1_2011-09-30.pdf": {
+      "checksum": "5902e12b8be9f139b127f0189c27c90c"
+    },
+    "data-raw/usaoc-data-tables/e-1_2011-12-31.pdf": {
+      "checksum": "34c3b17d6245527e9c7c74dd60cd3019"
+    },
+    "data-raw/usaoc-data-tables/e-1_2012-03-31.pdf": {
+      "checksum": "5d74f9777082ea21bfb0f6b6b97ec67c"
+    },
+    "data-raw/usaoc-data-tables/e-1_2012-06-30.pdf": {
+      "checksum": "ec6ff3dfccc6e468db2e844738588c26"
+    },
+    "data-raw/usaoc-data-tables/e-1_2012-09-30.pdf": {
+      "checksum": "0980c7d34d024085bf7544bdd67691c8"
+    },
+    "data-raw/usaoc-data-tables/e-1_2012-12-31.pdf": {
+      "checksum": "e8047431be2de8c970e2eb92eb3aef13"
+    },
+    "data-raw/usaoc-data-tables/e-1_2013-03-31.pdf": {
+      "checksum": "63058a90b58e127194e652e0856037d8"
+    },
+    "data-raw/usaoc-data-tables/e-1_2013-06-30.pdf": {
+      "checksum": "e9e7b62b6fb1bdff37717c6454ab38df"
+    },
+    "data-raw/usaoc-data-tables/e-1_2013-09-30.pdf": {
+      "checksum": "4e95dc06624ca77dd9ecd47aa6ed19cf"
+    },
+    "data-raw/usaoc-data-tables/e-1_2013-12-31.pdf": {
+      "checksum": "d8007f2ee30ecda0048108c1db7658ab"
+    },
+    "data-raw/usaoc-data-tables/e-1_2014-03-31.pdf": {
+      "checksum": "90e085746c61dc4fe01890c903e703f5"
+    },
+    "data-raw/usaoc-data-tables/e-1_2014-06-30.pdf": {
+      "checksum": "f366a7628a540df21a7f03a6eec45de4"
+    },
+    "data-raw/usaoc-data-tables/e-1_2014-09-30.pdf": {
+      "checksum": "dad7fac18bf292f7770394e402e86891"
+    },
+    "data-raw/usaoc-data-tables/e-1_2014-12-31.pdf": {
+      "checksum": "796f0bfa8cd4cff1774b524791741f5b"
+    },
+    "data-raw/usaoc-data-tables/e-1_2015-03-31.pdf": {
+      "checksum": "cadf05ec19eb791441b3a87fe89cf510"
+    },
+    "data-raw/usaoc-data-tables/e-1_2015-06-30.pdf": {
+      "checksum": "0426b4000f76d3533fa177c0f887abaf"
+    },
+    "data-raw/usaoc-data-tables/e-1_2015-09-30.pdf": {
+      "checksum": "88f51fafbb531e627084ef1225cef1f7"
+    },
+    "data-raw/usaoc-data-tables/e-1_2015-12-31.pdf": {
+      "checksum": "f9c9aef759cf1f40c49f7e36d67f99bf"
+    },
+    "data-raw/usaoc-data-tables/e-1_2016-03-31.pdf": {
+      "checksum": "647ff6200898fa8e67b4dde3b02c1667"
+    },
+    "data-raw/usaoc-data-tables/e-1_2016-06-30.pdf": {
+      "checksum": "8369aaccd5000a0cbf12cbd7b1629b67"
+    },
+    "data-raw/usaoc-data-tables/e-1_2016-09-30.pdf": {
+      "checksum": "3c1e49d94999adb96cf1af5efaa1495d"
+    },
+    "data-raw/usaoc-data-tables/e-1_2016-12-31.pdf": {
+      "checksum": "bfbca6d44589418720f428bb75755c16"
+    },
+    "data-raw/usaoc-data-tables/e-1_2017-03-31.pdf": {
+      "checksum": "044eaf9b5ee1dfc61b824b0b680e5a5f"
+    },
+    "data-raw/usaoc-data-tables/e-1_2017-06-30.pdf": {
+      "checksum": "ad5876b40e98da31819d0e8a64d1ce27"
+    },
+    "data-raw/usaoc-data-tables/e-1_2017-09-30.xlsx": {
+      "checksum": "3ba07e27324946670226c9c430bdebd9"
+    },
+    "data-raw/usaoc-data-tables/e-1_2017-12-31.xlsx": {
+      "checksum": "46c15e86b55647662355c5a29ca418da"
+    },
+    "data-raw/usaoc-data-tables/e-1_2018-03-31.xlsx": {
+      "checksum": "6eeaf4e46cfc71ccdbfcb4098f3302f4"
+    },
+    "data-raw/usaoc-data-tables/e-1_2018-06-30.xlsx": {
+      "checksum": "d9496376dc2eeaa22f15acf963f395d6"
+    },
+    "data-raw/usaoc-data-tables/e-1_2018-09-30.xlsx": {
+      "checksum": "b9e80df21417ae6b5c1dd84c0e76bf92"
+    },
+    "data-raw/usaoc-data-tables/e-1_2018-12-31.xlsx": {
+      "checksum": "d4658882e00a28de49ec9f480fb2e2ac"
+    },
+    "data-raw/usaoc-data-tables/e-1_2019-03-31.xlsx": {
+      "checksum": "5458e7d31b2599595982491f523e6801"
+    },
+    "data-raw/usaoc-data-tables/e-1_2019-06-30.xlsx": {
+      "checksum": "1dc4db7cd91d4297951e13ed15eb6944"
+    },
+    "data-raw/usaoc-data-tables/e-1_2019-09-30.xlsx": {
+      "checksum": "54d192c6ed0cf4072711875fad65265e"
+    },
+    "data-raw/usaoc-data-tables/e-1_2019-12-31.xlsx": {
+      "checksum": "aed10c7f7347d75e29f953247c16a57a"
+    },
+    "data-raw/usaoc-data-tables/e-1_2020-03-31.xlsx": {
+      "checksum": "7a0ebf57598f243cd2cc85c4713548ad"
+    },
+    "data-raw/usaoc-data-tables/e-1_2020-06-30.xlsx": {
+      "checksum": "c9b500a9b66188b642a8b3568516871e"
+    },
+    "data-raw/usaoc-data-tables/e-1_2020-09-30.xlsx": {
+      "checksum": "522d415d91d796fa0c0b016029fec2eb"
+    },
+    "data-raw/usaoc-data-tables/e-1_2020-12-31.xlsx": {
+      "checksum": "7c44a71c5f026db0ac5c7cd9d19fb140"
+    },
+    "data-raw/usaoc-data-tables/e-1_2021-03-31.xlsx": {
+      "checksum": "bd8f7a9023832a0ad48b236c93a12410"
+    },
+    "data-raw/usaoc-data-tables/e-1_2021-06-30.xlsx": {
+      "checksum": "7f31240ae0dc9ed86f6f2c4667f7abad"
+    },
+    "data-raw/usaoc-data-tables/e-1_2021-09-30.xlsx": {
+      "checksum": "656b181cbacb9c94d36ff16dd574d5f4"
+    },
+    "data-raw/usaoc-data-tables/e-1_2021-12-31.xlsx": {
+      "checksum": "edc6b949a5cea9e726f985fe75022a09"
+    },
+    "data-raw/usaoc-data-tables/e-1_2022-03-31.xlsx": {
+      "checksum": "aa187b4f5007f1d3002e62ea9f1bd975"
+    },
+    "data-raw/usaoc-data-tables/e-1_2022-06-30.xlsx": {
+      "checksum": "6c31697b6adc2b27ab4a56eb5f37ba44"
+    },
+    "data-raw/usaoc-data-tables/e-1_2022-09-30.xlsx": {
+      "checksum": "508285bc5e4052f942944d45b087c4c1"
+    },
+    "data-raw/usaoc-data-tables/e-1_2022-12-31.xlsx": {
+      "checksum": "9862507bc25b300cd7a8611d3addeafa"
+    },
+    "data-raw/usaoc-data-tables/e-1_2023-03-31.xlsx": {
+      "checksum": "13dd61d544ac70fe54b1ebb2075a4dea"
+    },
+    "data-raw/usaoc-data-tables/e-1_2023-06-30.xlsx": {
+      "checksum": "98b4cee5ece41e7d3cd69f33ca4f4d23"
+    },
+    "data-raw/usaoc-data-tables/e-1_2023-09-30.xlsx": {
+      "checksum": "e31854fe8605abe3aa6decdb4bd5f433"
+    },
+    "data-raw/usaoc-data-tables/e-1_2023-12-31.xlsx": {
+      "checksum": "485cea24725504c8967073fb20e189b2"
+    },
+    "data-raw/usaoc-data-tables/e-1_2024-03-31.xlsx": {
+      "checksum": "01d435abe49262dd5db51cff9edff8c6"
+    },
+    "data-raw/usaoc-data-tables/e-1_2024-06-30.xlsx": {
+      "checksum": "428b2160f1da5bc3da1b06eb2c62a9a5"
+    },
+    "data-raw/usaoc-data-tables/e-1_2024-09-30.xlsx": {
+      "checksum": "7f8e21ada8c3688da06cadb7a8f78eba"
+    },
+    "data-raw/usaoc-data-tables/e-1_2024-12-31.xlsx": {
+      "checksum": "71c48a6c752689afd7556893a112cd22"
+    },
+    "data-raw/usaoc-data-tables/e-1_2025-03-31.xlsx": {
+      "checksum": "43f1d567f82c071b169dba8cd9f8e219"
+    },
+    "data-raw/usaoc-data-tables/e-1_2025-06-30.xlsx": {
+      "checksum": "a3766e5ccb40dfe05193564ed83943b2"
+    },
+    "data-raw/usaoc-data-tables/e-1_2025-09-30.xlsx": {
+      "checksum": "3f2e1ce26ea5430873957b060486dee4"
+    },
+    "data-raw/usaoc-data-tables/e-10_2022-09-30.xlsx": {
+      "checksum": "848b823894f7f007c9587ce38ca239cb"
+    },
+    "data-raw/usaoc-data-tables/e-10_2023-09-30.xlsx": {
+      "checksum": "a00985b713a5d935730156da56f659ab"
+    },
+    "data-raw/usaoc-data-tables/e-10_2024-09-30.xlsx": {
+      "checksum": "921ec1afc7e9e75069b18fd189bd75db"
+    },
+    "data-raw/usaoc-data-tables/e-2_1997-09-30.pdf": {
+      "checksum": "659725777f196e2cce687ff8299c518a"
+    },
+    "data-raw/usaoc-data-tables/e-2_1998-09-30.pdf": {
+      "checksum": "fd55807f650ad7b412039a9d5cde4fe5"
+    },
+    "data-raw/usaoc-data-tables/e-2_1999-09-30.pdf": {
+      "checksum": "d3b534b6d98cb6977bb73f7eca043e67"
+    },
+    "data-raw/usaoc-data-tables/e-2_2000-09-30.pdf": {
+      "checksum": "5345a662dc81757f037ef89da4ca33ea"
+    },
+    "data-raw/usaoc-data-tables/e-2_2001-03-31.pdf": {
+      "checksum": "9aa57ec9dcc6a0543407be736b139717"
+    },
+    "data-raw/usaoc-data-tables/e-2_2001-06-30.pdf": {
+      "checksum": "d7540079694ef245c6997107918da1d9"
+    },
+    "data-raw/usaoc-data-tables/e-2_2001-12-31.pdf": {
+      "checksum": "1259761394e3be732fe2942b04473511"
+    },
+    "data-raw/usaoc-data-tables/e-2_2002-03-31.pdf": {
+      "checksum": "3827ae1471bee52c8c6531a564466032"
+    },
+    "data-raw/usaoc-data-tables/e-2_2002-06-30.pdf": {
+      "checksum": "116a5f46b633a6a3a6622e4ab1b7057c"
+    },
+    "data-raw/usaoc-data-tables/e-2_2002-09-30.pdf": {
+      "checksum": "775808d7831f3242af323049a74f026c"
+    },
+    "data-raw/usaoc-data-tables/e-2_2002-12-31.pdf": {
+      "checksum": "5c92c5abc5f349a1718989c6b276a941"
+    },
+    "data-raw/usaoc-data-tables/e-2_2003-03-31.pdf": {
+      "checksum": "d32c95cdd63406217607c3a98c14cda5"
+    },
+    "data-raw/usaoc-data-tables/e-2_2003-06-30.pdf": {
+      "checksum": "510be74a13e74a9defe3732bd5ea0679"
+    },
+    "data-raw/usaoc-data-tables/e-2_2003-09-30.pdf": {
+      "checksum": "7f50e849ff7d032bbd703e578ebb361c"
+    },
+    "data-raw/usaoc-data-tables/e-2_2003-12-31.pdf": {
+      "checksum": "bb73945f24ff72c5247cbcb9ffb7f9f3"
+    },
+    "data-raw/usaoc-data-tables/e-2_2004-03-31.pdf": {
+      "checksum": "1606f4fb198f93ef66b18cd70d87cf56"
+    },
+    "data-raw/usaoc-data-tables/e-2_2004-06-30.pdf": {
+      "checksum": "cd130c91a27d34cfc62c553a1db65e08"
+    },
+    "data-raw/usaoc-data-tables/e-2_2004-09-30.pdf": {
+      "checksum": "2cb3d42783d0d820f2e14313ed2e2191"
+    },
+    "data-raw/usaoc-data-tables/e-2_2004-12-31.pdf": {
+      "checksum": "1a8192cd383209577cd98a41ed4b0897"
+    },
+    "data-raw/usaoc-data-tables/e-2_2005-03-31.pdf": {
+      "checksum": "5db21a49fe9433fb4c107df15bead9dc"
+    },
+    "data-raw/usaoc-data-tables/e-2_2005-06-30.pdf": {
+      "checksum": "d90208ce34a332e0211c24605f3acf90"
+    },
+    "data-raw/usaoc-data-tables/e-2_2005-09-30.pdf": {
+      "checksum": "3989acbac1aed963fa89310f6e3a19ba"
+    },
+    "data-raw/usaoc-data-tables/e-2_2005-12-31.pdf": {
+      "checksum": "09d36e30b953b7040fa230e847c32345"
+    },
+    "data-raw/usaoc-data-tables/e-2_2006-03-31.pdf": {
+      "checksum": "04929debe3265247bbea0745850f6eac"
+    },
+    "data-raw/usaoc-data-tables/e-2_2006-06-30.pdf": {
+      "checksum": "571c4288552a63104cffa3af4dfdf105"
+    },
+    "data-raw/usaoc-data-tables/e-2_2006-09-30.pdf": {
+      "checksum": "4213f2ead6333356b886b4bd0b2e79e7"
+    },
+    "data-raw/usaoc-data-tables/e-2_2006-12-31.pdf": {
+      "checksum": "8a22b356a415e6582cccd5487a8316ab"
+    },
+    "data-raw/usaoc-data-tables/e-2_2007-03-31.pdf": {
+      "checksum": "b6be0bc9844da7e736320787517599e2"
+    },
+    "data-raw/usaoc-data-tables/e-2_2007-06-30.pdf": {
+      "checksum": "50f5bdfb5569ba3cd77bb6f1af955311"
+    },
+    "data-raw/usaoc-data-tables/e-2_2007-09-30.pdf": {
+      "checksum": "1426d8e990dc7aeccf22d25b52f7f476"
+    },
+    "data-raw/usaoc-data-tables/e-2_2007-12-31.pdf": {
+      "checksum": "03e90f470f4017b1757b1aae3fd7f802"
+    },
+    "data-raw/usaoc-data-tables/e-2_2008-03-31.pdf": {
+      "checksum": "d9a6bad7ec7fb567cccd1b22c9058549"
+    },
+    "data-raw/usaoc-data-tables/e-2_2008-06-30.pdf": {
+      "checksum": "1e1016f26841533a92123c3d003dd493"
+    },
+    "data-raw/usaoc-data-tables/e-2_2008-09-30.pdf": {
+      "checksum": "4518831c0f0ff972f93d2b34742fd65a"
+    },
+    "data-raw/usaoc-data-tables/e-2_2008-12-31.pdf": {
+      "checksum": "613fc0606c7ff1d2af42567103c97ce3"
+    },
+    "data-raw/usaoc-data-tables/e-2_2009-03-31.pdf": {
+      "checksum": "9e956031514c45bd87f035832b896d2c"
+    },
+    "data-raw/usaoc-data-tables/e-2_2009-06-30.pdf": {
+      "checksum": "6bccf1b88f3c1b0188a28c9b4b425512"
+    },
+    "data-raw/usaoc-data-tables/e-2_2009-09-30.pdf": {
+      "checksum": "88fb7b998184920fecda5d3d37c3b948"
+    },
+    "data-raw/usaoc-data-tables/e-2_2009-12-31.pdf": {
+      "checksum": "ae6d6610aac741269a51e50abcc81ec6"
+    },
+    "data-raw/usaoc-data-tables/e-2_2010-03-31.pdf": {
+      "checksum": "4f7163bc5fee26e1ce86c18ec8098a55"
+    },
+    "data-raw/usaoc-data-tables/e-2_2010-06-30.pdf": {
+      "checksum": "eca802aa1d9074cc74aaf97beb618483"
+    },
+    "data-raw/usaoc-data-tables/e-2_2010-09-30.pdf": {
+      "checksum": "28d93c8fdc61a3f57a38bfca9fc028b1"
+    },
+    "data-raw/usaoc-data-tables/e-2_2010-12-31.pdf": {
+      "checksum": "ecd67919fde9ce2ed2b1eb9adceb260a"
+    },
+    "data-raw/usaoc-data-tables/e-2_2011-03-31.pdf": {
+      "checksum": "1c47045690fc021156b7dba57a145358"
+    },
+    "data-raw/usaoc-data-tables/e-2_2011-06-30.pdf": {
+      "checksum": "2bb05750d109ca72ce450c818626debe"
+    },
+    "data-raw/usaoc-data-tables/e-2_2011-09-30.pdf": {
+      "checksum": "8e9e981f97b62e4f9d71c2791ed3b2c2"
+    },
+    "data-raw/usaoc-data-tables/e-2_2011-12-31.pdf": {
+      "checksum": "55f97aebf7519bb6f6e8c514806b1316"
+    },
+    "data-raw/usaoc-data-tables/e-2_2012-03-31.pdf": {
+      "checksum": "38b8de2d4661ead80610efe1a644439a"
+    },
+    "data-raw/usaoc-data-tables/e-2_2012-06-30.pdf": {
+      "checksum": "7d5da6e755ba23d9311e348d8ab970ab"
+    },
+    "data-raw/usaoc-data-tables/e-2_2012-09-30.pdf": {
+      "checksum": "f532c7f0e39661e370ff9e4aa63ae412"
+    },
+    "data-raw/usaoc-data-tables/e-2_2012-12-31.pdf": {
+      "checksum": "f560695784982e7d1ff822f0ed605761"
+    },
+    "data-raw/usaoc-data-tables/e-2_2013-03-31.pdf": {
+      "checksum": "c641927c346a891f6b94a350a708c963"
+    },
+    "data-raw/usaoc-data-tables/e-2_2013-06-30.pdf": {
+      "checksum": "c65a4be5e6fa2fde1415b59089f79a80"
+    },
+    "data-raw/usaoc-data-tables/e-2_2013-09-30.pdf": {
+      "checksum": "652923c94e207898b39bfccf7486cdac"
+    },
+    "data-raw/usaoc-data-tables/e-2_2013-12-31.pdf": {
+      "checksum": "3a4d467fe6cd6ad20c32870057c8cfe0"
+    },
+    "data-raw/usaoc-data-tables/e-2_2014-03-31.pdf": {
+      "checksum": "0ed400f7cd52a13986793733166a56fe"
+    },
+    "data-raw/usaoc-data-tables/e-2_2014-06-30.pdf": {
+      "checksum": "2291ce1113293d89a988588e7cdcaf02"
+    },
+    "data-raw/usaoc-data-tables/e-2_2014-09-30.pdf": {
+      "checksum": "5a9cb1135c0b55df29307c8cf1dd3caf"
+    },
+    "data-raw/usaoc-data-tables/e-2_2014-12-31.pdf": {
+      "checksum": "0f91e32ceb7f356c7e67ffc01b3b8473"
+    },
+    "data-raw/usaoc-data-tables/e-2_2015-03-31.pdf": {
+      "checksum": "f8323706cca6f5c1766c5aab1040e3b2"
+    },
+    "data-raw/usaoc-data-tables/e-2_2015-06-30.pdf": {
+      "checksum": "e5eb283d9e4c7c5faf2d3d0bcd40579b"
+    },
+    "data-raw/usaoc-data-tables/e-2_2015-09-30.pdf": {
+      "checksum": "4f7ccdd3939eb436dee0e3eefe6f7cee"
+    },
+    "data-raw/usaoc-data-tables/e-2_2015-12-31.pdf": {
+      "checksum": "a33551aa89376cf880a27530e6a4ea83"
+    },
+    "data-raw/usaoc-data-tables/e-2_2016-03-31.pdf": {
+      "checksum": "3ccf06fb8f3cb6e6f8ba646d52a0ae4b"
+    },
+    "data-raw/usaoc-data-tables/e-2_2016-06-30.pdf": {
+      "checksum": "69845aa941294287a4e0ffa71356426e"
+    },
+    "data-raw/usaoc-data-tables/e-2_2016-09-30.pdf": {
+      "checksum": "610f44f42b1bcb78192a88bea98119ac"
+    },
+    "data-raw/usaoc-data-tables/e-2_2016-12-31.pdf": {
+      "checksum": "a17d151227c1c326c46a906bad4417c3"
+    },
+    "data-raw/usaoc-data-tables/e-2_2017-03-31.pdf": {
+      "checksum": "91a286ae655d99d9454924e50e8d7976"
+    },
+    "data-raw/usaoc-data-tables/e-2_2017-06-30.pdf": {
+      "checksum": "d3a687046e71c553a0c20086a95d808c"
+    },
+    "data-raw/usaoc-data-tables/e-2_2017-09-30.xlsx": {
+      "checksum": "168a940b11dc3e6d30fc9e0735426ce0"
+    },
+    "data-raw/usaoc-data-tables/e-2_2017-12-31.xlsx": {
+      "checksum": "1640cca09fc412a28bdc6a9089bc2dde"
+    },
+    "data-raw/usaoc-data-tables/e-2_2018-03-31.xlsx": {
+      "checksum": "af99e3ade62a43ffdbd54f2a371c2167"
+    },
+    "data-raw/usaoc-data-tables/e-2_2018-06-30.xlsx": {
+      "checksum": "02b8b6c8688465e871cf9a34956d47d5"
+    },
+    "data-raw/usaoc-data-tables/e-2_2018-09-30.xlsx": {
+      "checksum": "40ee3a5e325e71020227e33057e26db1"
+    },
+    "data-raw/usaoc-data-tables/e-2_2018-12-31.xlsx": {
+      "checksum": "cbeba546b08a9fc453c78037458cb085"
+    },
+    "data-raw/usaoc-data-tables/e-2_2019-03-31.xlsx": {
+      "checksum": "2eb755b6d595cd5d551b35d1b218b5ef"
+    },
+    "data-raw/usaoc-data-tables/e-2_2019-06-30.xlsx": {
+      "checksum": "e583fef6b2f553b6aa3e43dc17884233"
+    },
+    "data-raw/usaoc-data-tables/e-2_2019-09-30.xlsx": {
+      "checksum": "e99b568152e182b31deb85222d3bc4eb"
+    },
+    "data-raw/usaoc-data-tables/e-2_2019-12-31.xlsx": {
+      "checksum": "538d90db7b6b3ea002d9a22874dd57b9"
+    },
+    "data-raw/usaoc-data-tables/e-2_2020-03-31.xlsx": {
+      "checksum": "6444536fa86d2cbe7deea0a68900e0ae"
+    },
+    "data-raw/usaoc-data-tables/e-2_2020-06-30.xlsx": {
+      "checksum": "f2e15f66171b5bf5fd32408a274347d2"
+    },
+    "data-raw/usaoc-data-tables/e-2_2020-09-30.xlsx": {
+      "checksum": "7253523a469d4a9ef6371bc518178aae"
+    },
+    "data-raw/usaoc-data-tables/e-2_2020-12-31.xlsx": {
+      "checksum": "2c5221fd55364e4ad7a1ca53a1e8ee5a"
+    },
+    "data-raw/usaoc-data-tables/e-2_2021-03-31.xlsx": {
+      "checksum": "aab66b4899c04dc1861895349ca5f99d"
+    },
+    "data-raw/usaoc-data-tables/e-2_2021-06-30.xlsx": {
+      "checksum": "1764d4f8a418635e28786220843dc319"
+    },
+    "data-raw/usaoc-data-tables/e-2_2021-09-30.xlsx": {
+      "checksum": "3c7dcd4b290230478d38990026d7b5ce"
+    },
+    "data-raw/usaoc-data-tables/e-2_2021-12-31.xlsx": {
+      "checksum": "3aa34cea956b7f1482c2444429ae1cba"
+    },
+    "data-raw/usaoc-data-tables/e-2_2022-03-31.xlsx": {
+      "checksum": "d00e1c17ec5cc889106fd80d9a54dc6a"
+    },
+    "data-raw/usaoc-data-tables/e-2_2022-06-30.xlsx": {
+      "checksum": "0f2eb8878fc50f331538a7fd783607ed"
+    },
+    "data-raw/usaoc-data-tables/e-2_2022-09-30.xlsx": {
+      "checksum": "c6af4cabe039ee8cbf19b88aa6207038"
+    },
+    "data-raw/usaoc-data-tables/e-2_2022-12-31.xlsx": {
+      "checksum": "bc516e0a54d6e4d7386fbbd0b794bde9"
+    },
+    "data-raw/usaoc-data-tables/e-2_2023-03-31.xlsx": {
+      "checksum": "ae269375320f5ec2611d24fbd628511b"
+    },
+    "data-raw/usaoc-data-tables/e-2_2023-06-30.xlsx": {
+      "checksum": "87fc4f9458418066a901e0b334c7eb3e"
+    },
+    "data-raw/usaoc-data-tables/e-2_2023-09-30.xlsx": {
+      "checksum": "74dd8c1bf9d508f9cf8a5b36d9a04c43"
+    },
+    "data-raw/usaoc-data-tables/e-2_2023-12-31.xlsx": {
+      "checksum": "646e5a90d986f5c73f4ab2aca512911e"
+    },
+    "data-raw/usaoc-data-tables/e-2_2024-03-31.xlsx": {
+      "checksum": "b67db0cdae7d8b6055b1764b32bc8110"
+    },
+    "data-raw/usaoc-data-tables/e-2_2024-06-30.xlsx": {
+      "checksum": "bada989f4d91c1d1ea6a991358e319c1"
+    },
+    "data-raw/usaoc-data-tables/e-2_2024-09-30.xlsx": {
+      "checksum": "2ea1786135ac824a7b7a01637e833f1c"
+    },
+    "data-raw/usaoc-data-tables/e-2_2024-12-31.xlsx": {
+      "checksum": "df11e17f1d68212b07c86abb9ac2b11b"
+    },
+    "data-raw/usaoc-data-tables/e-2_2025-03-31.xlsx": {
+      "checksum": "fc17b3d6504ef6071222236c558200fa"
+    },
+    "data-raw/usaoc-data-tables/e-2_2025-06-30.xlsx": {
+      "checksum": "58e3b64b40244000bc3c869f2a85d636"
+    },
+    "data-raw/usaoc-data-tables/e-2_2025-09-30.xlsx": {
+      "checksum": "8c388025dee7c0a9d6551cfc13d8bb51"
+    },
+    "data-raw/usaoc-data-tables/e-3_1997-09-30.pdf": {
+      "checksum": "b04cb1d4ffb7443977977418b82b1573"
+    },
+    "data-raw/usaoc-data-tables/e-3_1998-09-30.pdf": {
+      "checksum": "2b7edfe484c0219004cd7930378e6c74"
+    },
+    "data-raw/usaoc-data-tables/e-3_1999-09-30.pdf": {
+      "checksum": "7e0625e4c0f717ad447d7f4c784431ca"
+    },
+    "data-raw/usaoc-data-tables/e-3_2000-09-30.pdf": {
+      "checksum": "95be47e784ba41366cab48131abb61b8"
+    },
+    "data-raw/usaoc-data-tables/e-3_2001-09-30.pdf": {
+      "checksum": "f3f3d22d5f94ce74fce07bce83f52c34"
+    },
+    "data-raw/usaoc-data-tables/e-3_2002-09-30.pdf": {
+      "checksum": "d74febc4f24251ae1ff3bd68a42517f3"
+    },
+    "data-raw/usaoc-data-tables/e-3_2003-09-30.pdf": {
+      "checksum": "787170041fb3d180e4fcaf9f165e298a"
+    },
+    "data-raw/usaoc-data-tables/e-3_2004-09-30.pdf": {
+      "checksum": "ad2b295abcdb262d1a5ed279dc0ff2ce"
+    },
+    "data-raw/usaoc-data-tables/e-3_2005-09-30.pdf": {
+      "checksum": "f610080c756a65a898d9124d188b7aa2"
+    },
+    "data-raw/usaoc-data-tables/e-3_2006-09-30.pdf": {
+      "checksum": "2c30eb11dc3af6163ec4cbb67ffad66d"
+    },
+    "data-raw/usaoc-data-tables/e-3_2007-09-30.pdf": {
+      "checksum": "79bd5c10f12281c59b4620611880a91e"
+    },
+    "data-raw/usaoc-data-tables/e-3_2008-09-30.pdf": {
+      "checksum": "fcecdb019997acbe9406e51cec25cd57"
+    },
+    "data-raw/usaoc-data-tables/e-3_2009-09-30.pdf": {
+      "checksum": "ea2854058c4d4b413c165ca6888dfde7"
+    },
+    "data-raw/usaoc-data-tables/e-3_2010-09-30.pdf": {
+      "checksum": "b971f821dbe3365589417adbf6e7b420"
+    },
+    "data-raw/usaoc-data-tables/e-3_2011-09-30.pdf": {
+      "checksum": "a1ed3424d4b3fbbf037dd4cb80a0c27a"
+    },
+    "data-raw/usaoc-data-tables/e-3_2012-09-30.pdf": {
+      "checksum": "4da591c6b5d7f1388e724e9093d69c72"
+    },
+    "data-raw/usaoc-data-tables/e-3_2013-09-30.pdf": {
+      "checksum": "7b7475e1f299f053dd81945085ae3376"
+    },
+    "data-raw/usaoc-data-tables/e-3_2014-09-30.pdf": {
+      "checksum": "fd100965d899b575946a0e736e491e4d"
+    },
+    "data-raw/usaoc-data-tables/e-3_2015-09-30.pdf": {
+      "checksum": "9e5ffa9b043d10d910265554c087ba71"
+    },
+    "data-raw/usaoc-data-tables/e-3_2016-09-30.pdf": {
+      "checksum": "87ea52ad996e47514397abf801e35117"
+    },
+    "data-raw/usaoc-data-tables/e-3_2017-09-30.xlsx": {
+      "checksum": "06e11a7f3cb2ce70de59bd9e82befbf2"
+    },
+    "data-raw/usaoc-data-tables/e-3_2018-09-30.xlsx": {
+      "checksum": "e42479ce9b6d1a496660375c78f7e71a"
+    },
+    "data-raw/usaoc-data-tables/e-3_2019-09-30.xlsx": {
+      "checksum": "838171ad607411c98ddae288a798acb8"
+    },
+    "data-raw/usaoc-data-tables/e-3_2020-09-30.xlsx": {
+      "checksum": "cccdf5819a5b652a321dec545c779afb"
+    },
+    "data-raw/usaoc-data-tables/e-3_2021-09-30.xlsx": {
+      "checksum": "99c3c7dae6470d881c74fa3df7f60118"
+    },
+    "data-raw/usaoc-data-tables/e-3_2022-09-30.xlsx": {
+      "checksum": "7325fbc2481ec9b92970f1ed049f048f"
+    },
+    "data-raw/usaoc-data-tables/e-3_2023-09-30.xlsx": {
+      "checksum": "597a19a7fdf7ca4a86d1c80675322abb"
+    },
+    "data-raw/usaoc-data-tables/e-3_2024-09-30.xlsx": {
+      "checksum": "8df44b61324c34486eaa0dd7ffd4f4df"
+    },
+    "data-raw/usaoc-data-tables/e-4_1997-09-30.pdf": {
+      "checksum": "240c327277b91fe9aedaac7bd5020e45"
+    },
+    "data-raw/usaoc-data-tables/e-4_1998-09-30.pdf": {
+      "checksum": "cb8915c47687bcb189ea33bb70fbd003"
+    },
+    "data-raw/usaoc-data-tables/e-7_1997-09-30.pdf": {
+      "checksum": "00ac452bbcd849e10e84682494144d9e"
+    },
+    "data-raw/usaoc-data-tables/e-7_1998-09-30.pdf": {
+      "checksum": "b99323a9a45096ba9013e7f4a8430231"
+    },
+    "data-raw/usaoc-data-tables/e-7_1999-09-30.pdf": {
+      "checksum": "5c3bb50494e10a9fe491414b645af24a"
+    },
+    "data-raw/usaoc-data-tables/e-7_2000-09-30.pdf": {
+      "checksum": "73245a8d7923598430256eb7a380dd91"
+    },
+    "data-raw/usaoc-data-tables/e-7_2001-09-30.pdf": {
+      "checksum": "66ec2a96e7c664f3d792608cffa53fbd"
+    },
+    "data-raw/usaoc-data-tables/e-7_2002-09-30.pdf": {
+      "checksum": "1e2cf51a662ef4d6637e1044d02804c1"
+    },
+    "data-raw/usaoc-data-tables/e-7_2003-09-30.pdf": {
+      "checksum": "a3f8a0f8a59a88cc2cd0fc1ab2421217"
+    },
+    "data-raw/usaoc-data-tables/e-7_2004-09-30.pdf": {
+      "checksum": "e9d837a8e162b96f03c534d7f835c3fa"
+    },
+    "data-raw/usaoc-data-tables/e-7_2005-09-30.pdf": {
+      "checksum": "4ebe25013180a67f70c6f747670d168e"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2006-09-30.pdf": {
+      "checksum": "d81ea62c288073d4c46794059b5cc324"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2006-12-31.pdf": {
+      "checksum": "02c48c7340f24d14e060d3dde72ffddb"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2007-03-31.pdf": {
+      "checksum": "81e0348aa162cd8dcf4be1836821e870"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2007-06-30.pdf": {
+      "checksum": "130ee839579efd0b3f00e8a0f9ca2017"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2007-09-30.pdf": {
+      "checksum": "c083ddc9e4130128250552d8e4530e31"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2007-12-31.pdf": {
+      "checksum": "f127fd5f8315ee7b646cf239780b0a9b"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2008-03-31.pdf": {
+      "checksum": "3d94adffb76111e706be10a2799416e8"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2008-06-30.pdf": {
+      "checksum": "3cf0b4ab36f933089f8350b722242967"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2008-09-30.pdf": {
+      "checksum": "139a24d9b5223b3d51f7e867e4c4f234"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2008-12-31.pdf": {
+      "checksum": "fd84663612b5a90689f10ab609561542"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2009-03-31.pdf": {
+      "checksum": "35041286f4cf0496f65b5ee78b843684"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2009-06-30.pdf": {
+      "checksum": "286108ee1f622ae1e47996cc7d58f687"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2009-09-30.pdf": {
+      "checksum": "15697aa0aa9167c954088a1c12bc8f51"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2010-03-31.pdf": {
+      "checksum": "91346ff877ffbad6c817e299327085b2"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2010-06-30.pdf": {
+      "checksum": "382c895dc89a100999c81e7bce5583af"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2010-09-30.pdf": {
+      "checksum": "103350ba2d94adfce6c9227316703e32"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2010-12-31.pdf": {
+      "checksum": "dee26c54108f6bfe5480a925f9c51f73"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2011-03-31.pdf": {
+      "checksum": "fa3f568030486031dc2e3bafe1ffc9b2"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2011-06-30.pdf": {
+      "checksum": "61f42a6e224e94521b74f4c69684b382"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2011-09-30.pdf": {
+      "checksum": "65d7efa538e7721f9ecbe30343050e40"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2011-12-31.pdf": {
+      "checksum": "6d1e3aea913c8f5f9f886f7147423974"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2012-03-31.pdf": {
+      "checksum": "67c6d4ef430618ac737f4dd0080b0a68"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2012-06-30.pdf": {
+      "checksum": "47bad0601c9b09a8d5d4e5ee3d3da119"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2012-09-30.pdf": {
+      "checksum": "782937939e14aa4922174b96585c8be0"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2012-12-31.pdf": {
+      "checksum": "6862f835d29e9fc5507212bdd8756790"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2013-03-31.pdf": {
+      "checksum": "91c16f9537bd6817fd00d0f4e231d423"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2013-06-30.pdf": {
+      "checksum": "37cd473f9341db16e1757dc64b10ebb2"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2013-09-30.pdf": {
+      "checksum": "3d05304be6663d2c388bedcb1b02a366"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2013-12-31.pdf": {
+      "checksum": "3913a4d22cfbe3a586ba723e70ec35ca"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2014-03-31.pdf": {
+      "checksum": "4ac3267333a473790a4ee19918ae7efb"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2014-06-30.pdf": {
+      "checksum": "76735dce4a746c6f7219a828005c7354"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2014-09-30.pdf": {
+      "checksum": "b2b8a361037d18e23da56beada0eb2ea"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2014-12-31.pdf": {
+      "checksum": "bebbd0e72b792369929dbc49a78c70b1"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2015-03-31.pdf": {
+      "checksum": "c4c990e3db6e9b1f6a0e19cb5afce393"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2015-06-30.pdf": {
+      "checksum": "6eda0c1993a37bfde8c1e11d4e728d6b"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2015-09-30.pdf": {
+      "checksum": "85140686d1305a9b0db4422738c287b3"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2015-12-31.pdf": {
+      "checksum": "2013e4dfd994463320128b9cddbc6cf0"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2016-03-31.pdf": {
+      "checksum": "a8c989f447de6e0af7d4689beab6ea99"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2016-06-30.pdf": {
+      "checksum": "b0541b0c9edd60fc94dc26206e08c8bb"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2016-09-30.pdf": {
+      "checksum": "5086ae5496b0b2642744d0e309ebe699"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2016-12-31.pdf": {
+      "checksum": "6be7944e3202991596cd661574953e26"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2017-03-31.pdf": {
+      "checksum": "4392b6b21b5f888a03ad3add58e30ead"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2017-06-30.pdf": {
+      "checksum": "cdb5cf1073bf817aef7a266a6de610db"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2017-09-30.xlsx": {
+      "checksum": "6c35e48d886f7075d556a40698f4d49a"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2017-12-31.xlsx": {
+      "checksum": "e6d9fb2a9980a75031ece13f600cb3ef"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2018-03-31.xlsx": {
+      "checksum": "74da5b72e27facf5103faa98d4953cf0"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2018-06-30.xlsx": {
+      "checksum": "8a274f4bb11790740c58eeafd1b10e82"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2018-09-30.xlsx": {
+      "checksum": "2e3b16690a57cf6cb751957a86f55bf9"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2018-12-31.xlsx": {
+      "checksum": "a6d1dbbbe62e87e199a14674aa17a6f4"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2019-03-31.xlsx": {
+      "checksum": "ad528104a3a8e58bad83979b1b32aa3f"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2019-06-30.xlsx": {
+      "checksum": "6b1c3f312a5f2336dda1d391efaf0ae2"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2019-09-30.xlsx": {
+      "checksum": "f660bc2093e10a6f11a9bfacbdaecba0"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2019-12-31.xlsx": {
+      "checksum": "33d42dc78b23cc42536dce304581bd32"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2020-03-31.xlsx": {
+      "checksum": "66aad2f08d0b2d8c73da7d546f0f9339"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2020-06-30.xlsx": {
+      "checksum": "8f162a6b265a03e4fa738317c6eeacf7"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2020-09-30.xlsx": {
+      "checksum": "40d5177156fbcb3b9c399b6eeed21822"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2020-12-31.xlsx": {
+      "checksum": "5a88c9f836dbd92aa2747c10aef66e15"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2021-03-31.xlsx": {
+      "checksum": "5c97a8dafddc14eb7539ffea5fc35d47"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2021-06-30.xlsx": {
+      "checksum": "4d3e39fe50a8ffe0fee69389743aa2b6"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2021-09-30.xlsx": {
+      "checksum": "62e7e17c6f9d67d990a7d8e4d9f539e1"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2021-12-31.xlsx": {
+      "checksum": "1e8cf1df7ebb46ef3a0fe59c929e23d3"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2022-03-31.xlsx": {
+      "checksum": "7b3721d3c915c235706384ae596245d7"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2022-06-30.xlsx": {
+      "checksum": "eca5eaf9310eb7a6004bd42f95ccd4d8"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2022-09-30.xlsx": {
+      "checksum": "5cd2ad3cd5a7a5385c5b7ea13651fd72"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2022-12-31.xlsx": {
+      "checksum": "c7e36c305edadc6bd154c7cd7da8847a"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2023-03-31.xlsx": {
+      "checksum": "e6c4aeb5979a0cb4c5894dc739795258"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2023-06-30.xlsx": {
+      "checksum": "f093c7ea9792e2384601bf007b744e8b"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2023-09-30.xlsx": {
+      "checksum": "9c512717ff1d0930ba2d904356a6ed3b"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2023-12-31.xlsx": {
+      "checksum": "7cc2e065b3e7fa50622db1e004616e8f"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2024-03-31.xlsx": {
+      "checksum": "dee31d98046753de32d639794c3eb836"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2024-06-30.xlsx": {
+      "checksum": "bf72b6cd8b714c3baed60df1473a3140"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2024-09-30.xlsx": {
+      "checksum": "60f723fd22f8a04f9c1c97fd24749b51"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2024-12-31.xlsx": {
+      "checksum": "65a042af238c209d817ed3c978572c6b"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2025-03-31.xlsx": {
+      "checksum": "39e6d86b318bf05828559202b4d2dc5e"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2025-06-30.xlsx": {
+      "checksum": "c37f96e1cc3b484ec698bff3b2623234"
+    },
+    "data-raw/usaoc-data-tables/e-7a_2025-09-30.xlsx": {
+      "checksum": "f0237e5068930b611d48b3dba4992aaa"
+    },
+    "data-raw/usaoc-data-tables/e-8_2022-09-30.xlsx": {
+      "checksum": "3b2c641484bb6d154d97f84e50363117"
+    },
+    "data-raw/usaoc-data-tables/e-8_2023-09-30.xlsx": {
+      "checksum": "9cdc245d22586497a416e8011b63a2c2"
+    },
+    "data-raw/usaoc-data-tables/e-8_2024-09-30.xlsx": {
+      "checksum": "5edd597bd39bbd9143356ae40601e633"
+    },
+    "data-raw/usaoc-data-tables/e-8a_2022-09-30.xlsx": {
+      "checksum": "c462ce4a71226b2e28ab733ef1f71e6a"
+    },
+    "data-raw/usaoc-data-tables/e-8a_2023-09-30.xlsx": {
+      "checksum": "c9a67262810a3a0b7295962434b29708"
+    },
+    "data-raw/usaoc-data-tables/e-8a_2024-09-30.xlsx": {
+      "checksum": "dbccd6811039778fb95c0d44573e18d3"
+    },
     "data/judicial_circuit_sf.rds": {
       "checksum": "4a6f718b2215c48fa1cc7bff3fc32b4e"
     },
@@ -6651,26 +6923,29 @@
     "data/judicial_sf_data.rds": {
       "checksum": "2c09365cb9499a47f6d6158ff77610d4"
     },
-    "data/us_federal_courts_data.csv": {
-      "checksum": "ad5ae703198368e6578ccb57da081119"
-    },
     "data/us_federal_courts_data.csv.gz": {
-      "checksum": "ffb1e398ea8d8164106c812385fc2d70"
+      "checksum": "d9052204756010bf9f86c59d3214a92b"
     },
     "logs/selenium.log": {
-      "checksum": "acf25fa3d453b162558be102dc4fb9da"
+      "checksum": "23b7f53154789849b5fe31dce801004d"
+    },
+    "plots/sup_pop_by_crime_type.pdf": {
+      "checksum": "58f9f431a2c228c50f43c4d4f156ba10"
+    },
+    "R/analyze-post-conviction-supervision-by-offense.R": {
+      "checksum": "30ce82fd162f1a693d3fe4a44518b6ef"
     },
     "R/county-population-data.R": {
       "checksum": "cb7b90c5464ee1f2e209de19e024d569"
     },
     "R/parse-us-courts-data.R": {
-      "checksum": "2f4b37457f7bbd1e7c008bcd8a8f7f2d"
+      "checksum": "51326b5b50c803bbbf39c5cdfd0990c5"
     },
     "R/scrape-us-courts-data.R": {
-      "checksum": "de10897f0711fe9dc57877354a040d47"
+      "checksum": "327e3d030adc2068ab5ce24ca3c96a56"
     },
     "renv.lock": {
-      "checksum": "440aca52d04d67bbc122a66a607d054e"
+      "checksum": "5032b55b8100ba64e6f231edd5809d36"
     }
   },
   "users": null

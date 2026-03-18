@@ -826,7 +826,6 @@ pdf_data <-
                categories = 
                  categories %>% 
                  str_replace_all("_pivot$", "")) %>% 
-        filter(is.na(values) == FALSE) %>% 
         distinct() %>% 
         mutate(file_name = 
                  .x %>% 
@@ -834,7 +833,7 @@ pdf_data <-
                  str_replace_all("[.]pdf$", "")) %>% 
         select(where(~ !all(is.na(.x))))
   ) %>% 
-  bind_rows() %>% 
+  bind_rows() %>%
   mutate(table_name_full = 
            table_name_full %>% 
            str_replace_all("\u0097", "—") %>% 
@@ -866,7 +865,11 @@ pdf_data <-
            str_replace_all("^from_institutions_bureau_of$", "from_institutions_bop_custody") %>% 
            str_replace_all("bureau_of_prisons", "bop") %>% 
            str_replace_all("special_offenses_postal_laws", "special_offenses_postal") %>% 
-           str_replace_all("^total$", "offenses_total")) %>% 
+           str_replace_all("^total$", "offenses_total"),
+         values = 
+           ifelse((categories == "persons_under_supervision" & state_or_district == "UT" & 
+                     file_name == "e-1_2009-12-31" & date == "2009-12-31"), 0, values)) %>% 
+  filter(is.na(values) == FALSE) %>%
   separate_wider_delim(file_name, names = c("file_name_table_num", "file_name_table_desc"), delim = "_", cols_remove = FALSE, too_few = "align_start") %>% 
   mutate(table_num = 
            ifelse(table_num == "", str_to_upper(file_name_table_num), table_num) %>% 
@@ -875,13 +878,36 @@ pdf_data <-
                 ~.x %>% 
                   na_if(""))) %>% 
   rename("table_name_date" = "file_name_table_desc") %>% 
-  dplyr::select(-file_name_table_num) 
-
+  dplyr::select(-file_name_table_num) %>% 
+  {
+    df <- .
+    df %>% 
+      filter(!(categories == "persons_under_supervision" & state_or_district == "UT" & 
+                 file_name == "e-1_2009-12-31" & date == "2009-12-31")) %>% 
+      bind_rows(df %>% 
+                  filter(categories == "persons_under_supervision" & state_or_district == "UT" & 
+                           file_name == "e-1_2009-12-31" & date == "2009-12-31")) %>% 
+      group_by(file_name, state_or_district) %>% 
+      mutate(values_updated = 
+               values %>% 
+               lag(1)) %>% 
+      ungroup() %>% 
+      mutate(values = 
+               case_when(categories == "removed_from_post_conviction_supervision_total_removed" & state_or_district == "UT" & 
+                           file_name == "e-1_2009-12-31" ~ 670, 
+                         state_or_district == "UT" & file_name == "e-1_2009-12-31" & 
+                           str_detect(categories, "^removed_from_post_conviction_supervision") == TRUE ~ values_updated, 
+                         categories == "persons_under_supervision" & state_or_district == "UT" & 
+                           file_name == "e-1_2009-12-31" & date == "2009-12-31" ~ values_updated, 
+                         TRUE ~ values))
+  }
+  
 ##Combine Data
 full_data <- 
   xlsx_data %>% 
   mutate(file_type = "XLSX") %>% 
   bind_rows(pdf_data %>% 
+              dplyr::select(-values_updated) %>% 
               mutate(file_type = "PDF")) %>% 
   mutate(categories = 
            categories %>% 

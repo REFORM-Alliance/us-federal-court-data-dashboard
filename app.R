@@ -17,14 +17,17 @@ library(scales)
 library(bslib)
 library(plotly)
 library(matrixStats)
+library(patchwork)
 
-####Load Pre-processed Data####
+
+####Prep for App####
+##Load Pre-processed Data
 federal_courts_df_final <- readRDS(here("data", "federal_courts_df_final.rds"))
 states_sf               <- readRDS(here("data", "states_sf.rds"))
 judicial_district_sf    <- readRDS(here("data", "judicial_district_sf_simplified.rds"))
 judicial_circuit_sf     <- readRDS(here("data", "judicial_circuit_sf_simplified.rds"))
 
-####Define Theme####
+##Define Theme
 my_theme <- bs_theme(
   version = 4,
   bg = "#FDF6E3",          
@@ -38,7 +41,7 @@ my_theme <- bs_theme(
   base_font = font_google("Roboto")
 )
 
-####Define Quarters####
+##Define Quarters
 quarters <- 
   federal_courts_df_final %>% 
   dplyr::select(year, date_quarter) %>% 
@@ -327,12 +330,12 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                                   fluidRow(
                                     box(width = 12,
                                         div(style = "width:100%; padding:0; margin:0; text-align:right;",
-                                            plotlyOutput("national_viz_stacked_barplot", height = 600, width = "100%")))
+                                            plotlyOutput("national_viz_trends", height = 800, width = "100%")))
                                   ),
                                   fluidRow(
                                     box(width = 12,
                                         div(style = "width:100%; padding:0; margin:0; text-align:right;",
-                                            plotlyOutput("national_viz_trends", height = 800, width = "100%")))
+                                            plotlyOutput("national_viz_stacked_barplot", height = 600, width = "100%")))
                                   )
                                 )
                               )
@@ -1419,9 +1422,13 @@ server <- function(input, output, session){
 #   })
 
   output$national_viz_trends <- renderPlotly({
-    df <- national_base_data()
-    
-    df %>%
+    ylab <- 
+      ifelse(input$rate_or_count_national == "Per Capita", 
+             "National Count per 10,000",  
+             "National Total Count") 
+
+    df <- 
+      national_base_data() %>%
       filter(as.character(supervision_type) != "Total Supervision") %>%
       mutate(
         hover_text = paste0(
@@ -1431,7 +1438,121 @@ server <- function(input, output, session){
           "Per 10k: ", round(values_per_capita, 2), "\n",
           "Date: ", format(date, "%b %d, %Y")
         )
-      ) %>%
+      ) 
+    
+    # df_total_pop <- 
+    #   df %>% 
+    #   filter(outcome_metric_type == "Total Population")
+    # 
+    # df_exits_admissions <- 
+    #   df %>% 
+    #   filter(outcome_metric_type != "Total Population")
+    # 
+    # base_plot <- function(data){
+    #   data %>% 
+    #     ggplot(
+    #       aes(x = date,
+    #           y = if(input$rate_or_count_national == "Per Capita") values_per_capita else values,
+    #           color = supervision_type,
+    #           group = supervision_type,
+    #           text = hover_text)) +
+    #     geom_line(linewidth = 1) +
+    #     geom_point(size = 1) +
+    #     scale_color_manual(values = c("#0072B2", "#E69F00", "#009E73", "#CC79A7")) +
+    #     scale_x_date(date_breaks = "4 years", date_labels = "%Y") +
+    #     scale_y_continuous(labels = scales::comma) +
+    #     theme_minimal()
+    # }
+    # 
+    # p_total_pop <- 
+    #   df_total_pop %>% 
+    #   base_plot() + 
+    #   facet_wrap(~outcome_metric_type, nrow = 1, scales = "free_y")
+    # 
+    # p_exits_admissions <- 
+    #   df_exits_admissions %>% 
+    #   base_plot() + 
+    #   facet_wrap(~outcome_metric_type, nrow = 1, scales = "free_y")
+    # 
+    # p_total_pop_plotly <- 
+    #   p_total_pop %>% 
+    #   ggplotly(tooltip = "text") 
+    # 
+    # p_total_pop_plotly$x$data <- lapply(
+    #   p_total_pop_plotly$x$data,
+    #   function(tr) { tr$showlegend <- FALSE; tr }
+    # )
+    # 
+    # p_exits_admissions_plotly <- 
+    #   p_exits_admissions %>% 
+    #   ggplotly(tooltip = "text") %>%
+    #   layout(showlegend = TRUE)
+    
+    # subplot(
+    #   p_total_pop_plotly,
+    #   p_exits_admissions_plotly,
+    #   nrows = 2,
+    #   heights = c(0.65, 0.35),
+    #   shareX = TRUE,
+    #   titleY = TRUE, 
+    #   margin = 0.1
+    # ) %>%
+    #   layout(
+    #     margin = list(l = 120, r = 50, t = 60, b = 80),
+    #     
+    #     xaxis2 = list(title = NULL),
+    #     yaxis = list(title = NULL),
+    #     
+    #     legend = list(
+    #       title = list(text = "Supervision Type"),
+    #       orientation = "h",
+    #       x = 0.5,
+    #       xanchor = "center",
+    #       y = -0.15
+    #     ),
+    #     
+    #     title = list(
+    #       text = "National Supervision Trends Over Time",
+    #       x = 0.52
+    #     ),
+    #     
+    #     annotations = list(
+    #       list(
+    #         text = ylab,
+    #         x = -0.04,
+    #         y = 0.5,
+    #         xref = "paper",
+    #         yref = "paper",
+    #         textangle = -90,
+    #         showarrow = FALSE,
+    #         xanchor = "center",
+    #         yanchor = "middle"
+    #       ),
+    #       list(
+    #         text = "Date",
+    #         x = 0.5,
+    #         y = -0.075,
+    #         xref = "paper",
+    #         yref = "paper",
+    #         showarrow = FALSE,
+    #         xanchor = "center",
+    #         yanchor = "top"
+    #       )
+    #     )
+    #   )
+    
+    # combined <- p_total_pop / p_exits_admissions + plot_layout(heights = c(2, 1))
+    # 
+    # combined %>% 
+    #   ggplotly(tooltip = "text")
+      
+    
+    df %>%
+      mutate(
+        outcome_metric_type = 
+          outcome_metric_type %>% 
+          factor(levels = c("Total Population", 
+                            setdiff(unique(outcome_metric_type), "Total Population")))) %>% 
       {
         ggplot(., aes(
           x = date,
@@ -1448,17 +1569,20 @@ server <- function(input, output, session){
           scale_y_continuous(labels = scales::comma) +
           labs(
             x = "Date",
-            y = if(input$rate_or_count_national == "Per Capita") "National Count per 10,000" else "National Total Count",
+            y = ylab,
             color = "Supervision Type",
-            title = "National Supervision Trends Over Time (Excluding Total)"
+            title = "National Federal Supervision Trends Over Time"
           ) +
           theme_minimal() +
           theme(
             axis.text.x  = element_text(angle = 45, hjust = 1),
             strip.text   = element_text(size = 12, face = "bold"),
+            strip.background = element_blank(),
+            strip.switch.pad.grid = unit(0.3, "cm"), 
             legend.position = "bottom",
             axis.title.x = element_text(margin = margin(t = 15)),
-            plot.title   = element_text(size = 14, face = "bold", hjust = 0.5)
+            plot.title   = element_text(size = 14, face = "bold", hjust = 0.5, margin = margin(b = 15)), 
+            plot.margin = margin(t = 20, r = 10, b = 10, l = 10)
           )
       } %>%
       ggplotly(tooltip = "text") %>%

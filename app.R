@@ -22,10 +22,25 @@ library(patchwork)
 
 ####Prep for App####
 ##Load Pre-processed Data
-federal_courts_df_final <- readRDS(here("data", "federal_courts_df_final.rds"))
-states_sf               <- readRDS(here("data", "states_sf.rds"))
-judicial_district_sf    <- readRDS(here("data", "judicial_district_sf_simplified.rds"))
-judicial_circuit_sf     <- readRDS(here("data", "judicial_circuit_sf_simplified.rds"))
+federal_courts_df_final <- 
+  "data" %>% 
+  here("federal_courts_df_final.rds") %>% 
+  readRDS()
+
+states_sf <- 
+  "data" %>% 
+  here("states_sf.rds") %>% 
+  readRDS()
+
+judicial_district_sf <- 
+  "data" %>% 
+  here("judicial_district_sf_simplified.rds") %>% 
+  readRDS()
+
+judicial_circuit_sf <- 
+  "data" %>% 
+  here("judicial_circuit_sf_simplified.rds") %>% 
+  readRDS()
 
 ##Define Theme
 my_theme <- bs_theme(
@@ -1155,6 +1170,7 @@ server <- function(input, output, session){
           facet_grid(supervision_type ~ outcome_metric_type, scales = "free_y") +
           scale_color_manual(values = c("#0072B2", "#E69F00", "#009E73")) +
           scale_x_date(date_breaks = "4 years", date_labels = "%Y") +
+          scale_y_continuous(labels = scales::comma) +
           labs(x = "Date", 
                y = if(input$rate_or_count_state == "Per Capita") "Count per 10,000" else "Total Count",
                color = paste0(input$state_selection, " vs. National")) +
@@ -1174,7 +1190,7 @@ server <- function(input, output, session){
         y = -0.15,
         yanchor = "top"
       ),
-      margin = list(l = 80, r = 180, t = 40, b = 55))
+      margin = list(l = 95, r = 180, t = 40, b = 55))
   })
   
   output$state_viz_stacked_barplot <- renderPlotly({
@@ -1212,11 +1228,14 @@ server <- function(input, output, session){
       group_by(state_name, quarter_name_full, outcome_metric_type, supervision_type) %>%
       dplyr::summarize(across(c(values, population), ~.x %>% sum(na.rm = TRUE))) %>% 
       ungroup() %>%
-      mutate(values_per_capita = 10000 * (values / population),
+      mutate(values_per_capita = 
+               10000 * (values / population),
              plot_val = if(use_per_capita) values_per_capita else values) %>%
       filter(state_name == input$state_selection & quarter_name_full %in% selected_quarters) %>% 
       group_by(supervision_type, outcome_metric_type, state_name) %>% 
-      mutate(plot_val = plot_val %>% mean(na.rm = TRUE)) %>% 
+      dplyr::summarize(plot_val = 
+                         plot_val %>%
+                         mean(na.rm = TRUE)) %>% 
       ungroup() %>%
       mutate(supervision_type = 
                supervision_type %>% 
@@ -1570,8 +1589,9 @@ server <- function(input, output, session){
           labs(
             x = "Date",
             y = ylab,
-            color = "Supervision Type",
-            title = "National Federal Supervision Trends Over Time"
+            color = "Supervision Type"
+            # ,
+            # title = "National Federal Supervision Trends Over Time"
           ) +
           theme_minimal() +
           theme(
@@ -1581,14 +1601,14 @@ server <- function(input, output, session){
             strip.switch.pad.grid = unit(0.3, "cm"), 
             legend.position = "bottom",
             axis.title.x = element_text(margin = margin(t = 15)),
-            plot.title   = element_text(size = 14, face = "bold", hjust = 0.5, margin = margin(b = 15)), 
+            plot.title   = element_text(size = 14, face = "bold", hjust = 0.5, margin = margin(b = 25)), 
             plot.margin = margin(t = 20, r = 10, b = 10, l = 10)
           )
       } %>%
       ggplotly(tooltip = "text") %>%
       layout(
         legend = list(orientation = "h", x = 0.5, xanchor = "center", y = -0.15, yanchor = "top"),
-        margin = list(l = 50, r = 50, t = 40, b = 55)
+        margin = list(l = 50, r = 50, t = 70, b = 55)
       )
   })
 }

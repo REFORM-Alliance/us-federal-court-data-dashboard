@@ -1104,8 +1104,8 @@ server <- function(input, output, session){
                               ~.x %>% 
                                 sum(na.rm = TRUE))) %>% 
       ungroup() %>%
-      mutate(values_per_capita = 
-               10000 * (values/population)) %>% 
+      mutate(values_per_capita =
+               10000 * (values/population)) %>%
       separate_wider_delim(cols = quarter_name_full, delim = ", Q", names = c("year", "quarter"), cols_remove = FALSE) %>%
       mutate(quarter =
                quarter %>%
@@ -1120,31 +1120,30 @@ server <- function(input, output, session){
                as.Date(),
              date =
                date + months(1) - days(1)) %>%
+      filter(is.na(state_name) == FALSE) %>% 
       {
         base_data <- .
         bind_rows(
           base_data,
           base_data %>%  
             group_by(date, supervision_type, outcome_metric_type, quarter_name_full) %>%
-            dplyr::summarize(across(c(values, population), 
+            dplyr::summarize(across(c("values", "values_per_capita"), 
                                     ~.x %>% 
-                                      sum(na.rm = TRUE))) %>% 
+                                      mean(na.rm = TRUE))) %>% 
             ungroup() %>% 
-            mutate(values_per_capita = 
-                     10000 * (values/population), 
-                   state_name = "National Mean"),
+            mutate(state_name = "National Mean"),
           base_data %>%
             group_by(date, supervision_type, outcome_metric_type, quarter_name_full) %>%
             dplyr::summarize(
-              values_per_capita = weightedMedian(10000 * (values / population), w = population, na.rm = TRUE),
+              values_per_capita = weightedMedian(values_per_capita, w = population, na.rm = TRUE),
               values            = weightedMedian(values, w = population, na.rm = TRUE),
               .groups = "drop"
             ) %>%
             mutate(state_name = "National Median")
         )
       } %>% 
-      filter(state_name %in% c(input$state_selection, "National Mean", "National Median"),
-             quarter_name_full %in% selected_quarters) %>%
+      filter(state_name %in% c(input$state_selection, "National Mean", "National Median") & 
+               quarter_name_full %in% selected_quarters) %>%
       mutate(supervision_type = 
                supervision_type %>% 
                factor(levels = rev(c("BOP Custody", "Supervised Release", 

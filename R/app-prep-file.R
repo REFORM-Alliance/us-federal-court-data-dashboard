@@ -11,7 +11,6 @@ library(lubridate)
 library(rmapshaper)
 
 ####Read in Data####
-
 ##Federal Courts Data
 federal_courts_df <- 
   "data" %>% 

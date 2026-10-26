@@ -82,6 +82,28 @@ selected_quarters <-
   ifelse(str_detect(quarters_full, "Q1$"), quarters_full, "") %>% 
   str_replace_all(", Q[:digit:]", "")
 
+##Helper Functions
+carto_key <- Sys.getenv("CARTO_API_KEY")   # set in .Renviron or your host's env vars
+
+add_basemap <- function(map){
+  if(nzchar(carto_key)){
+    addTiles(
+      map,
+      urlTemplate = paste0(
+        "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png?key=",
+        carto_key
+      ),
+      attribution = paste0(
+        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors ',
+        '&copy; <a href="https://carto.com/attributions">CARTO</a>'
+      )
+    )
+  } else {
+    # keyless fallback so the map never shows a watermark
+    addProviderTiles(map, "Esri.WorldGrayCanvas")
+  }
+}
+
 
 ####App####
 ##UI
@@ -363,7 +385,7 @@ server <- function(input, output, session){
   
   # CHANGE 1: Render year selector UI for map/barplot filters (toggle-based)
   output$year_selector_map <- renderUI({
-    if (input$year_mode_map == "single") {
+    if(input$year_mode_map == "single"){
       fluidRow(
         column(7,
                selectInput("single_year_map_val", "Year",
@@ -391,7 +413,7 @@ server <- function(input, output, session){
   
   # CHANGE 1: Render year selector UI for table filters (toggle-based)
   output$year_selector_table <- renderUI({
-    if (input$year_mode_table == "single") {
+    if(input$year_mode_table == "single"){
       fluidRow(
         column(7,
                selectInput("single_year_table_val", "Year",
@@ -418,12 +440,12 @@ server <- function(input, output, session){
   })
   
   map_agg_prefix <- reactive({
-    if (input$year_mode_map == "single") "" else paste0(str_to_title(input$agg_level), " ")
+    if(input$year_mode_map == "single") "" else paste0(str_to_title(input$agg_level), " ")
   })
   
   # Helper: get selected quarters for map/barplot
   map_selected_quarters <- reactive({
-    if (input$year_mode_map == "single") {
+    if(input$year_mode_map == "single"){
       req(input$single_year_map_val, input$single_quarter_map_val)
       target <- paste0(input$single_year_map_val, ", ", input$single_quarter_map_val)
       quarters_full[quarters_full == target]
@@ -437,7 +459,7 @@ server <- function(input, output, session){
   
   # Helper: get selected quarters for table
   # table_selected_quarters <- reactive({
-  #   if (input$year_mode_table == "single") {
+  #   if(input$year_mode_table == "single"){
   #     req(input$single_year_table_val, input$single_quarter_table_val)
   #     target <- paste0(input$single_year_table_val, ", ", input$single_quarter_table_val)
   #     quarters_full[quarters_full == target]
@@ -450,13 +472,13 @@ server <- function(input, output, session){
   # })
   
   table_selected_quarters <- reactive({
-    if (input$year_mode_table == "single") {
+    if(input$year_mode_table == "single"){
       req(input$single_year_table_val, input$single_quarter_table_val)
       target <- paste0(input$single_year_table_val, ", ", input$single_quarter_table_val)
       quarters_full[quarters_full == target]
     } else {
       yr <- input$year_range_table
-      if (is.null(yr)) return(quarters_full)  # default to full range on load
+      if(is.null(yr)) return(quarters_full)  # default to full range on load
       start_idx <- which(quarters_full == yr[1])
       end_idx   <- which(quarters_full == yr[2])
       quarters_full[start_idx:end_idx]
@@ -725,7 +747,7 @@ server <- function(input, output, session){
                    replace_na(0) %>% 
                    as.numeric()) %>% 
           leaflet() %>%
-          addProviderTiles("CartoDB.Positron") %>%
+          add_basemap() %>% 
           addPolygons(
             fillColor = ~pal(value),
             color = "white", weight = 1,
@@ -759,7 +781,7 @@ server <- function(input, output, session){
                    replace_na(0) %>% 
                    as.numeric()) %>% 
           leaflet() %>%
-          addProviderTiles("CartoDB.Positron") %>%
+          add_basemap() %>% 
           addPolygons(
             fillColor = ~pal(value),
             color = "white", weight = 1,
@@ -793,7 +815,7 @@ server <- function(input, output, session){
                    replace_na(0) %>% 
                    as.numeric()) %>% 
           leaflet() %>%
-          addProviderTiles("CartoDB.Positron") %>%
+          add_basemap() %>% 
           addPolygons(
             fillColor = ~pal(value),
             color = "white", weight = 1,
@@ -836,7 +858,7 @@ server <- function(input, output, session){
                    replace_na(0) %>% 
                    as.numeric()) %>% 
           leaflet() %>%
-          addProviderTiles("CartoDB.Positron") %>%
+          add_basemap() %>% 
           addPolygons(
             fillColor = ~pal(value),
             color = "white", weight = 1,
@@ -870,7 +892,7 @@ server <- function(input, output, session){
                    replace_na(0) %>% 
                    as.numeric()) %>% 
           leaflet() %>%
-          addProviderTiles("CartoDB.Positron") %>%
+          add_basemap() %>% 
           addPolygons(
             fillColor = ~pal(value),
             color = "white", weight = 1,
@@ -904,7 +926,7 @@ server <- function(input, output, session){
                    replace_na(0) %>% 
                    as.numeric()) %>% 
           leaflet() %>%
-          addProviderTiles("CartoDB.Positron") %>%
+          add_basemap() %>% 
           addPolygons(
             fillColor = ~pal(value),
             color = "white", weight = 1,
@@ -1498,7 +1520,7 @@ server <- function(input, output, session){
     # 
     # p_total_pop_plotly$x$data <- lapply(
     #   p_total_pop_plotly$x$data,
-    #   function(tr) { tr$showlegend <- FALSE; tr }
+    #   function(tr){ tr$showlegend <- FALSE; tr }
     # )
     # 
     # p_exits_admissions_plotly <- 

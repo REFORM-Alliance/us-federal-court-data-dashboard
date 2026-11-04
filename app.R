@@ -1242,6 +1242,8 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                  
                  tabPanel("Overview", overview_ui),
                  
+                 tabPanel("About", about_ui),
+                 
                  tabPanel("Main Dashboard",
                           div(id = "dashboard_main", 
                               sidebarLayout(
@@ -1423,9 +1425,7 @@ ui <- navbarPage("US Federal Court Supervision Data Dashboard",
                                 )
                               )
                           )
-                 ),
-                 
-                 tabPanel("About", about_ui)
+                 )
 )
 
 ##Server
